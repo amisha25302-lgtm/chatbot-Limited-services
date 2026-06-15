@@ -1,0 +1,475 @@
+{
+  "service_id": "354",
+  "language": "en",
+  "name": "Application for subsidy in feature film",
+  "department": "Culture & Language",
+  "category": "",
+  "sla": "15 Days",
+  "details_link": "https://sewasetu.cgstate.gov.in/instractionPageNew.do?serviceId=354&lang=en",
+  "required_documents": [
+    {
+      "sno": "1",
+      "document_type": "Bank Passbook",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Bank Passbook",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "2",
+      "document_type": "Declaration Certificate",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Declaration Certificate",
+          "format_link": "https://sewasetu.cgstate.gov.in/resources/docFormat/24640.pdf",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "3",
+      "document_type": "COLLECTOR RELEASE FILM SHOOTING NOC",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "COLLECTOR RELEASE FILM SHOOTING NOC",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "4",
+      "document_type": "FILM SCRIPT CERTIFICATE",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "FILM SCRIPT CERTIFICATE",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "5",
+      "document_type": "FILM PRODUCTIONHOUSE IMPPA/WIFPA/CCTPACERTIFICATE",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "FILM PRODUCTIONHOUSE IMPPA/WIFPA/CCTPACERTIFICATE",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "6",
+      "document_type": "CA CERTIFIED COPY FILM CAST OF PRODUCTION(COP)",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "CA CERTIFIED COPY FILM CAST OF PRODUCTION(COP)",
+          "format_link": "https://sewasetu.cgstate.gov.in/resources/docFormat/24631.pdf",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "7",
+      "document_type": "UFO/QUBE/K SERA KERACERTIFICATE/RELEASE ORDER(RO)",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "UFO/QUBE/K SERA KERACERTIFICATE/RELEASE ORDER(RO)",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "8",
+      "document_type": "SENSOR BOARD CERTIFICATE",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "SENSOR BOARD CERTIFICATE",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "9",
+      "document_type": "FILM PRODUCTION HOUSE PAN/TAN/GST",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "FILM PRODUCTION HOUSE PAN/TAN/GST",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "10",
+      "document_type": "SHOOTING DAYS IN CG/TOTAL SHOOTING DAYS",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "SHOOTING DAYS IN CG/TOTAL SHOOTING DAYS",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "11",
+      "document_type": "TOTAL NO. OF ARTIST/CG LOCAL NO. OF ARTIST",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "TOTAL NO. OF ARTIST/CG LOCAL NO. OF ARTIST",
+          "format_link": "https://sewasetu.cgstate.gov.in/resources/docFormat/24636.pdf",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "12",
+      "document_type": "Registration Fee Receipt / Demand Draft Online Payment Receipt of INR 5,900/- (including 18% GST) In favour of Directorate of Culture and Language",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Registration Fee Receipt / Demand Draft Online Payment Receipt of INR 5,900/- (including 18% GST) In favour of Directorate of Culture and Language",
+          "format_link": "https://sewasetu.cgstate.gov.in/resources/docFormat/24638.pdf",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "13",
+      "document_type": "ARTIST RESIDENCE CERTIFICATE / BIRTH CERTIFICATE / EDUCATION CERTIFICATE (MINIMUM 5 YEARS) / AADHAAR CARD / DRIVING LICENSE.",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "ARTIST RESIDENCE CERTIFICATE / BIRTH CERTIFICATE / EDUCATION CERTIFICATE (MINIMUM 5 YEARS) / AADHAAR CARD / DRIVING LICENSE.",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    }
+  ],
+  "fees": {
+    "where_to_apply": "",
+    "kiosk_fee": "30.0",
+    "online_fee": "30.0",
+    "raw_text": "Where to Apply? Sewa Setu Kendra : ₹30.0 Online : ₹30.0"
+  },
+  "contact_details": "Sewa Setu Kendra",
+  "time_limit": "15 Days",
+  "form_fields": [
+    {
+      "attribute_id": "8312",
+      "label": "Project Type",
+      "input_type": "textarea",
+      "data_type": "Charactar",
+      "row": "1",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8313",
+      "label": "Genre",
+      "input_type": "drop down",
+      "data_type": "Search",
+      "row": "1",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8314",
+      "label": "Project Duration(In minutes)",
+      "input_type": "number",
+      "data_type": "Number",
+      "row": "2",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8315",
+      "label": "Project Title",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "2",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8316",
+      "label": "Producer Name",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "3",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8317",
+      "label": "Production House",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "3",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8318",
+      "label": "Type of Unit",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "4",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8319",
+      "label": "Shooting Date in Chhattisgarh",
+      "input_type": "date",
+      "data_type": "Date",
+      "row": "4",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8320",
+      "label": "Estimated Budget",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "5",
+      "col": "1"
+    },
+    {
+      "attribute_id": "1615",
+      "label": "Estimated total expenditure",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "5",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8322",
+      "label": "CG Human Resource Usage",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "6",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8323",
+      "label": "Proposed Shooting Location",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "6",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8324",
+      "label": "Producer Details",
+      "input_type": "textarea",
+      "data_type": "Charactar",
+      "row": "7",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8325",
+      "label": "Registered Address",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "7",
+      "col": "2"
+    },
+    {
+      "attribute_id": "2673",
+      "label": "Email Address",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "8",
+      "col": "1"
+    },
+    {
+      "attribute_id": "914",
+      "label": "Mobile Number",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "8",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8326",
+      "label": "GST / PAN",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "9",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8327",
+      "label": "Director Name",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "9",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8328",
+      "label": "Authorized Representative Name",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "10",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8329",
+      "label": "Authorized Representative Email",
+      "input_type": "text",
+      "data_type": "Email",
+      "row": "10",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8330",
+      "label": "Authorized Representative Mobile",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "11",
+      "col": "1"
+    },
+    {
+      "attribute_id": "4330",
+      "label": "Total Shooting Days",
+      "input_type": "number",
+      "data_type": "Number",
+      "row": "12",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8331",
+      "label": "Lead Actors Name",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "13",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8332",
+      "label": "Project Summary (Max 100 Words)",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "13",
+      "col": "2"
+    },
+    {
+      "attribute_id": "4112",
+      "label": "Film Language",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "14",
+      "col": "1"
+    },
+    {
+      "attribute_id": "4114",
+      "label": "Are you eligible and applying for subsidy under Clause 11(1)",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "14",
+      "col": "2"
+    },
+    {
+      "attribute_id": "4115",
+      "label": "Total number of shooting days of the film",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "15",
+      "col": "1"
+    },
+    {
+      "attribute_id": "4301",
+      "label": "Total number of shooting days in Chhattisgarh",
+      "input_type": "number",
+      "data_type": "Number",
+      "row": "15",
+      "col": "2"
+    },
+    {
+      "attribute_id": "4118",
+      "label": "Total number of artists and employees working in the film",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "16",
+      "col": "1"
+    },
+    {
+      "attribute_id": "4120",
+      "label": "Number of Chhattisgarh based assistant technicians and ground staff in the film",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "16",
+      "col": "2"
+    },
+    {
+      "attribute_id": "4123",
+      "label": "Total number of Chhattisgarh artists in the film under main actors category",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "17",
+      "col": "1"
+    },
+    {
+      "attribute_id": "1302",
+      "label": "Bank Account Number",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "17",
+      "col": "2"
+    },
+    {
+      "attribute_id": "1183",
+      "label": "Bank Name",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "18",
+      "col": "1"
+    },
+    {
+      "attribute_id": "238",
+      "label": "IFSC code",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "18",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8333",
+      "label": "Number of Feature Films in Chhattisgarh",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "19",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8334",
+      "label": "Percentage of CG Employees",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "19",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8335",
+      "label": "Artist Details For Film Subsidy",
+      "input_type": "fieldset",
+      "data_type": "Alfa Numeric",
+      "row": "20",
+      "col": "1"
+    }
+  ],
+  "downloaded_pdfs": [],
+  "combined_manual_text_path": "scraped_data/extracted_text/combined_manual_354_en.txt"
+}

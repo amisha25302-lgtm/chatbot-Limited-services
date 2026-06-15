@@ -1,0 +1,355 @@
+{
+  "service_id": "7",
+  "language": "hi",
+  "name": "मूल निवासी प्रमाण पत्र",
+  "department": "राजस्व एवं आपदा प्रबंधन विभाग",
+  "category": "",
+  "sla": "",
+  "details_link": "https://sewasetu.cgstate.gov.in/instractionPageNew.do?serviceId=7&lang=hi",
+  "required_documents": [
+    {
+      "sno": "1",
+      "document_type": "शपथ पत्र",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "शपथ पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "2",
+      "document_type": "अन्य कारण",
+      "mandatory": "नहीं",
+      "supporting_documents": [
+        {
+          "name": "अन्य",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "3",
+      "document_type": "१५ वर्ष तक निवास का प्रमाण",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "जन्म प्रमाण पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "पिता/पालक का सेवा प्रमाण पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "नौकरी प्रमाणपत्र /पहचान पत्र (यदि आवेदक शासकीय /अर्ध शासकीय अधीनस्थ हो )",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "वोटिंग कार्ड",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "घर या भूमि का दस्तावेज़",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "जन्म सूचना प्रपत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "वार्ड सदस्य, स्थानीय विधायक / सांसद से प्रमाण पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "राशन कार्ड",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "बिजली का बिल",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "4",
+      "document_type": "शैक्षणिक प्रमाण पत्र",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "माध्यमिक विद्यालय का प्रमाणपत्र -8 कक्षा",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "प्राथमिक विद्यालय का प्रमाणपत्र - 5वीं कक्षा",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "हाई स्कूल(10वी कक्षा) अंकसूची",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "उच्चतर माध्यमिक विधालय प्रमाण पत्र(१२ वीं कक्षा)",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "एम-फिल",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "स्कूल प्रमाणपत्र (3 साल की एक सबूत निरंतर अध्ययन के रूप में)",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "स्नातकोत्तर प्रमाणपत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "तकनीकी विषयों में प्रमाणपत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "5",
+      "document_type": "५ साल निवास का प्रमाण",
+      "mandatory": "नहीं",
+      "supporting_documents": [
+        {
+          "name": "घर या भूमि का दस्तावेज़",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "व्यक्ति की सेवा पुस्तिका.",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    }
+  ],
+  "fees": {
+    "where_to_apply": "",
+    "kiosk_fee": "",
+    "online_fee": "",
+    "raw_text": ""
+  },
+  "contact_details": "",
+  "time_limit": "",
+  "form_fields": [
+    {
+      "attribute_id": "76",
+      "label": "सामान्य विवरण",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "1",
+      "col": "1"
+    },
+    {
+      "attribute_id": "78",
+      "label": "हितग्राही के अभिभावक का प्रकार",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "2",
+      "col": "1"
+    },
+    {
+      "attribute_id": "79",
+      "label": "हितग्राही के अभिभावक का नाम",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "2",
+      "col": "2"
+    },
+    {
+      "attribute_id": "80",
+      "label": "हितग्राही के अभिभावक का व्यवसाय",
+      "input_type": "search",
+      "data_type": "Search",
+      "row": "3",
+      "col": "1"
+    },
+    {
+      "attribute_id": "81",
+      "label": "हितग्राही का जन्म स्थान",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "3",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8",
+      "label": "लिंग",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "4",
+      "col": "1"
+    },
+    {
+      "attribute_id": "7",
+      "label": "जन्म तिथि",
+      "input_type": "date",
+      "data_type": "Date",
+      "row": "4",
+      "col": "2"
+    },
+    {
+      "attribute_id": "119",
+      "label": "पता का विवरण",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "5",
+      "col": "1"
+    },
+    {
+      "attribute_id": "104",
+      "label": "पता",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "6",
+      "col": "1"
+    },
+    {
+      "attribute_id": "82",
+      "label": "पिन कोड",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "6",
+      "col": "2"
+    },
+    {
+      "attribute_id": "396",
+      "label": "जिला",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "7",
+      "col": "1"
+    },
+    {
+      "attribute_id": "83",
+      "label": "हितग्राही के जन्म के बाद निवास का विवरण",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "8",
+      "col": "1"
+    },
+    {
+      "attribute_id": "250",
+      "label": "हितग्राही के जन्म के बाद का निवास का विवरण",
+      "input_type": "fieldset",
+      "data_type": "Alfa Numeric",
+      "row": "9",
+      "col": "1"
+    },
+    {
+      "attribute_id": "91",
+      "label": "हितग्राही के व्यवसाय या सेवा का विवरण",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "10",
+      "col": "1"
+    },
+    {
+      "attribute_id": "251",
+      "label": "हितग्राही के व्यवसाय या सेवा का विवरण",
+      "input_type": "fieldset",
+      "data_type": "Alfa Numeric",
+      "row": "11",
+      "col": "1"
+    },
+    {
+      "attribute_id": "94",
+      "label": "हितग्राही के शिक्षा का स्तर",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "12",
+      "col": "1"
+    },
+    {
+      "attribute_id": "252",
+      "label": "हितग्राही के शिक्षा का स्तर",
+      "input_type": "fieldset",
+      "data_type": "Alfa Numeric",
+      "row": "13",
+      "col": "1"
+    },
+    {
+      "attribute_id": "33",
+      "label": "अन्य विवरण",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "14",
+      "col": "1"
+    },
+    {
+      "attribute_id": "99",
+      "label": "हितग्राही का वोटर आईडी",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "15",
+      "col": "1"
+    },
+    {
+      "attribute_id": "101",
+      "label": "हितग्राही किस जिले का निवासी है",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "15",
+      "col": "2"
+    },
+    {
+      "attribute_id": "103",
+      "label": "किस वर्ष से रह रहा है",
+      "input_type": "number",
+      "data_type": "Date",
+      "row": "16",
+      "col": "1"
+    },
+    {
+      "attribute_id": "253",
+      "label": "आवेदन का कारण",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "16",
+      "col": "2"
+    },
+    {
+      "attribute_id": "106",
+      "label": "अन्य जानकारी",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "17",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8384",
+      "label": "मैं सहमति देता/देती हूँ कि यदि निर्धारित समय सीमा के भीतर आवेदनित लोक सेवा प्रदान नहीं की जाती है, तो मेरी ओर से सक्षम अधिकारी के समक्ष लोक सेवा गारंटी नियम, 2011 के नियम 6 के अंतर्गत स्वतः शिकायत/अपील दर्ज की जाए।",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "17",
+      "col": "2"
+    }
+  ],
+  "downloaded_pdfs": [],
+  "combined_manual_text_path": "scraped_data/extracted_text/combined_manual_7_hi.txt"
+}

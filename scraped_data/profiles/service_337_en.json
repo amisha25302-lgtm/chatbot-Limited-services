@@ -1,0 +1,311 @@
+{
+  "service_id": "337",
+  "language": "en",
+  "name": "Chief Minister Employment Generation Programme (CMEGP)",
+  "department": "Rural Industry Department",
+  "category": "",
+  "sla": "45 Days",
+  "details_link": "https://sewasetu.cgstate.gov.in/instractionPageNew.do?serviceId=337&lang=en",
+  "required_documents": [
+    {
+      "sno": "1",
+      "document_type": "Residential Proof",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Domicile Certificate",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "2",
+      "document_type": "Caste Proof",
+      "mandatory": "No",
+      "supporting_documents": [
+        {
+          "name": "Caste Certificate",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "3",
+      "document_type": "Affidavit",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Affidavit",
+          "format_link": "https://sewasetu.cgstate.gov.in/resources/docFormat/24806.pdf",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "4",
+      "document_type": "Educational Certificate",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Educational Certificate",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "5",
+      "document_type": "Age Proof Document",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Any Relevant Document",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "6",
+      "document_type": "Aadhaar Card",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Aadhaar Card",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "7",
+      "document_type": "Industry Registration",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Udyam / Trade License",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "8",
+      "document_type": "Project Report / Dpr",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Project Report/Dpr",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "9",
+      "document_type": "Bank Passbook Front Page",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Bank Passbook Front Page",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "10",
+      "document_type": "Passport Size Photo",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Passport Size Photo",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "11",
+      "document_type": "Gram Panchayat Noc",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Gram Panchayat Noc",
+          "format_link": "https://sewasetu.cgstate.gov.in/resources/docFormat/24803.pdf",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "12",
+      "document_type": "Land Ownership Proof / Lease Deed/ Rent Agreement",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Land Ownership Proof / Lease Deed/ Rent Agreement",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    }
+  ],
+  "fees": {
+    "where_to_apply": "",
+    "kiosk_fee": "30.0",
+    "online_fee": "30.0",
+    "raw_text": "Where to Apply? Sewa Setu Kendra : ₹30.0 Online : ₹30.0"
+  },
+  "contact_details": "Sewa Setu Kendra",
+  "time_limit": "45 Days",
+  "form_fields": [
+    {
+      "attribute_id": "4059",
+      "label": "Father’s Name",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "1",
+      "col": "1"
+    },
+    {
+      "attribute_id": "2136",
+      "label": "Husband Name",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "1",
+      "col": "2"
+    },
+    {
+      "attribute_id": "7",
+      "label": "Date of Birth",
+      "input_type": "date",
+      "data_type": "Date",
+      "row": "2",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8336",
+      "label": "Loan Amount (Capital Expenditure + Working Capital)",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "2",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8",
+      "label": "Gender",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "3",
+      "col": "1"
+    },
+    {
+      "attribute_id": "4086",
+      "label": "Social Category",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "3",
+      "col": "2"
+    },
+    {
+      "attribute_id": "4087",
+      "label": "Special Category",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "4",
+      "col": "1"
+    },
+    {
+      "attribute_id": "800",
+      "label": "Educational Qualification",
+      "input_type": "Data List",
+      "data_type": "Search",
+      "row": "4",
+      "col": "2"
+    },
+    {
+      "attribute_id": "3767",
+      "label": "Residential Address",
+      "input_type": "textarea",
+      "data_type": "Charactar",
+      "row": "5",
+      "col": "1"
+    },
+    {
+      "attribute_id": "4088",
+      "label": "Proposed Unit Location Address",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "5",
+      "col": "2"
+    },
+    {
+      "attribute_id": "3819",
+      "label": "Type of Project",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "6",
+      "col": "1"
+    },
+    {
+      "attribute_id": "4090",
+      "label": "Name Of Proposed Unit",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "6",
+      "col": "2"
+    },
+    {
+      "attribute_id": "3821",
+      "label": "Means of Finance",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "7",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3925",
+      "label": "PAN Card",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "7",
+      "col": "2"
+    },
+    {
+      "attribute_id": "4091",
+      "label": "Name of Financing Bank",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "8",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8383",
+      "label": "Branch Name",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "8",
+      "col": "2"
+    },
+    {
+      "attribute_id": "1301",
+      "label": "Branch IFSC Code",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "9",
+      "col": "1"
+    },
+    {
+      "attribute_id": "1184",
+      "label": "Bank Address",
+      "input_type": "textarea",
+      "data_type": "Charactar",
+      "row": "9",
+      "col": "2"
+    }
+  ],
+  "downloaded_pdfs": [],
+  "combined_manual_text_path": "scraped_data/extracted_text/combined_manual_337_en.txt"
+}

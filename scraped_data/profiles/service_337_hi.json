@@ -1,0 +1,311 @@
+{
+  "service_id": "337",
+  "language": "hi",
+  "name": "मुख्यमंत्री रोजगार सृजन कार्यक्रम हेतु आवेदन",
+  "department": "ग्रामीण उद्योग विभाग",
+  "category": "",
+  "sla": "",
+  "details_link": "https://sewasetu.cgstate.gov.in/instractionPageNew.do?serviceId=337&lang=hi",
+  "required_documents": [
+    {
+      "sno": "1",
+      "document_type": "निवास का प्रमाण",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "मूल निवासी प्रमाण पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "2",
+      "document_type": "जाति का प्रमाण",
+      "mandatory": "नहीं",
+      "supporting_documents": [
+        {
+          "name": "जाति प्रमाण पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "3",
+      "document_type": "शपथ पत्र",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "शपथपत्र",
+          "format_link": "https://sewasetu.cgstate.gov.in/resources/docFormat/24806.pdf",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "4",
+      "document_type": "शैक्षणिक प्रमाण पत्र",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "शैक्षणिक प्रमाण - पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "5",
+      "document_type": "आयु प्रमाण पत्र",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "कोई भी प्रासंगिक दस्तावेज़",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "6",
+      "document_type": "आधार कार्ड",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "आधार कार्ड",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "7",
+      "document_type": "उद्योग पंजीकरण",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "उद्यम / व्यापार लाइसेंस",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "8",
+      "document_type": "परियोजना रिपोर्ट / डीपीआर (विस्तृत परियोजना रिपोर्ट)",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "परियोजना रिपोर्ट/डीपीआर",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "9",
+      "document_type": "बैंक पासबुक का पहला पृष्ठ",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "बैंक पासबुक का पहला पृष्ठ",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "10",
+      "document_type": "पासपोर्ट साइज फोटो",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "पासपोर्ट साइज फोटो",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "11",
+      "document_type": "ग्राम पंचायत एनओसी",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "ग्राम पंचायत एनओसी",
+          "format_link": "https://sewasetu.cgstate.gov.in/resources/docFormat/24803.pdf",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "12",
+      "document_type": "भूमि स्वामित्व प्रमाण / पट्टा दस्तावेज़ / किराया समझौता",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "भूमि स्वामित्व प्रमाण / पट्टा दस्तावेज़ / किराया समझौता",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    }
+  ],
+  "fees": {
+    "where_to_apply": "",
+    "kiosk_fee": "",
+    "online_fee": "",
+    "raw_text": ""
+  },
+  "contact_details": "",
+  "time_limit": "",
+  "form_fields": [
+    {
+      "attribute_id": "4059",
+      "label": "पिता का नाम",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "1",
+      "col": "1"
+    },
+    {
+      "attribute_id": "2136",
+      "label": "पति का नाम",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "1",
+      "col": "2"
+    },
+    {
+      "attribute_id": "7",
+      "label": "जन्म तिथि",
+      "input_type": "date",
+      "data_type": "Date",
+      "row": "2",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8336",
+      "label": "ऋण राशि (पूंजीगत व्यय + कार्यशील पूंजी)",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "2",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8",
+      "label": "लिंग",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "3",
+      "col": "1"
+    },
+    {
+      "attribute_id": "4086",
+      "label": "सामाजिक श्रेणी",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "3",
+      "col": "2"
+    },
+    {
+      "attribute_id": "4087",
+      "label": "विशेष श्रेणी",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "4",
+      "col": "1"
+    },
+    {
+      "attribute_id": "800",
+      "label": "शैक्षणिक योग्यता",
+      "input_type": "Data List",
+      "data_type": "Search",
+      "row": "4",
+      "col": "2"
+    },
+    {
+      "attribute_id": "3767",
+      "label": "आवासीय पता",
+      "input_type": "textarea",
+      "data_type": "Charactar",
+      "row": "5",
+      "col": "1"
+    },
+    {
+      "attribute_id": "4088",
+      "label": "प्रस्तावित इकाई का स्थान और पता",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "5",
+      "col": "2"
+    },
+    {
+      "attribute_id": "3819",
+      "label": "परियोजना का प्रकार",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "6",
+      "col": "1"
+    },
+    {
+      "attribute_id": "4090",
+      "label": "प्रस्तावित इकाई का नाम",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "6",
+      "col": "2"
+    },
+    {
+      "attribute_id": "3821",
+      "label": "वित्तीय स्रोत",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "7",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3925",
+      "label": "पैन कार्ड",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "7",
+      "col": "2"
+    },
+    {
+      "attribute_id": "4091",
+      "label": "वित्तपोषण बैंक का नाम",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "8",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8383",
+      "label": "ब्रांच का नाम",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "8",
+      "col": "2"
+    },
+    {
+      "attribute_id": "1301",
+      "label": "आईएफएससी कोड",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "9",
+      "col": "1"
+    },
+    {
+      "attribute_id": "1184",
+      "label": "बैंक का पता",
+      "input_type": "textarea",
+      "data_type": "Charactar",
+      "row": "9",
+      "col": "2"
+    }
+  ],
+  "downloaded_pdfs": [],
+  "combined_manual_text_path": "scraped_data/extracted_text/combined_manual_337_hi.txt"
+}

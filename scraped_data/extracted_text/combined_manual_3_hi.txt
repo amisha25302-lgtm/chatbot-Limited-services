@@ -1,0 +1,79 @@
+==================================================
+SERVICE DETAILS MANUAL: विवाह पंजीकरण एवं प्रमाण पत्र
+Service ID: 3
+Language: HI
+Department: नगरीय प्रशासन एवं विकास विभाग
+Time Limit / SLA: 
+Contact Details: 
+Kiosk Fee: 
+Online Fee: 
+Where to Apply: 
+Raw Fees Text: 
+==================================================
+
+REQUIRED DOCUMENTS:
+- SNo 1: शपथ पत्र (Mandatory: हाँ)
+  * Supporting Document 1: शपथ पत्र
+- SNo 2: वर एवं वधु का संयुक्त फोटो(2A साईज) प्रमाण पत्र के लिए (Mandatory: हाँ)
+  * Supporting Document 1: वर एवं वधु का संयुक्त फोटो(2A साईज) प्रमाण पत्र के लिए
+- SNo 3: प्रमाण पत्र (Mandatory: नहीं)
+  * Supporting Document 1: विवाह अनुस्थान संपन्न कराने वाले के सत्यापन के लिए उस समय उपस्थित पंडित /पादरी /मौलवी अथवा समाज का प्रमाण पत्र
+- SNo 4: अन्य कारण (Mandatory: नहीं)
+  * Supporting Document 1: अन्य कारण
+- SNo 5: आवश्यक दस्तावेज़ (Mandatory: नहीं)
+  * Supporting Document 1: आवश्यक दस्तावेज़
+- SNo 6: वर का जन्म प्रमाण पत्र (Mandatory: हाँ)
+  * Supporting Document 1: वर का जन्म प्रमाण पत्र
+- SNo 7: वधु का जन्म प्रमाण पत्र (Mandatory: हाँ)
+  * Supporting Document 1: वधु का जन्म प्रमाण पत्र
+- SNo 8: वर एव वधु द्वारा हस्ताक्षरित दस्तावेज (प्रथम पेज) (Mandatory: हाँ)
+  * Supporting Document 1: वर एव वधु द्वारा हस्ताक्षरित दस्तावेज (प्रथम पेज)
+- SNo 9: वर एव वधु द्वारा हस्ताक्षरित दस्तावेज (व्दितीय पेज) (Mandatory: हाँ)
+  * Supporting Document 1: वर एव वधु द्वारा हस्ताक्षरित दस्तावेज (व्दितीय पेज)
+- SNo 10: चालान की प्रति (Mandatory: हाँ)
+  * Supporting Document 1: चालान की प्रति
+- SNo 11: विवाह आमंत्रण पत्र (Mandatory: हाँ)
+  * Supporting Document 1: विवाह आमंत्रण पत्र
+- SNo 12: तलाक प्रमाण पत्र (Mandatory: नहीं)
+  * Supporting Document 1: तलाक प्रमाण पत्र
+- SNo 13: विधवा प्रमाण पत्र (Mandatory: नहीं)
+  * Supporting Document 1: विधवा प्रमाण पत्र
+- SNo 14: अंतरधार्मिक विवाह प्रमाण पत्र (Mandatory: नहीं)
+  * Supporting Document 1: अंतरधार्मिक विवाह प्रमाण पत्र
+
+APPLICATION FORM FIELDS:
+- Field: वैवाहिक जानकारी [Type: section lebel, Data: Charactar] (Row: 1, Col: 1)
+- Field: विवाह की तिथि [Type: date, Data: Date] (Row: 2, Col: 1)
+- Field: विवाह का स्थान [Type: textarea, Data: Alfa Numeric] (Row: 2, Col: 2)
+- Field: विवाह का प्रकार [Type: drop down, Data: Charactar] (Row: 3, Col: 1)
+- Field: क्या विवाह पंजीकृत है [Type: drop down, Data: Charactar] (Row: 3, Col: 2)
+- Field: पंजीयन क्रमांक [Type: text, Data: Number] (Row: 4, Col: 1)
+- Field: अन्य जानकारी [Type: textarea, Data: Charactar] (Row: 4, Col: 2)
+- Field: वर का विवरण [Type: section lebel, Data: Charactar] (Row: 5, Col: 1)
+- Field: वर का नाम स्थानीय भाषा में [Type: text, Data: Charactar] (Row: 6, Col: 1)
+- Field: वर का नाम अंग्रेजी में [Type: text, Data: Charactar] (Row: 6, Col: 2)
+- Field: वर का जन्म तिथि [Type: date, Data: Date] (Row: 7, Col: 1)
+- Field: विवाह के समय उम्र [Type: text, Data: Number] (Row: 7, Col: 2)
+- Field: पिता का नाम स्थानीय भाषा में [Type: text, Data: Charactar] (Row: 8, Col: 1)
+- Field: पिता का नाम अंग्रेजी में [Type: textarea, Data: Charactar] (Row: 8, Col: 2)
+- Field: वर की वैवाहिक स्थिति [Type: drop down, Data: Charactar] (Row: 9, Col: 1)
+- Field: वर का पता [Type: section lebel, Data: Charactar] (Row: 10, Col: 1)
+- Field: वर का वर्तमान पता स्थानीय भाषा में [Type: textarea, Data: Alfa Numeric] (Row: 11, Col: 1)
+- Field: वर का वर्तमान पता अंग्रेजी में [Type: textarea, Data: Alfa Numeric] (Row: 11, Col: 2)
+- Field: वर का स्थाई पता स्थानीय भाषा में [Type: textarea, Data: Alfa Numeric] (Row: 12, Col: 1)
+- Field: वर का स्थाई पता अंग्रेजी में [Type: textarea, Data: Alfa Numeric] (Row: 12, Col: 2)
+- Field: वर पक्ष के गवाह का विवरण [Type: fieldset, Data: Alfa Numeric] (Row: 13, Col: 1)
+- Field: वधु का विवरण [Type: section lebel, Data: Charactar] (Row: 14, Col: 1)
+- Field: वधु का नाम स्थानीय भाषा में [Type: text, Data: Charactar] (Row: 15, Col: 1)
+- Field: वधु का नाम अंग्रेजी में [Type: text, Data: Charactar] (Row: 15, Col: 2)
+- Field: वधु की जन्म तिथि [Type: date, Data: Date] (Row: 16, Col: 1)
+- Field: विवाह के समय वधु की उम्र [Type: text, Data: Number] (Row: 16, Col: 2)
+- Field: वधु के पिता का नाम स्थानीय भाषा में [Type: text, Data: Charactar] (Row: 17, Col: 1)
+- Field: वधु के पिता का नाम अंग्रेजी में [Type: text, Data: Charactar] (Row: 17, Col: 2)
+- Field: वधु की वैवाहिक स्थिति [Type: drop down, Data: Charactar] (Row: 18, Col: 1)
+- Field: वधु का पता [Type: section lebel, Data: Charactar] (Row: 19, Col: 1)
+- Field: वधु का वर्तमान पता स्थानीय भाषा में [Type: textarea, Data: Alfa Numeric] (Row: 20, Col: 1)
+- Field: वधु का वर्तमान पता अंग्रेजी में [Type: textarea, Data: Alfa Numeric] (Row: 20, Col: 2)
+- Field: वधु का स्थायी पता स्थानीय भाषा में [Type: textarea, Data: Alfa Numeric] (Row: 21, Col: 1)
+- Field: वधु की स्थायी पता अंग्रेजी में [Type: textarea, Data: Alfa Numeric] (Row: 21, Col: 2)
+- Field: वधु पक्ष के गवाह का विवरण [Type: fieldset, Data: Alfa Numeric] (Row: 22, Col: 1)

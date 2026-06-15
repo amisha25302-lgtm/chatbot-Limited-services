@@ -1,0 +1,79 @@
+==================================================
+SERVICE DETAILS MANUAL: फीचर फिल्म पर सब्सिडी हेतु आवेदन
+Service ID: 354
+Language: HI
+Department: संस्कृति एवं राजभाषा
+Time Limit / SLA: 
+Contact Details: 
+Kiosk Fee: 
+Online Fee: 
+Where to Apply: 
+Raw Fees Text: 
+==================================================
+
+REQUIRED DOCUMENTS:
+- SNo 1: बैंक पासबुक (Mandatory: हाँ)
+  * Supporting Document 1: बैंक पासबुक
+- SNo 2: घोषणा प्रमाण पत्र (Mandatory: हाँ)
+  * Supporting Document 1: घोषणा प्रमाण पत्र [Format: https://sewasetu.cgstate.gov.in/resources/docFormat/24640.pdf]
+- SNo 3: जिला कलेक्टर द्वारा फिल्म शूटिंग के लिए जारी अनापत्ति प्रमाण पत्र (Mandatory: हाँ)
+  * Supporting Document 1: जिला कलेक्टर द्वारा फिल्म शूटिंग के लिए जारी अनापत्ति प्रमाण पत्र
+- SNo 4: फिल्म की पटकथा का प्रमाण पत्र (Mandatory: हाँ)
+  * Supporting Document 1: फिल्म की पटकथा का प्रमाण पत्र
+- SNo 5: फिल्म प्रोडक्शन हाउस का IMPPA/WIFPA/CCTPA प्रमाण पत्र (Mandatory: हाँ)
+  * Supporting Document 1: फिल्म प्रोडक्शन हाउस का IMPPA/WIFPA/CCTPA प्रमाण पत्र
+- SNo 6: फिल्म की निर्माण लागत (COST OF PRODUCTION) की सीए द्वारा प्रमाणित प्रति (Mandatory: हाँ)
+  * Supporting Document 1: फिल्म की निर्माण लागत (COST OF PRODUCTION) की सीए द्वारा प्रमाणित प्रति [Format: https://sewasetu.cgstate.gov.in/resources/docFormat/24631.pdf]
+- SNo 7: UFO / QUBE / K SERA SERA का प्रमाण पत्र / रिलीज आदेश (RO) (Mandatory: हाँ)
+  * Supporting Document 1: UFO / QUBE / K SERA SERA का प्रमाण पत्र / रिलीज आदेश (RO)
+- SNo 8: सेंसर बोर्ड प्रमाण पत्र (Mandatory: हाँ)
+  * Supporting Document 1: सेंसर बोर्ड प्रमाण पत्र
+- SNo 9: फिल्म निर्माण संस्था का PAN / TAN / GST विवरण (Mandatory: हाँ)
+  * Supporting Document 1: फिल्म निर्माण संस्था का PAN / TAN / GST विवरण
+- SNo 10: छत्तीसगढ़ में शूटिंग के दिन / कुल शूटिंग दिवस (Mandatory: हाँ)
+  * Supporting Document 1: छत्तीसगढ़ में शूटिंग के दिन / कुल शूटिंग दिवस
+- SNo 11: कुल कलाकारों की संख्या / छत्तीसगढ़ के स्थानीय कलाकारों की संख्या (Mandatory: हाँ)
+  * Supporting Document 1: कुल कलाकारों की संख्या / छत्तीसगढ़ के स्थानीय कलाकारों की संख्या [Format: https://sewasetu.cgstate.gov.in/resources/docFormat/24636.pdf]
+- SNo 12: (पंजीकरण शुल्क रसीद / डिमांड ड्राफ्ट) INR 5,900/- (18% जीएसटी सहित) भुगतान की ऑनलाइन रसीद संस्कृति एवं भाषा निदेशालय के पक्ष में (Mandatory: हाँ)
+  * Supporting Document 1: (पंजीकरण शुल्क रसीद / डिमांड ड्राफ्ट) INR 5,900/- (18% जीएसटी सहित) भुगतान की ऑनलाइन रसीद संस्कृति एवं भाषा निदेशालय के पक्ष में [Format: https://sewasetu.cgstate.gov.in/resources/docFormat/24638.pdf]
+- SNo 13: कलाकार का निवास प्रमाण पत्र / जन्म प्रमाण पत्र / शैक्षणिक प्रमाण पत्र (न्यूनतम 5 वर्ष) / आधार कार्ड / ड्राइविंग लाइसेंस (Mandatory: हाँ)
+  * Supporting Document 1: कलाकार का निवास प्रमाण पत्र / जन्म प्रमाण पत्र / शैक्षणिक प्रमाण पत्र (न्यूनतम 5 वर्ष) / आधार कार्ड / ड्राइविंग लाइसेंस
+
+APPLICATION FORM FIELDS:
+- Field: परियोजना का प्रकार [Type: textarea, Data: Charactar] (Row: 1, Col: 1)
+- Field: शैली [Type: drop down, Data: Search] (Row: 1, Col: 2)
+- Field: परियोजना की अवधि [Type: number, Data: Number] (Row: 2, Col: 1)
+- Field: परियोजना का शीर्षक [Type: text, Data: Charactar] (Row: 2, Col: 2)
+- Field: निर्माता का नाम [Type: text, Data: Charactar] (Row: 3, Col: 1)
+- Field: प्रोडक्शन हाउस [Type: text, Data: Charactar] (Row: 3, Col: 2)
+- Field: इकाई का प्रकार [Type: drop down, Data: Charactar] (Row: 4, Col: 1)
+- Field: छत्तीसगढ़ में शूटिंग की तारीख [Type: date, Data: Date] (Row: 4, Col: 2)
+- Field: परियोजना का अनुमानित बजट [Type: text, Data: Number] (Row: 5, Col: 1)
+- Field: अनुमानित कुल व्यय [Type: text, Data: Number] (Row: 5, Col: 2)
+- Field: छत्तीसगढ़ से मानव संसाधन उपयोग [Type: text, Data: Number] (Row: 6, Col: 1)
+- Field: प्रस्तावित शूटिंग लोकेशन [Type: text, Data: Charactar] (Row: 6, Col: 2)
+- Field: निर्माता का विवरण [Type: textarea, Data: Charactar] (Row: 7, Col: 1)
+- Field: पंजीकृत पता [Type: textarea, Data: Alfa Numeric] (Row: 7, Col: 2)
+- Field: ईमेल आईडी [Type: text, Data: Charactar] (Row: 8, Col: 1)
+- Field: मोबाइल नंबर [Type: text, Data: Number] (Row: 8, Col: 2)
+- Field: जीएसटी / पैन [Type: text, Data: Alfa Numeric] (Row: 9, Col: 1)
+- Field: निर्देशक का नाम [Type: text, Data: Charactar] (Row: 9, Col: 2)
+- Field: अधिकृत प्रतिनिधि का नाम [Type: text, Data: Charactar] (Row: 10, Col: 1)
+- Field: अधिकृत प्रतिनिधि का ईमेल [Type: text, Data: Email] (Row: 10, Col: 2)
+- Field: अधिकृत प्रतिनिधि का मोबाइल [Type: text, Data: Number] (Row: 11, Col: 1)
+- Field: कुल शूटिंग दिवस [Type: number, Data: Number] (Row: 12, Col: 1)
+- Field: मुख्य अभिनेताओं के नाम [Type: text, Data: Alfa Numeric] (Row: 13, Col: 1)
+- Field: परियोजना सारांश (100 शब्द) [Type: textarea, Data: Alfa Numeric] (Row: 13, Col: 2)
+- Field: फिल्म की भाषा [Type: drop down, Data: Charactar] (Row: 14, Col: 1)
+- Field: क्या आप खंड 11(1) के तहत सब्सिडी के लिए पात्र हैं एवं आवेदन कर रहे हैं [Type: drop down, Data: Charactar] (Row: 14, Col: 2)
+- Field: फिल्म की शूटिंग के दिनों की कुल संख्या [Type: text, Data: Number] (Row: 15, Col: 1)
+- Field: छत्तीसगढ़ में शूटिंग के दिनों की कुल संख्या [Type: number, Data: Number] (Row: 15, Col: 2)
+- Field: फिल्म में कार्यरत कलाकारों और कर्मचारियों की कुल संख्या [Type: text, Data: Number] (Row: 16, Col: 1)
+- Field: फिल्म में छत्तीसगढ़ आधारित सहायक तकनीकी और ग्राउंड स्टाफ की संख्या [Type: text, Data: Number] (Row: 16, Col: 2)
+- Field: परियोजना में मुख्य कलाकारों में छत्तीसगढ़ के कलाकारों की कुल संख्या [Type: text, Data: Number] (Row: 17, Col: 1)
+- Field: बैंक खाता संख्या [Type: text, Data: Number] (Row: 17, Col: 2)
+- Field: बैंक का नाम [Type: text, Data: Charactar] (Row: 18, Col: 1)
+- Field: आईएफएससी कोड [Type: text, Data: Alfa Numeric] (Row: 18, Col: 2)
+- Field: छत्तीसगढ़ में बनाई जा रही फिल्मों की संख्या [Type: drop down, Data: Alfa Numeric] (Row: 19, Col: 1)
+- Field: छत्तीसगढ़ कर्मचारियों का प्रतिशत [Type: text, Data: Alfa Numeric] (Row: 19, Col: 2)
+- Field: Artist Details For Film Subsidy [Type: fieldset, Data: Alfa Numeric] (Row: 20, Col: 1)

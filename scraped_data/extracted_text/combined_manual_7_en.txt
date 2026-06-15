@@ -1,0 +1,268 @@
+==================================================
+SERVICE DETAILS MANUAL: Domicile Certificate
+Service ID: 7
+Language: EN
+Department: Revenue and disaster management Department
+Time Limit / SLA: 7 Days
+Contact Details: Sewa Setu Kendra
+Kiosk Fee: 30.0
+Online Fee: 30.0
+Where to Apply: 
+Raw Fees Text: Where to Apply? Sewa Setu Kendra : ₹30.0 Online : ₹30.0
+==================================================
+
+REQUIRED DOCUMENTS:
+- SNo 1: Affidavit (Mandatory: Yes)
+  * Supporting Document 1: Affidavit
+- SNo 2: Other (Mandatory: No)
+  * Supporting Document 1: Other Documents
+- SNo 3: Proof Of At Least 15 Years Stay (Mandatory: Yes)
+  * Supporting Document 1: Birth Certificate
+  * Supporting Document 2: Father/ Guardian Service Certificate
+  * Supporting Document 3: Job Service Certificate / Identity Card (If The Applicant Is Under Govt./Semi Govt.)
+  * Supporting Document 4: Voters Identity Card
+  * Supporting Document 5: Land And House Document
+  * Supporting Document 6: Birth Information Form
+  * Supporting Document 7: Certificate From Ward Member, Local Mla/Mp
+  * Supporting Document 8: Ration Card
+  * Supporting Document 9: Electricity Bill
+- SNo 4: Educational Certificate (Mandatory: Yes)
+  * Supporting Document 1: Middle School Certificate - 8th Standard
+  * Supporting Document 2: Primary School Certificate - 5th Standard
+  * Supporting Document 3: High School(10th) Certificate
+  * Supporting Document 4: Higher Secondary School Certificate(12th)
+  * Supporting Document 5: M.Phil/D.Lit./Ph.D. Certificate
+  * Supporting Document 6: School Certificate (As A Proof Of 3 Years Continuous Study)
+  * Supporting Document 7: Post Graduation Certificate
+  * Supporting Document 8: Certificate In Technical Subjects
+- SNo 5: Proof Of At Least 5 Years Stay (Mandatory: No)
+  * Supporting Document 1: Land And House Document
+  * Supporting Document 2: Persons Service Book.
+
+APPLICATION FORM FIELDS:
+- Field: General Details [Type: section lebel, Data: Charactar] (Row: 1, Col: 1)
+- Field: Beneficiary Guardian Type [Type: drop down, Data: Charactar] (Row: 2, Col: 1)
+- Field: Beneficiary Guardian name [Type: text, Data: Charactar] (Row: 2, Col: 2)
+- Field: Guardians Occupation of Beneficiary [Type: search, Data: Search] (Row: 3, Col: 1)
+- Field: Beneficiary place of Birth [Type: text, Data: Charactar] (Row: 3, Col: 2)
+- Field: Gender [Type: drop down, Data: Charactar] (Row: 4, Col: 1)
+- Field: Date of Birth [Type: date, Data: Date] (Row: 4, Col: 2)
+- Field: Address Details [Type: section lebel, Data: Charactar] (Row: 5, Col: 1)
+- Field: Address [Type: textarea, Data: Alfa Numeric] (Row: 6, Col: 1)
+- Field: PIN Code [Type: text, Data: Number] (Row: 6, Col: 2)
+- Field: District [Type: drop down, Data: Charactar] (Row: 7, Col: 1)
+- Field: Particulars of stay After Birth of Beneficiary [Type: section lebel, Data: Charactar] (Row: 8, Col: 1)
+- Field: Particulars of stay After Birth of Beneficiary [Type: fieldset, Data: Alfa Numeric] (Row: 9, Col: 1)
+- Field: Beneficiary Details of Business or Service [Type: section lebel, Data: Charactar] (Row: 10, Col: 1)
+- Field: Beneficiary Details of Business or service [Type: fieldset, Data: Alfa Numeric] (Row: 11, Col: 1)
+- Field: Beneficiary Education Level [Type: section lebel, Data: Charactar] (Row: 12, Col: 1)
+- Field: Beneficiary Education Level [Type: fieldset, Data: Alfa Numeric] (Row: 13, Col: 1)
+- Field: Other Details [Type: section lebel, Data: Charactar] (Row: 14, Col: 1)
+- Field: Have Beneficiary Voter Id [Type: drop down, Data: Charactar] (Row: 15, Col: 1)
+- Field: District Name of Beneficiary [Type: drop down, Data: Charactar] (Row: 15, Col: 2)
+- Field: Living From in Years [Type: number, Data: Date] (Row: 16, Col: 1)
+- Field: Reason for application Domicile [Type: text, Data: Charactar] (Row: 16, Col: 2)
+- Field: Any other detail [Type: text, Data: Charactar] (Row: 17, Col: 1)
+- Field: I, hereby give my consent to automatic filing of a complaint/Appeal on my behalf before the Competent Officer under Rule 6 of the Lok Seva Guarantee Rules, 2011, in the event that the applied service is not delivered within the stipulated time. [Type: drop down, Data: Alfa Numeric] (Row: 17, Col: 2)
+
+
+==================================================
+EXTRACTED PDF DOCUMENT TEXTS
+==================================================
+
+--- [Document: 7_en_7.pdf (USER_MANUAL)] ---
+--- Page 1 ---
+उपयोगकर्ता मतगादर्शिकत 
+ 
+  
+मूल निवतसी प्रमतण पत्र क े  र्लए ई-निस्ट्रिक्ट पोर्ाल पर ऑिलतइि आवेदि प्रक्रियत 
+ 
+छत्तीसगढ़ इन्फोर्ेक प्रमोशि सोसतयर्ी
+
+--- Page 2 ---
+ववषय सूची 
+होम पेजः छत्तीसगढ़ ई-निस्ट्रिक्ट पोर्ाल ................................ ................................ ................................ ................................ .......... 2 
+चरण 1: ई-निस्ट्रिक्ट पोर्ाल पर पंजीयि ................................ ................................ ................................ ................................ ......... 3 
+चरण 2: पंजीक ृ र् यूज़र लॉक्रगि ................................ ................................ ................................ ................................ ........................... 4 
+चरण 5: मूल निवतसी प्रमतण पत्र के र्लए आवेदि ................................ ................................ ................................ .................... 9 
+चरण 6: आवश्यक दस्ततवेज़ अपलोि करित ................................ ................................ ................................ ............................ 10 
+चरण 7: पूवतावलोकि और आवेदि जमत करित ................................ ................................ ................................ ........................ 12 
+चरण 8: शुल्क कत भुगर्ति ................................ ................................ ................................ ................................ ................................  14 
+चरण 9: पतवर्ी सुरक्षिर् रखित ................................ ................................ ................................ ................................ ....................... 15 
+चरण 10: आवेदि की स्थिवर् देखित ................................ ................................ ................................ ................................ ............. 16
+
+--- Page 3 ---
+होम पेजः छत्तीसगढ़ ई-निस्ट्रिक्ट पोर्ाल 
+अपने कम्प्यूटर या लैपटॉप क े  वेब ब्राउज़र में टाइप करें 
+cgedistrict.cgstate.gov.in  
+ 
+छत्तीसगढ़ ई-डिस्ट्रिक्ट पोटटल का होमपेज खुलेगा। 
+ 
+चचत्र िमतंक 1: ई-निस्ट्रिक्ट पोर्ाल कत होम पेज 
+लॉगगन करने क े  ललए “ितगररक लॉक्रगि” बटन पर क्लिक करें। 
+ 
+चचत्र िमतंक 2: ितगररक लॉक्रगि
+
+--- Page 4 ---
+चरण 1: ई-निस्ट्रिक्ट पोर्ाल पर पंजीयि 
+चरण 1.1: यदि आप नए यूज़र हैं तो यहााँ क्लिक करें – “नया पंजीयन करने हेतु क्लिक करें”  
+ 
+चचत्र िमतंक 3:  
+ 
+चरण 1.2: ितगररक पंजीकरण पेज खुलेगा। 
+ 
+चित्र क्रमांक 4 
+ 
+चरण 1.3: यूज़सा िेम और अन्य आवश्यक जानकाररयााँ िज़ट करें। 
+चरण 1.4: “जमत करें” बटन पर क्लिक करें। 
+पंजीयन स्वीकार होने क े  बाि आपक े  रचजस्टिट मोबाइल नंबर पर पासविट भेजा जाएगा। इस पासविट की सहायता 
+से आप मूल डनवासी प्रमाण पत्र हेतु लॉगगन कर सकते हैं। आपक े  पास पासविट बिलने का गवकल्प भी है।
+
+--- Page 5 ---
+चरण 2: पंजीक ृ र् यूज़र लॉक्रगि 
+पंजीक ृ त यूज़सट डनम्न प्रदक्रया द्वारा लॉगगन करें। 
+ 
+चित्र क्रमांक 5 
+ 
+1. भतषत का ियन करें। 
+2. यूज़रिेम िजट करें। 
+3. पतसविा िजट करें। 
+4. “ओर्ीपी भेजें” पर क्लिक करें। 
+5. अपने पंजीक ृ त नंबर पर प्राप्त ओटीपी यहााँ िजट करें।  
+6. लॉक्रगि बटन पर क्लिक करें।
+
+--- Page 6 ---
+चरण 3: योजित खोज 
+लॉगगन क े  पश्चात डनम्नानुसार योजना खोज पेज खुलेगा। 
+ 
+चित्र क्रमांक 6 
+ 
+चरण 3.1: यहााँ डनर्ाटररत बॉक्स में पूछी गई जानकारी िजट करें और “खोजें” बटन पर क्लिक करें। 
+चरण 3.2: सेवाओं की सूिी दिखाई िेगी, इसमें “Domicile Certificate” पर क्लिक करें। 
+अब डनम्नानुसार पेज दिखाई िेगा। इस पेज पर, नीिे आवश्यक दस्ततवेज़़ों की सूिी िेखी जा सकती है। 
+ 
+ 
+चित्र क्रमांक 7
+
+--- Page 7 ---
+चित्र क्रमांक 8 
+ 
+चरण 3.3: चित्र क्रमांक 7 क े  अनुसार प्रिचशित गविंिो में “आगे” बटन दिखाई िेगा, उस पर क्लिक करें।
+
+--- Page 8 ---
+चरण 4: आधतर ई-प्रमतणीकरण 
+आर्ार ई-प्रमाणीकरण हेतु इस फॉमट में आवेिक की बुडनयािी जानकारी िजट करें। 
+ 
+चित्र क्रमांक 9 
+ 
+चरण 4.1: आवेिक एवं दहतग्राही का नाम भरें। ड्रॉप-िाउन ललस्ट से िुनकर कायाटलय का नाम और पूरा पता िजट 
+करें। 
+चरण 4.2: प्रमाणीकरण क े  ललए “Aadhaar e-authentication” पर क्लिक करें। डनम्नानुसार पॉप-अप 
+गविंिो खुलेगा। 
+ 
+चित्र क्रमांक 10
+
+--- Page 9 ---
+चरण 4.3: प्रमाणीकरण हेतु आर्ार संख्या एवं नाम (आर्ार कािट क े  अनुसार अ ं ग्रेज़ी में) िजट करें। 
+चरण 4.4: डनर्ाटररत बॉक्स पर क्लिक करक े  आर्ार प्रमाणीकरण हेतु सहमगत िें। 
+चरण 4.5: “Authentication”  बटन पर क्लिक करें। 
+चरण 4.6: आर्ार ई-प्रमाणीकरण क े  बाि “जमत करें” बटन पर क्लिक करें।  
+डनम्नानुसार पॉप-अप गविंिो खुलेगा, चजसमें सहायक िस्तावेज़़ों क े ललए जााँि सूिी प्रिचशित है। 
+ 
+चित्र क्रमांक 11 
+ 
+चरण 4.6: उपरोक्त गविंि़ों में “जमत” बटन पर क्लिक कर िें। 
+ 
+नोट: मूल डनवासी प्रमाण पत्र बनवाने क े  ललए शपथ पत्र, फोटोग्राफ, 15 वर्षों क े  डनवास का प्रमाण, शैक्षलणक प्रमाण पत्र 
+अडनवायट है।
+
+--- Page 10 ---
+चरण 5: मूल निवतसी प्रमतण पत्र क े  र्लए आवेदि 
+चरण 5.1: मूल डनवासी प्रमाण पत्र क े  ललए आवेिन में पहले सामान्य गववरण, पता एवं दहतग्राही क े  जन्म क े  बाि 
+डनवास का गववरण भरें। 
+ 
+चित्र क्रमांक 12 
+ 
+चरण 5.2: दहतग्राही क े  रोज़गार, चशक्षा संबंर्ी एवं अन्य गववरण भरें। 
+ 
+चित्र क्रमांक 13 
+ 
+चरण 5.3: सारे गववरण भरकर “सहेजें और पूवतावलोकि” बटन पर क्लिक करें।
+
+--- Page 11 ---
+चरण 6: आवश्यक दस्ततवेज़ अपलोि करित 
+भरा हुआ फॉमट सहेजने क े  बाि डनम्न चित्रानुसार पेज खुलेगा। 
+ 
+चित्र क्रमांक 14 
+चरण 6.1: “Choose File” पर क्लिक करें और अपने कम्प्यूटर या लैपटॉप से फोटोग्राफ तथा संबंचर्त 
+िस्तावेज़ों की स्क ै न की गई प्रगत का ियन करें। 
+चरण 6.2: िस्तावेज़ िुनने क े  बाि “UPLOAD”  पर क्लिक करें। 
+चरण 6.3: अपलोि प्रदक्रया क े  बाि “अिुलग्नक सहेजें” पर क्लिक करें। 
+चरण 6.4: पुदिकरण क े  ललए िॉयलॉग बॉक्स खुलेगा, इसे ओक े कर िें। 
+ 
+ 
+नोट: 
+• तारांडकत (*) िस्तावेज़ अपलोि करना अडनवायट है। 
+• हैश (#) चिह्ांडकत िस्तावेज़़ों में डनवास का न्यूनतम एक प्रमाण तथा शैक्षलणक प्रमाण पत्र प्रस्तुत करना अडनवायट है।  
+• फाइल का अचर्कतम आकार 750kb होना िादहए।
+
+--- Page 12 ---
+
+
+--- Page 13 ---
+चरण 7: पूवतावलोकि और आवेदि जमत करित 
+पूवाटवलोकन पेज पर आवेिक की बुडनयािी जानकारी एवं सामान्य गववरण िेखे जा सकते हैं। 
+चरण 7.1: अपने आवेिन की जांि करें। 
+ 
+चित्र क्रमांक 16 
+ 
+ 
+चित्र क्रमांक 17
+
+--- Page 14 ---
+चित्र क्रमांक 18 
+ 
+चरण 7.2: घोषणत: घोर्षणा हेतु डनर्ाटररत बॉक्स पर क्लिक करें। 
+चरण 7.3: घोर्षणा पर क्लिक करते ही “जमत करें” बटन दिखाई िेगा, इस पर क्लिक करें, इस तरह आवेिन 
+जमा हो जाएगा। 
+ 
+चित्र क्रमांक 19
+
+--- Page 15 ---
+चरण 8: शुल्क कत भुगर्ति 
+इस पेज पर लोकसेवा क ें द्र/ सीएससी/डकयोस्क क े  ललए सेवा शुल्क एवं स्क ै डनिंग शुल्क का गववरण िेख सकते 
+हैं। 
+ 
+चित्र क्रमांक 15 
+ 
+चरण 8.1: डनर्ाटररत शुल्क का भुगतान करें। 
+चरण 8.2: भुगतान क े  पश्चात् “जमत करें” बटन पर क्लिक करें। 
+ 
+िोर्: 
+• लोकसेवा क ें द्र/ सीएससी/डकयोस्क क े  ललए सेवत शुल्क रु. 30 डनर्ाटररत हैं। 
+• सेवा शुल्क में  पताँच दस्ततवेज़़ों तक स्क ै डनिंग का शुल्क भी शागमल है। अगतररक्त िस्तावेज़़ों की स्क ै डनिंग का शुल्क पृथक से 
+लोकसेवा क ें द्र/ सीएससी/डकयोस्क संिालक द्वारा ललया जा सकता है।
+
+--- Page 16 ---
+चरण 9: पतवर्ी सुरक्षिर् रखित 
+आवेिन जमा करते ही चित्रानुसार पावती जेनरेट हो जाती है।  
+इस पावती में “आवेदि संदभा िमतंक” प्रिचशित होता है। 
+भगवष्य की आवश्यकताओं और आवेिन की स्थिगत िेखने क े  ललए आवेिक इस पावती का दप्रिंट आउट रख लें। 
+ 
+चित्र क्रमांक 20
+
+--- Page 17 ---
+चरण 10: आवेदि की स्थिवर् देखित 
+चरण 10.1: आवेिन की स्थिगत िेखने क े  ललए होम पेज पर आवेिन की स्थिगत मेन्यू पर क्लिक करें। 
+यह पेज खुलेगा – 
+ 
+चित्र क्रमांक 21 
+ 
+चरण 10.2: आवेिन संिभट क्रमांक एवं चसस्टम प्रित्त क ै प्िा डनर्ाटररत िान पर िजट करें। 
+चरण 10.3: स्थिवर् िैक करें बटन पर क्लिक करें। 
+डनम्नानुसार गविंिो खुलेगा यहााँ आवेिक आवेिन की स्थिगत िेख सकते हैं। 
+ 
+चित्र क्रमांक 22 
+ 
+चरण 10.4: डिचजटल प्रगत िाउनलोि – मूल डनवासी प्रमाण पत्र जारी होने क े  बाि उपरोक्त गविंिो में “देखें” बटन 
+पर क्लिक कर िाउनलोि करें।

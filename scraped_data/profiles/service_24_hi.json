@@ -1,0 +1,240 @@
+{
+  "service_id": "24",
+  "language": "hi",
+  "name": "नल कनेक्शन हेतु आवेदन",
+  "department": "नगरीय प्रशासन एवं विकास विभाग",
+  "category": "",
+  "sla": "",
+  "details_link": "https://sewasetu.cgstate.gov.in/instractionPageNew.do?serviceId=24&lang=hi",
+  "required_documents": [
+    {
+      "sno": "1",
+      "document_type": "निवास का प्रमाण",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "मूल निवासी प्रमाण पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "राशन कार्ड",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "बिजली का बिल",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "अन्य",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "घर या भूमि का दस्तावेज़",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "वार्ड सदस्य, स्थानीय विधायक / सांसद से प्रमाण पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "2",
+      "document_type": "बी.पी.एल. प्रमाण",
+      "mandatory": "नहीं",
+      "supporting_documents": [
+        {
+          "name": "बी.पी.एल. प्रमाण पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "3",
+      "document_type": "कर रसीद",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "कर रसीद",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "4",
+      "document_type": "सहमति पत्र",
+      "mandatory": "नहीं",
+      "supporting_documents": [
+        {
+          "name": "सहमति पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    }
+  ],
+  "fees": {
+    "where_to_apply": "",
+    "kiosk_fee": "",
+    "online_fee": "",
+    "raw_text": ""
+  },
+  "contact_details": "",
+  "time_limit": "",
+  "form_fields": [
+    {
+      "attribute_id": "577",
+      "label": "पिता का नाम",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "1",
+      "col": "1"
+    },
+    {
+      "attribute_id": "104",
+      "label": "पता",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "1",
+      "col": "2"
+    },
+    {
+      "attribute_id": "798",
+      "label": "मकान नंबर",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "2",
+      "col": "1"
+    },
+    {
+      "attribute_id": "776",
+      "label": "वार्ड",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "2",
+      "col": "2"
+    },
+    {
+      "attribute_id": "799",
+      "label": "वार्षिक किराया",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "3",
+      "col": "1"
+    },
+    {
+      "attribute_id": "900",
+      "label": "बी पी एल संख्या",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "3",
+      "col": "2"
+    },
+    {
+      "attribute_id": "792",
+      "label": "गृह स्वामी का विवरण",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "4",
+      "col": "1"
+    },
+    {
+      "attribute_id": "777",
+      "label": "गृह स्वामी का नाम",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "5",
+      "col": "1"
+    },
+    {
+      "attribute_id": "778",
+      "label": "गृह स्वामी के पिता का नाम",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "5",
+      "col": "2"
+    },
+    {
+      "attribute_id": "779",
+      "label": "गृह स्वामी का पता",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "6",
+      "col": "1"
+    },
+    {
+      "attribute_id": "598",
+      "label": "संपत्ति पहचान क्रमांक",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "6",
+      "col": "2"
+    },
+    {
+      "attribute_id": "793",
+      "label": "नल कनेक्शन का विवरण",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "7",
+      "col": "1"
+    },
+    {
+      "attribute_id": "821",
+      "label": "कनेक्सन प्रकार",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "10",
+      "col": "1"
+    },
+    {
+      "attribute_id": "791",
+      "label": "स्थाई कनेक्शन की आवश्यकता है",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "10",
+      "col": "2"
+    },
+    {
+      "attribute_id": "786",
+      "label": "सम्बंधित मकान में पुराना कनेक्शन है",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "11",
+      "col": "1"
+    },
+    {
+      "attribute_id": "787",
+      "label": "पुराना कनेक्शन का विवरण",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "11",
+      "col": "2"
+    },
+    {
+      "attribute_id": "785",
+      "label": "जल का प्रयोग किस लिये होगा",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "12",
+      "col": "1"
+    },
+    {
+      "attribute_id": "788",
+      "label": "यदि जल का अन्य प्रयोग हो तो विवरण दें",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "12",
+      "col": "2"
+    }
+  ],
+  "downloaded_pdfs": [],
+  "combined_manual_text_path": "scraped_data/extracted_text/combined_manual_24_hi.txt"
+}

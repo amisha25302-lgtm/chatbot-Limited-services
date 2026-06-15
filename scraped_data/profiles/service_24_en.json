@@ -1,0 +1,246 @@
+{
+  "service_id": "24",
+  "language": "en",
+  "name": "Application for Water Tap Connection",
+  "department": "Urban Administration and development Department",
+  "category": "",
+  "sla": "30 Days",
+  "details_link": "https://sewasetu.cgstate.gov.in/instractionPageNew.do?serviceId=24&lang=en",
+  "required_documents": [
+    {
+      "sno": "1",
+      "document_type": "Residential Proof",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Domicile Certificate",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Ration Card",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Electricity Bill",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Other Documents",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Land And House Document",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Certificate From Ward Member, Local Mla/Mp",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "2",
+      "document_type": "Bpl Proof",
+      "mandatory": "No",
+      "supporting_documents": [
+        {
+          "name": "Bpl Certificate",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "3",
+      "document_type": "Tax Reciept",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Tax Receipt",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "4",
+      "document_type": "Cosent Form",
+      "mandatory": "No",
+      "supporting_documents": [
+        {
+          "name": "Cosent Form",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    }
+  ],
+  "fees": {
+    "where_to_apply": "",
+    "kiosk_fee": "30.0",
+    "online_fee": "30.0",
+    "raw_text": "Where to Apply? Sewa Setu Kendra : ₹30.0 Online : ₹30.0"
+  },
+  "contact_details": "Sewa Setu Kendra",
+  "time_limit": "30 Days",
+  "form_fields": [
+    {
+      "attribute_id": "577",
+      "label": "Fathers name",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "1",
+      "col": "1"
+    },
+    {
+      "attribute_id": "104",
+      "label": "Address",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "1",
+      "col": "2"
+    },
+    {
+      "attribute_id": "798",
+      "label": "House No",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "2",
+      "col": "1"
+    },
+    {
+      "attribute_id": "776",
+      "label": "Ward",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "2",
+      "col": "2"
+    },
+    {
+      "attribute_id": "799",
+      "label": "Annual Rent",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "3",
+      "col": "1"
+    },
+    {
+      "attribute_id": "900",
+      "label": "BPL No",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "3",
+      "col": "2"
+    },
+    {
+      "attribute_id": "792",
+      "label": "Details of Land Lord",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "4",
+      "col": "1"
+    },
+    {
+      "attribute_id": "777",
+      "label": "Land Lords Name",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "5",
+      "col": "1"
+    },
+    {
+      "attribute_id": "778",
+      "label": "Land Lords Father Name",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "5",
+      "col": "2"
+    },
+    {
+      "attribute_id": "779",
+      "label": "Land Lords Address",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "6",
+      "col": "1"
+    },
+    {
+      "attribute_id": "598",
+      "label": "Property Id No",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "6",
+      "col": "2"
+    },
+    {
+      "attribute_id": "793",
+      "label": "Detail of Water Tap Connection",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "7",
+      "col": "1"
+    },
+    {
+      "attribute_id": "821",
+      "label": "Connection Type",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "10",
+      "col": "1"
+    },
+    {
+      "attribute_id": "791",
+      "label": "Permanent Connection Required",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "10",
+      "col": "2"
+    },
+    {
+      "attribute_id": "786",
+      "label": "Old water tap Connection",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "11",
+      "col": "1"
+    },
+    {
+      "attribute_id": "787",
+      "label": "Details of Old water tap Connection",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "11",
+      "col": "2"
+    },
+    {
+      "attribute_id": "785",
+      "label": "Purpose of New Water connection",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "12",
+      "col": "1"
+    },
+    {
+      "attribute_id": "788",
+      "label": "Details of Other Purpose of New Water connection",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "12",
+      "col": "2"
+    }
+  ],
+  "downloaded_pdfs": [
+    {
+      "source_url": "https://sewasetu.cgstate.gov.in/resources/edistrict/user-manual/new/24.pdf",
+      "type": "user_manual",
+      "local_path": "scraped_data/pdfs/24_en_24.pdf"
+    }
+  ],
+  "combined_manual_text_path": "scraped_data/extracted_text/combined_manual_24_en.txt"
+}

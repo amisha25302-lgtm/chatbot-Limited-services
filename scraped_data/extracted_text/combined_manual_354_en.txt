@@ -1,0 +1,79 @@
+==================================================
+SERVICE DETAILS MANUAL: Application for subsidy in feature film
+Service ID: 354
+Language: EN
+Department: Culture & Language
+Time Limit / SLA: 15 Days
+Contact Details: Sewa Setu Kendra
+Kiosk Fee: 30.0
+Online Fee: 30.0
+Where to Apply: 
+Raw Fees Text: Where to Apply? Sewa Setu Kendra : ₹30.0 Online : ₹30.0
+==================================================
+
+REQUIRED DOCUMENTS:
+- SNo 1: Bank Passbook (Mandatory: Yes)
+  * Supporting Document 1: Bank Passbook
+- SNo 2: Declaration Certificate (Mandatory: Yes)
+  * Supporting Document 1: Declaration Certificate [Format: https://sewasetu.cgstate.gov.in/resources/docFormat/24640.pdf]
+- SNo 3: COLLECTOR RELEASE FILM SHOOTING NOC (Mandatory: Yes)
+  * Supporting Document 1: COLLECTOR RELEASE FILM SHOOTING NOC
+- SNo 4: FILM SCRIPT CERTIFICATE (Mandatory: Yes)
+  * Supporting Document 1: FILM SCRIPT CERTIFICATE
+- SNo 5: FILM PRODUCTIONHOUSE IMPPA/WIFPA/CCTPACERTIFICATE (Mandatory: Yes)
+  * Supporting Document 1: FILM PRODUCTIONHOUSE IMPPA/WIFPA/CCTPACERTIFICATE
+- SNo 6: CA CERTIFIED COPY FILM CAST OF PRODUCTION(COP) (Mandatory: Yes)
+  * Supporting Document 1: CA CERTIFIED COPY FILM CAST OF PRODUCTION(COP) [Format: https://sewasetu.cgstate.gov.in/resources/docFormat/24631.pdf]
+- SNo 7: UFO/QUBE/K SERA KERACERTIFICATE/RELEASE ORDER(RO) (Mandatory: Yes)
+  * Supporting Document 1: UFO/QUBE/K SERA KERACERTIFICATE/RELEASE ORDER(RO)
+- SNo 8: SENSOR BOARD CERTIFICATE (Mandatory: Yes)
+  * Supporting Document 1: SENSOR BOARD CERTIFICATE
+- SNo 9: FILM PRODUCTION HOUSE PAN/TAN/GST (Mandatory: Yes)
+  * Supporting Document 1: FILM PRODUCTION HOUSE PAN/TAN/GST
+- SNo 10: SHOOTING DAYS IN CG/TOTAL SHOOTING DAYS (Mandatory: Yes)
+  * Supporting Document 1: SHOOTING DAYS IN CG/TOTAL SHOOTING DAYS
+- SNo 11: TOTAL NO. OF ARTIST/CG LOCAL NO. OF ARTIST (Mandatory: Yes)
+  * Supporting Document 1: TOTAL NO. OF ARTIST/CG LOCAL NO. OF ARTIST [Format: https://sewasetu.cgstate.gov.in/resources/docFormat/24636.pdf]
+- SNo 12: Registration Fee Receipt / Demand Draft Online Payment Receipt of INR 5,900/- (including 18% GST) In favour of Directorate of Culture and Language (Mandatory: Yes)
+  * Supporting Document 1: Registration Fee Receipt / Demand Draft Online Payment Receipt of INR 5,900/- (including 18% GST) In favour of Directorate of Culture and Language [Format: https://sewasetu.cgstate.gov.in/resources/docFormat/24638.pdf]
+- SNo 13: ARTIST RESIDENCE CERTIFICATE / BIRTH CERTIFICATE / EDUCATION CERTIFICATE (MINIMUM 5 YEARS) / AADHAAR CARD / DRIVING LICENSE. (Mandatory: Yes)
+  * Supporting Document 1: ARTIST RESIDENCE CERTIFICATE / BIRTH CERTIFICATE / EDUCATION CERTIFICATE (MINIMUM 5 YEARS) / AADHAAR CARD / DRIVING LICENSE.
+
+APPLICATION FORM FIELDS:
+- Field: Project Type [Type: textarea, Data: Charactar] (Row: 1, Col: 1)
+- Field: Genre [Type: drop down, Data: Search] (Row: 1, Col: 2)
+- Field: Project Duration(In minutes) [Type: number, Data: Number] (Row: 2, Col: 1)
+- Field: Project Title [Type: text, Data: Charactar] (Row: 2, Col: 2)
+- Field: Producer Name [Type: text, Data: Charactar] (Row: 3, Col: 1)
+- Field: Production House [Type: text, Data: Charactar] (Row: 3, Col: 2)
+- Field: Type of Unit [Type: drop down, Data: Charactar] (Row: 4, Col: 1)
+- Field: Shooting Date in Chhattisgarh [Type: date, Data: Date] (Row: 4, Col: 2)
+- Field: Estimated Budget [Type: text, Data: Number] (Row: 5, Col: 1)
+- Field: Estimated total expenditure [Type: text, Data: Number] (Row: 5, Col: 2)
+- Field: CG Human Resource Usage [Type: text, Data: Number] (Row: 6, Col: 1)
+- Field: Proposed Shooting Location [Type: text, Data: Charactar] (Row: 6, Col: 2)
+- Field: Producer Details [Type: textarea, Data: Charactar] (Row: 7, Col: 1)
+- Field: Registered Address [Type: textarea, Data: Alfa Numeric] (Row: 7, Col: 2)
+- Field: Email Address [Type: text, Data: Charactar] (Row: 8, Col: 1)
+- Field: Mobile Number [Type: text, Data: Number] (Row: 8, Col: 2)
+- Field: GST / PAN [Type: text, Data: Alfa Numeric] (Row: 9, Col: 1)
+- Field: Director Name [Type: text, Data: Charactar] (Row: 9, Col: 2)
+- Field: Authorized Representative Name [Type: text, Data: Charactar] (Row: 10, Col: 1)
+- Field: Authorized Representative Email [Type: text, Data: Email] (Row: 10, Col: 2)
+- Field: Authorized Representative Mobile [Type: text, Data: Number] (Row: 11, Col: 1)
+- Field: Total Shooting Days [Type: number, Data: Number] (Row: 12, Col: 1)
+- Field: Lead Actors Name [Type: text, Data: Alfa Numeric] (Row: 13, Col: 1)
+- Field: Project Summary (Max 100 Words) [Type: textarea, Data: Alfa Numeric] (Row: 13, Col: 2)
+- Field: Film Language [Type: drop down, Data: Charactar] (Row: 14, Col: 1)
+- Field: Are you eligible and applying for subsidy under Clause 11(1) [Type: drop down, Data: Charactar] (Row: 14, Col: 2)
+- Field: Total number of shooting days of the film [Type: text, Data: Number] (Row: 15, Col: 1)
+- Field: Total number of shooting days in Chhattisgarh [Type: number, Data: Number] (Row: 15, Col: 2)
+- Field: Total number of artists and employees working in the film [Type: text, Data: Number] (Row: 16, Col: 1)
+- Field: Number of Chhattisgarh based assistant technicians and ground staff in the film [Type: text, Data: Number] (Row: 16, Col: 2)
+- Field: Total number of Chhattisgarh artists in the film under main actors category [Type: text, Data: Number] (Row: 17, Col: 1)
+- Field: Bank Account Number [Type: text, Data: Number] (Row: 17, Col: 2)
+- Field: Bank Name [Type: text, Data: Charactar] (Row: 18, Col: 1)
+- Field: IFSC code [Type: text, Data: Alfa Numeric] (Row: 18, Col: 2)
+- Field: Number of Feature Films in Chhattisgarh [Type: drop down, Data: Alfa Numeric] (Row: 19, Col: 1)
+- Field: Percentage of CG Employees [Type: text, Data: Alfa Numeric] (Row: 19, Col: 2)
+- Field: Artist Details For Film Subsidy [Type: fieldset, Data: Alfa Numeric] (Row: 20, Col: 1)

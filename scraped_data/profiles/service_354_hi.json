@@ -1,0 +1,475 @@
+{
+  "service_id": "354",
+  "language": "hi",
+  "name": "फीचर फिल्म पर सब्सिडी हेतु आवेदन",
+  "department": "संस्कृति एवं राजभाषा",
+  "category": "",
+  "sla": "",
+  "details_link": "https://sewasetu.cgstate.gov.in/instractionPageNew.do?serviceId=354&lang=hi",
+  "required_documents": [
+    {
+      "sno": "1",
+      "document_type": "बैंक पासबुक",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "बैंक पासबुक",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "2",
+      "document_type": "घोषणा प्रमाण पत्र",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "घोषणा प्रमाण पत्र",
+          "format_link": "https://sewasetu.cgstate.gov.in/resources/docFormat/24640.pdf",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "3",
+      "document_type": "जिला कलेक्टर द्वारा फिल्म शूटिंग के लिए जारी अनापत्ति प्रमाण पत्र",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "जिला कलेक्टर द्वारा फिल्म शूटिंग के लिए जारी अनापत्ति प्रमाण पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "4",
+      "document_type": "फिल्म की पटकथा का प्रमाण पत्र",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "फिल्म की पटकथा का प्रमाण पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "5",
+      "document_type": "फिल्म प्रोडक्शन हाउस का IMPPA/WIFPA/CCTPA प्रमाण पत्र",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "फिल्म प्रोडक्शन हाउस का IMPPA/WIFPA/CCTPA प्रमाण पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "6",
+      "document_type": "फिल्म की निर्माण लागत (COST OF PRODUCTION) की सीए द्वारा प्रमाणित प्रति",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "फिल्म की निर्माण लागत (COST OF PRODUCTION) की सीए द्वारा प्रमाणित प्रति",
+          "format_link": "https://sewasetu.cgstate.gov.in/resources/docFormat/24631.pdf",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "7",
+      "document_type": "UFO / QUBE / K SERA SERA का प्रमाण पत्र / रिलीज आदेश (RO)",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "UFO / QUBE / K SERA SERA का प्रमाण पत्र / रिलीज आदेश (RO)",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "8",
+      "document_type": "सेंसर बोर्ड प्रमाण पत्र",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "सेंसर बोर्ड प्रमाण पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "9",
+      "document_type": "फिल्म निर्माण संस्था का PAN / TAN / GST विवरण",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "फिल्म निर्माण संस्था का PAN / TAN / GST विवरण",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "10",
+      "document_type": "छत्तीसगढ़ में शूटिंग के दिन / कुल शूटिंग दिवस",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "छत्तीसगढ़ में शूटिंग के दिन / कुल शूटिंग दिवस",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "11",
+      "document_type": "कुल कलाकारों की संख्या / छत्तीसगढ़ के स्थानीय कलाकारों की संख्या",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "कुल कलाकारों की संख्या / छत्तीसगढ़ के स्थानीय कलाकारों की संख्या",
+          "format_link": "https://sewasetu.cgstate.gov.in/resources/docFormat/24636.pdf",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "12",
+      "document_type": "(पंजीकरण शुल्क रसीद / डिमांड ड्राफ्ट) INR 5,900/- (18% जीएसटी सहित) भुगतान की ऑनलाइन रसीद संस्कृति एवं भाषा निदेशालय के पक्ष में",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "(पंजीकरण शुल्क रसीद / डिमांड ड्राफ्ट) INR 5,900/- (18% जीएसटी सहित) भुगतान की ऑनलाइन रसीद संस्कृति एवं भाषा निदेशालय के पक्ष में",
+          "format_link": "https://sewasetu.cgstate.gov.in/resources/docFormat/24638.pdf",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "13",
+      "document_type": "कलाकार का निवास प्रमाण पत्र / जन्म प्रमाण पत्र / शैक्षणिक प्रमाण पत्र (न्यूनतम 5 वर्ष) / आधार कार्ड / ड्राइविंग लाइसेंस",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "कलाकार का निवास प्रमाण पत्र / जन्म प्रमाण पत्र / शैक्षणिक प्रमाण पत्र (न्यूनतम 5 वर्ष) / आधार कार्ड / ड्राइविंग लाइसेंस",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    }
+  ],
+  "fees": {
+    "where_to_apply": "",
+    "kiosk_fee": "",
+    "online_fee": "",
+    "raw_text": ""
+  },
+  "contact_details": "",
+  "time_limit": "",
+  "form_fields": [
+    {
+      "attribute_id": "8312",
+      "label": "परियोजना का प्रकार",
+      "input_type": "textarea",
+      "data_type": "Charactar",
+      "row": "1",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8313",
+      "label": "शैली",
+      "input_type": "drop down",
+      "data_type": "Search",
+      "row": "1",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8314",
+      "label": "परियोजना की अवधि",
+      "input_type": "number",
+      "data_type": "Number",
+      "row": "2",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8315",
+      "label": "परियोजना का शीर्षक",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "2",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8316",
+      "label": "निर्माता का नाम",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "3",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8317",
+      "label": "प्रोडक्शन हाउस",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "3",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8318",
+      "label": "इकाई का प्रकार",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "4",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8319",
+      "label": "छत्तीसगढ़ में शूटिंग की तारीख",
+      "input_type": "date",
+      "data_type": "Date",
+      "row": "4",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8320",
+      "label": "परियोजना का अनुमानित बजट",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "5",
+      "col": "1"
+    },
+    {
+      "attribute_id": "1615",
+      "label": "अनुमानित कुल व्यय",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "5",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8322",
+      "label": "छत्तीसगढ़ से मानव संसाधन उपयोग",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "6",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8323",
+      "label": "प्रस्तावित शूटिंग लोकेशन",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "6",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8324",
+      "label": "निर्माता का विवरण",
+      "input_type": "textarea",
+      "data_type": "Charactar",
+      "row": "7",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8325",
+      "label": "पंजीकृत पता",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "7",
+      "col": "2"
+    },
+    {
+      "attribute_id": "2673",
+      "label": "ईमेल आईडी",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "8",
+      "col": "1"
+    },
+    {
+      "attribute_id": "914",
+      "label": "मोबाइल नंबर",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "8",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8326",
+      "label": "जीएसटी / पैन",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "9",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8327",
+      "label": "निर्देशक का नाम",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "9",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8328",
+      "label": "अधिकृत प्रतिनिधि का नाम",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "10",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8329",
+      "label": "अधिकृत प्रतिनिधि का ईमेल",
+      "input_type": "text",
+      "data_type": "Email",
+      "row": "10",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8330",
+      "label": "अधिकृत प्रतिनिधि का मोबाइल",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "11",
+      "col": "1"
+    },
+    {
+      "attribute_id": "4330",
+      "label": "कुल शूटिंग दिवस",
+      "input_type": "number",
+      "data_type": "Number",
+      "row": "12",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8331",
+      "label": "मुख्य अभिनेताओं के नाम",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "13",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8332",
+      "label": "परियोजना सारांश (100 शब्द)",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "13",
+      "col": "2"
+    },
+    {
+      "attribute_id": "4112",
+      "label": "फिल्म की भाषा",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "14",
+      "col": "1"
+    },
+    {
+      "attribute_id": "4114",
+      "label": "क्या आप खंड 11(1) के तहत सब्सिडी के लिए पात्र हैं एवं आवेदन कर रहे हैं",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "14",
+      "col": "2"
+    },
+    {
+      "attribute_id": "4115",
+      "label": "फिल्म की शूटिंग के दिनों की कुल संख्या",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "15",
+      "col": "1"
+    },
+    {
+      "attribute_id": "4301",
+      "label": "छत्तीसगढ़ में शूटिंग के दिनों की कुल संख्या",
+      "input_type": "number",
+      "data_type": "Number",
+      "row": "15",
+      "col": "2"
+    },
+    {
+      "attribute_id": "4118",
+      "label": "फिल्म में कार्यरत कलाकारों और कर्मचारियों की कुल संख्या",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "16",
+      "col": "1"
+    },
+    {
+      "attribute_id": "4120",
+      "label": "फिल्म में छत्तीसगढ़ आधारित सहायक तकनीकी और ग्राउंड स्टाफ की संख्या",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "16",
+      "col": "2"
+    },
+    {
+      "attribute_id": "4123",
+      "label": "परियोजना में मुख्य कलाकारों में छत्तीसगढ़ के कलाकारों की कुल संख्या",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "17",
+      "col": "1"
+    },
+    {
+      "attribute_id": "1302",
+      "label": "बैंक खाता संख्या",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "17",
+      "col": "2"
+    },
+    {
+      "attribute_id": "1183",
+      "label": "बैंक का नाम",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "18",
+      "col": "1"
+    },
+    {
+      "attribute_id": "238",
+      "label": "आईएफएससी कोड",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "18",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8333",
+      "label": "छत्तीसगढ़ में बनाई जा रही फिल्मों की संख्या",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "19",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8334",
+      "label": "छत्तीसगढ़ कर्मचारियों का प्रतिशत",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "19",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8335",
+      "label": "Artist Details For Film Subsidy",
+      "input_type": "fieldset",
+      "data_type": "Alfa Numeric",
+      "row": "20",
+      "col": "1"
+    }
+  ],
+  "downloaded_pdfs": [],
+  "combined_manual_text_path": "scraped_data/extracted_text/combined_manual_354_hi.txt"
+}

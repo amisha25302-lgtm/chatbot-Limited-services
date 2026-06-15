@@ -1,0 +1,477 @@
+{
+  "service_id": "3",
+  "language": "en",
+  "name": "Marriage Registration & Certificate",
+  "department": "Urban Administration and development Department",
+  "category": "",
+  "sla": "15 Days",
+  "details_link": "https://sewasetu.cgstate.gov.in/instractionPageNew.do?serviceId=3&lang=en",
+  "required_documents": [
+    {
+      "sno": "1",
+      "document_type": "Affidavit",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Affidavit",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "2",
+      "document_type": "At The Time Of Marriage Combined Photograph Of Groom And Bride(2a Size)",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "At The Time Of Marriage Combined Photograph Of Groom And Bride(2a Size)",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "3",
+      "document_type": "Declaration Letter From Guardian Of Married Couple",
+      "mandatory": "No",
+      "supporting_documents": [
+        {
+          "name": "Declaration Letter From Guardian Of Married Couple",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "4",
+      "document_type": "Other",
+      "mandatory": "No",
+      "supporting_documents": [
+        {
+          "name": "Other",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "5",
+      "document_type": "Necessary Documents",
+      "mandatory": "No",
+      "supporting_documents": [
+        {
+          "name": "Necessary Documents",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "6",
+      "document_type": "Birth Certificate Of Groom",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Birth Certificate Of Groom",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "7",
+      "document_type": "Birth Certificate Of Bride",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Birth Certificate Of Bride",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "8",
+      "document_type": "Document Signed By The Bride And Groom (First Page)",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Document Signed By The Bride And Groom (First Page)",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "9",
+      "document_type": "Document Signed By The Bride And Groom (Second Page)",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Document Signed By The Bride And Groom (Second Page)",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "10",
+      "document_type": "Copy Of Challan",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Copy Of Challan",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "11",
+      "document_type": "Marriage Invitation Card",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Marriage Invitation Card",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "12",
+      "document_type": "Divorce Certifcate",
+      "mandatory": "No",
+      "supporting_documents": [
+        {
+          "name": "Divorce Certificate",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "13",
+      "document_type": "Widow Certificate",
+      "mandatory": "No",
+      "supporting_documents": [
+        {
+          "name": "Widow Certificate",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "14",
+      "document_type": "Inter Religion Marriage Certificate",
+      "mandatory": "No",
+      "supporting_documents": [
+        {
+          "name": "Inter Religion Marriage Certificate",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    }
+  ],
+  "fees": {
+    "where_to_apply": "",
+    "kiosk_fee": "30.0",
+    "online_fee": "30.0",
+    "raw_text": "Where to Apply? Sewa Setu Kendra : ₹30.0 Online : ₹30.0"
+  },
+  "contact_details": "Sewa Setu Kendra",
+  "time_limit": "15 Days",
+  "form_fields": [
+    {
+      "attribute_id": "131",
+      "label": "Marriage Details",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "1",
+      "col": "1"
+    },
+    {
+      "attribute_id": "132",
+      "label": "Date of Marriage",
+      "input_type": "date",
+      "data_type": "Date",
+      "row": "2",
+      "col": "1"
+    },
+    {
+      "attribute_id": "133",
+      "label": "Place of Marriage",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "2",
+      "col": "2"
+    },
+    {
+      "attribute_id": "134",
+      "label": "Type of Marriage",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "3",
+      "col": "1"
+    },
+    {
+      "attribute_id": "135",
+      "label": "Is marriage Registered",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "3",
+      "col": "2"
+    },
+    {
+      "attribute_id": "136",
+      "label": "Registration Number",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "4",
+      "col": "1"
+    },
+    {
+      "attribute_id": "137",
+      "label": "Other Details",
+      "input_type": "textarea",
+      "data_type": "Charactar",
+      "row": "4",
+      "col": "2"
+    },
+    {
+      "attribute_id": "138",
+      "label": "Groom Details",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "5",
+      "col": "1"
+    },
+    {
+      "attribute_id": "139",
+      "label": "Name of Groom in Local Language",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "6",
+      "col": "1"
+    },
+    {
+      "attribute_id": "140",
+      "label": "Name of Groom in English",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "6",
+      "col": "2"
+    },
+    {
+      "attribute_id": "141",
+      "label": "Date of Birth of Groom",
+      "input_type": "date",
+      "data_type": "Date",
+      "row": "7",
+      "col": "1"
+    },
+    {
+      "attribute_id": "142",
+      "label": "Age at time of marriage",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "7",
+      "col": "2"
+    },
+    {
+      "attribute_id": "54",
+      "label": "Father Name in local language",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "8",
+      "col": "1"
+    },
+    {
+      "attribute_id": "55",
+      "label": "Father Name in English",
+      "input_type": "textarea",
+      "data_type": "Charactar",
+      "row": "8",
+      "col": "2"
+    },
+    {
+      "attribute_id": "143",
+      "label": "Marital Status of Groom",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "9",
+      "col": "1"
+    },
+    {
+      "attribute_id": "144",
+      "label": "Address Of Groom",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "10",
+      "col": "1"
+    },
+    {
+      "attribute_id": "145",
+      "label": "Present Address of groom in Local Language",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "11",
+      "col": "1"
+    },
+    {
+      "attribute_id": "146",
+      "label": "Present Address of Groom in English",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "11",
+      "col": "2"
+    },
+    {
+      "attribute_id": "147",
+      "label": "Permanent Address of Groom in Local Language",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "12",
+      "col": "1"
+    },
+    {
+      "attribute_id": "149",
+      "label": "Permanent Address of Groom in English",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "12",
+      "col": "2"
+    },
+    {
+      "attribute_id": "276",
+      "label": "Witness Details of Groom Side",
+      "input_type": "fieldset",
+      "data_type": "Alfa Numeric",
+      "row": "13",
+      "col": "1"
+    },
+    {
+      "attribute_id": "157",
+      "label": "Bride Details",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "14",
+      "col": "1"
+    },
+    {
+      "attribute_id": "158",
+      "label": "Name of Bride in local language",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "15",
+      "col": "1"
+    },
+    {
+      "attribute_id": "159",
+      "label": "Name of Bride in English",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "15",
+      "col": "2"
+    },
+    {
+      "attribute_id": "160",
+      "label": "Date of Birth of Bride",
+      "input_type": "date",
+      "data_type": "Date",
+      "row": "16",
+      "col": "1"
+    },
+    {
+      "attribute_id": "176",
+      "label": "Bride Age at time of marriage",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "16",
+      "col": "2"
+    },
+    {
+      "attribute_id": "177",
+      "label": "Fathers name of Bride in Local language",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "17",
+      "col": "1"
+    },
+    {
+      "attribute_id": "178",
+      "label": "Fathers name of Bride in English",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "17",
+      "col": "2"
+    },
+    {
+      "attribute_id": "179",
+      "label": "Marital Status of Bride",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "18",
+      "col": "1"
+    },
+    {
+      "attribute_id": "199",
+      "label": "Address Of Bride",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "19",
+      "col": "1"
+    },
+    {
+      "attribute_id": "200",
+      "label": "Present Address of Bride in Local Language",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "20",
+      "col": "1"
+    },
+    {
+      "attribute_id": "201",
+      "label": "Present Address of Bride in English",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "20",
+      "col": "2"
+    },
+    {
+      "attribute_id": "203",
+      "label": "Permanent Address of Bride in Local Language",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "21",
+      "col": "1"
+    },
+    {
+      "attribute_id": "204",
+      "label": "Permanent Address of Bride in English",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "21",
+      "col": "2"
+    },
+    {
+      "attribute_id": "281",
+      "label": "Witness Details of Bride Side",
+      "input_type": "fieldset",
+      "data_type": "Alfa Numeric",
+      "row": "22",
+      "col": "1"
+    }
+  ],
+  "downloaded_pdfs": [
+    {
+      "source_url": "https://sewasetu.cgstate.gov.in/resources/edistrict/user-manual/new/3.pdf",
+      "type": "user_manual",
+      "local_path": "scraped_data/pdfs/3_en_3.pdf"
+    }
+  ],
+  "combined_manual_text_path": "scraped_data/extracted_text/combined_manual_3_en.txt"
+}

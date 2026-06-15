@@ -1,0 +1,58 @@
+==================================================
+SERVICE DETAILS MANUAL: मुख्यमंत्री रोजगार सृजन कार्यक्रम हेतु आवेदन
+Service ID: 337
+Language: HI
+Department: ग्रामीण उद्योग विभाग
+Time Limit / SLA: 
+Contact Details: 
+Kiosk Fee: 
+Online Fee: 
+Where to Apply: 
+Raw Fees Text: 
+==================================================
+
+REQUIRED DOCUMENTS:
+- SNo 1: निवास का प्रमाण (Mandatory: हाँ)
+  * Supporting Document 1: मूल निवासी प्रमाण पत्र
+- SNo 2: जाति का प्रमाण (Mandatory: नहीं)
+  * Supporting Document 1: जाति प्रमाण पत्र
+- SNo 3: शपथ पत्र (Mandatory: हाँ)
+  * Supporting Document 1: शपथपत्र [Format: https://sewasetu.cgstate.gov.in/resources/docFormat/24806.pdf]
+- SNo 4: शैक्षणिक प्रमाण पत्र (Mandatory: हाँ)
+  * Supporting Document 1: शैक्षणिक प्रमाण - पत्र
+- SNo 5: आयु प्रमाण पत्र (Mandatory: हाँ)
+  * Supporting Document 1: कोई भी प्रासंगिक दस्तावेज़
+- SNo 6: आधार कार्ड (Mandatory: हाँ)
+  * Supporting Document 1: आधार कार्ड
+- SNo 7: उद्योग पंजीकरण (Mandatory: हाँ)
+  * Supporting Document 1: उद्यम / व्यापार लाइसेंस
+- SNo 8: परियोजना रिपोर्ट / डीपीआर (विस्तृत परियोजना रिपोर्ट) (Mandatory: हाँ)
+  * Supporting Document 1: परियोजना रिपोर्ट/डीपीआर
+- SNo 9: बैंक पासबुक का पहला पृष्ठ (Mandatory: हाँ)
+  * Supporting Document 1: बैंक पासबुक का पहला पृष्ठ
+- SNo 10: पासपोर्ट साइज फोटो (Mandatory: हाँ)
+  * Supporting Document 1: पासपोर्ट साइज फोटो
+- SNo 11: ग्राम पंचायत एनओसी (Mandatory: हाँ)
+  * Supporting Document 1: ग्राम पंचायत एनओसी [Format: https://sewasetu.cgstate.gov.in/resources/docFormat/24803.pdf]
+- SNo 12: भूमि स्वामित्व प्रमाण / पट्टा दस्तावेज़ / किराया समझौता (Mandatory: हाँ)
+  * Supporting Document 1: भूमि स्वामित्व प्रमाण / पट्टा दस्तावेज़ / किराया समझौता
+
+APPLICATION FORM FIELDS:
+- Field: पिता का नाम [Type: text, Data: Alfa Numeric] (Row: 1, Col: 1)
+- Field: पति का नाम [Type: text, Data: Charactar] (Row: 1, Col: 2)
+- Field: जन्म तिथि [Type: date, Data: Date] (Row: 2, Col: 1)
+- Field: ऋण राशि (पूंजीगत व्यय + कार्यशील पूंजी) [Type: text, Data: Alfa Numeric] (Row: 2, Col: 2)
+- Field: लिंग [Type: drop down, Data: Charactar] (Row: 3, Col: 1)
+- Field: सामाजिक श्रेणी [Type: drop down, Data: Alfa Numeric] (Row: 3, Col: 2)
+- Field: विशेष श्रेणी [Type: drop down, Data: Alfa Numeric] (Row: 4, Col: 1)
+- Field: शैक्षणिक योग्यता [Type: Data List, Data: Search] (Row: 4, Col: 2)
+- Field: आवासीय पता [Type: textarea, Data: Charactar] (Row: 5, Col: 1)
+- Field: प्रस्तावित इकाई का स्थान और पता [Type: textarea, Data: Alfa Numeric] (Row: 5, Col: 2)
+- Field: परियोजना का प्रकार [Type: drop down, Data: Alfa Numeric] (Row: 6, Col: 1)
+- Field: प्रस्तावित इकाई का नाम [Type: text, Data: Alfa Numeric] (Row: 6, Col: 2)
+- Field: वित्तीय स्रोत [Type: drop down, Data: Alfa Numeric] (Row: 7, Col: 1)
+- Field: पैन कार्ड [Type: text, Data: Charactar] (Row: 7, Col: 2)
+- Field: वित्तपोषण बैंक का नाम [Type: drop down, Data: Alfa Numeric] (Row: 8, Col: 1)
+- Field: ब्रांच का नाम [Type: drop down, Data: Alfa Numeric] (Row: 8, Col: 2)
+- Field: आईएफएससी कोड [Type: text, Data: Alfa Numeric] (Row: 9, Col: 1)
+- Field: बैंक का पता [Type: textarea, Data: Charactar] (Row: 9, Col: 2)

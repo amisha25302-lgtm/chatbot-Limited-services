@@ -1,0 +1,82 @@
+{
+  "services": [
+    {
+      "sno": "1",
+      "service_id": "3",
+      "name_en": "Marriage Registration & Certificate",
+      "name_hi": "विवाह पंजीकरण एवं प्रमाण पत्र",
+      "dept_en": "Urban Administration and development Department",
+      "dept_hi": "नगरीय प्रशासन एवं विकास विभाग",
+      "is_internal": true,
+      "path_en": "scraped_data/profiles/service_3_en.json",
+      "path_hi": "scraped_data/profiles/service_3_hi.json",
+      "manual_path_en": "scraped_data/extracted_text/combined_manual_3_en.txt",
+      "manual_path_hi": "scraped_data/extracted_text/combined_manual_3_hi.txt"
+    },
+    {
+      "sno": "2",
+      "service_id": "6",
+      "name_en": "Income Certificate",
+      "name_hi": "आय प्रमाण पत्र",
+      "dept_en": "Revenue and disaster management Department",
+      "dept_hi": "राजस्व एवं आपदा प्रबंधन विभाग",
+      "is_internal": true,
+      "path_en": "scraped_data/profiles/service_6_en.json",
+      "path_hi": "scraped_data/profiles/service_6_hi.json",
+      "manual_path_en": "scraped_data/extracted_text/combined_manual_6_en.txt",
+      "manual_path_hi": "scraped_data/extracted_text/combined_manual_6_hi.txt"
+    },
+    {
+      "sno": "3",
+      "service_id": "7",
+      "name_en": "Domicile Certificate",
+      "name_hi": "मूल निवासी प्रमाण पत्र",
+      "dept_en": "Revenue and disaster management Department",
+      "dept_hi": "राजस्व एवं आपदा प्रबंधन विभाग",
+      "is_internal": true,
+      "path_en": "scraped_data/profiles/service_7_en.json",
+      "path_hi": "scraped_data/profiles/service_7_hi.json",
+      "manual_path_en": "scraped_data/extracted_text/combined_manual_7_en.txt",
+      "manual_path_hi": "scraped_data/extracted_text/combined_manual_7_hi.txt"
+    },
+    {
+      "sno": "4",
+      "service_id": "24",
+      "name_en": "Application for Water Tap Connection",
+      "name_hi": "नल कनेक्शन हेतु आवेदन",
+      "dept_en": "Urban Administration and development Department",
+      "dept_hi": "नगरीय प्रशासन एवं विकास विभाग",
+      "is_internal": true,
+      "path_en": "scraped_data/profiles/service_24_en.json",
+      "path_hi": "scraped_data/profiles/service_24_hi.json",
+      "manual_path_en": "scraped_data/extracted_text/combined_manual_24_en.txt",
+      "manual_path_hi": "scraped_data/extracted_text/combined_manual_24_hi.txt"
+    },
+    {
+      "sno": "5",
+      "service_id": "337",
+      "name_en": "Chief Minister Employment Generation Programme (CMEGP)",
+      "name_hi": "मुख्यमंत्री रोजगार सृजन कार्यक्रम हेतु आवेदन",
+      "dept_en": "Rural Industry Department",
+      "dept_hi": "ग्रामीण उद्योग विभाग",
+      "is_internal": true,
+      "path_en": "scraped_data/profiles/service_337_en.json",
+      "path_hi": "scraped_data/profiles/service_337_hi.json",
+      "manual_path_en": "scraped_data/extracted_text/combined_manual_337_en.txt",
+      "manual_path_hi": "scraped_data/extracted_text/combined_manual_337_hi.txt"
+    },
+    {
+      "sno": "6",
+      "service_id": "354",
+      "name_en": "Application for subsidy in feature film",
+      "name_hi": "फीचर फिल्म पर सब्सिडी हेतु आवेदन",
+      "dept_en": "Culture & Language",
+      "dept_hi": "संस्कृति एवं राजभाषा",
+      "is_internal": true,
+      "path_en": "scraped_data/profiles/service_354_en.json",
+      "path_hi": "scraped_data/profiles/service_354_hi.json",
+      "manual_path_en": "scraped_data/extracted_text/combined_manual_354_en.txt",
+      "manual_path_hi": "scraped_data/extracted_text/combined_manual_354_hi.txt"
+    }
+  ]
+}

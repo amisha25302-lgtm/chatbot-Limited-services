@@ -1,0 +1,47 @@
+==================================================
+SERVICE DETAILS MANUAL: नल कनेक्शन हेतु आवेदन
+Service ID: 24
+Language: HI
+Department: नगरीय प्रशासन एवं विकास विभाग
+Time Limit / SLA: 
+Contact Details: 
+Kiosk Fee: 
+Online Fee: 
+Where to Apply: 
+Raw Fees Text: 
+==================================================
+
+REQUIRED DOCUMENTS:
+- SNo 1: निवास का प्रमाण (Mandatory: हाँ)
+  * Supporting Document 1: मूल निवासी प्रमाण पत्र
+  * Supporting Document 2: राशन कार्ड
+  * Supporting Document 3: बिजली का बिल
+  * Supporting Document 4: अन्य
+  * Supporting Document 5: घर या भूमि का दस्तावेज़
+  * Supporting Document 6: वार्ड सदस्य, स्थानीय विधायक / सांसद से प्रमाण पत्र
+- SNo 2: बी.पी.एल. प्रमाण (Mandatory: नहीं)
+  * Supporting Document 1: बी.पी.एल. प्रमाण पत्र
+- SNo 3: कर रसीद (Mandatory: हाँ)
+  * Supporting Document 1: कर रसीद
+- SNo 4: सहमति पत्र (Mandatory: नहीं)
+  * Supporting Document 1: सहमति पत्र
+
+APPLICATION FORM FIELDS:
+- Field: पिता का नाम [Type: text, Data: Charactar] (Row: 1, Col: 1)
+- Field: पता [Type: textarea, Data: Alfa Numeric] (Row: 1, Col: 2)
+- Field: मकान नंबर [Type: text, Data: Alfa Numeric] (Row: 2, Col: 1)
+- Field: वार्ड [Type: text, Data: Alfa Numeric] (Row: 2, Col: 2)
+- Field: वार्षिक किराया [Type: text, Data: Alfa Numeric] (Row: 3, Col: 1)
+- Field: बी पी एल संख्या [Type: text, Data: Number] (Row: 3, Col: 2)
+- Field: गृह स्वामी का विवरण [Type: section lebel, Data: Charactar] (Row: 4, Col: 1)
+- Field: गृह स्वामी का नाम [Type: text, Data: Charactar] (Row: 5, Col: 1)
+- Field: गृह स्वामी के पिता का नाम [Type: text, Data: Charactar] (Row: 5, Col: 2)
+- Field: गृह स्वामी का पता [Type: textarea, Data: Alfa Numeric] (Row: 6, Col: 1)
+- Field: संपत्ति पहचान क्रमांक [Type: text, Data: Alfa Numeric] (Row: 6, Col: 2)
+- Field: नल कनेक्शन का विवरण [Type: section lebel, Data: Charactar] (Row: 7, Col: 1)
+- Field: कनेक्सन प्रकार [Type: drop down, Data: Charactar] (Row: 10, Col: 1)
+- Field: स्थाई कनेक्शन की आवश्यकता है [Type: drop down, Data: Alfa Numeric] (Row: 10, Col: 2)
+- Field: सम्बंधित मकान में पुराना कनेक्शन है [Type: drop down, Data: Alfa Numeric] (Row: 11, Col: 1)
+- Field: पुराना कनेक्शन का विवरण [Type: text, Data: Alfa Numeric] (Row: 11, Col: 2)
+- Field: जल का प्रयोग किस लिये होगा [Type: drop down, Data: Alfa Numeric] (Row: 12, Col: 1)
+- Field: यदि जल का अन्य प्रयोग हो तो विवरण दें [Type: text, Data: Alfa Numeric] (Row: 12, Col: 2)

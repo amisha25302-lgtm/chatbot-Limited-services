@@ -1,0 +1,237 @@
+{
+  "service_id": "6",
+  "language": "hi",
+  "name": "आय प्रमाण पत्र",
+  "department": "राजस्व एवं आपदा प्रबंधन विभाग",
+  "category": "",
+  "sla": "",
+  "details_link": "https://sewasetu.cgstate.gov.in/instractionPageNew.do?serviceId=6&lang=hi",
+  "required_documents": [
+    {
+      "sno": "1",
+      "document_type": "शपथ पत्र",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "शपथ पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "2",
+      "document_type": "आय प्रमाण",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "पटवारी/सरपंच/पार्षद से प्रमाण पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "नियोक्ता का आय प्रमाण पत्र/फार्म १६",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "भूमि/घर से आय",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "अन्य",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "आवेदन प्रपत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "फार्म 16",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "परिवार के अन्य सदस्यों आय",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    }
+  ],
+  "fees": {
+    "where_to_apply": "",
+    "kiosk_fee": "",
+    "online_fee": "",
+    "raw_text": ""
+  },
+  "contact_details": "",
+  "time_limit": "",
+  "form_fields": [
+    {
+      "attribute_id": "108",
+      "label": "हितग्राही की जानकारी",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "1",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8",
+      "label": "लिंग",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "2",
+      "col": "1"
+    },
+    {
+      "attribute_id": "109",
+      "label": "हितग्राही की उम्र",
+      "input_type": "number",
+      "data_type": "Number",
+      "row": "2",
+      "col": "2"
+    },
+    {
+      "attribute_id": "78",
+      "label": "हितग्राही के अभिभावक का प्रकार",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "3",
+      "col": "1"
+    },
+    {
+      "attribute_id": "79",
+      "label": "हितग्राही के अभिभावक का नाम",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "3",
+      "col": "2"
+    },
+    {
+      "attribute_id": "1085",
+      "label": "हितग्राही के साथ संबंध",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "4",
+      "col": "1"
+    },
+    {
+      "attribute_id": "112",
+      "label": "हितग्राही के पुत्र या पुत्री या पत्नी नाम",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "4",
+      "col": "2"
+    },
+    {
+      "attribute_id": "116",
+      "label": "जाति",
+      "input_type": "search",
+      "data_type": "Search",
+      "row": "5",
+      "col": "1"
+    },
+    {
+      "attribute_id": "117",
+      "label": "श्रेणी",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "5",
+      "col": "2"
+    },
+    {
+      "attribute_id": "118",
+      "label": "वर्ग का क्रमांक",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "6",
+      "col": "1"
+    },
+    {
+      "attribute_id": "119",
+      "label": "पता का विवरण",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "7",
+      "col": "1"
+    },
+    {
+      "attribute_id": "104",
+      "label": "पता",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "8",
+      "col": "1"
+    },
+    {
+      "attribute_id": "82",
+      "label": "पिन कोड",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "8",
+      "col": "2"
+    },
+    {
+      "attribute_id": "396",
+      "label": "जिला",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "9",
+      "col": "1"
+    },
+    {
+      "attribute_id": "223",
+      "label": "आय का विवरण",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "10",
+      "col": "1"
+    },
+    {
+      "attribute_id": "126",
+      "label": "व्यवसाय या सेवा का विवरण",
+      "input_type": "search",
+      "data_type": "Search",
+      "row": "11",
+      "col": "1"
+    },
+    {
+      "attribute_id": "105",
+      "label": "आवेदन का कारण",
+      "input_type": "Data List",
+      "data_type": "Charactar",
+      "row": "11",
+      "col": "2"
+    },
+    {
+      "attribute_id": "128",
+      "label": "वार्षिक आय",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "12",
+      "col": "1"
+    },
+    {
+      "attribute_id": "130",
+      "label": "विगत 3 वर्षो की औसत वार्षिक आय",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "12",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8384",
+      "label": "मैं सहमति देता/देती हूँ कि यदि निर्धारित समय सीमा के भीतर आवेदनित लोक सेवा प्रदान नहीं की जाती है, तो मेरी ओर से सक्षम अधिकारी के समक्ष लोक सेवा गारंटी नियम, 2011 के नियम 6 के अंतर्गत स्वतः शिकायत/अपील दर्ज की जाए।",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "13",
+      "col": "1"
+    }
+  ],
+  "downloaded_pdfs": [],
+  "combined_manual_text_path": "scraped_data/extracted_text/combined_manual_6_hi.txt"
+}

@@ -1,0 +1,46 @@
+==================================================
+SERVICE DETAILS MANUAL: आय प्रमाण पत्र
+Service ID: 6
+Language: HI
+Department: राजस्व एवं आपदा प्रबंधन विभाग
+Time Limit / SLA: 
+Contact Details: 
+Kiosk Fee: 
+Online Fee: 
+Where to Apply: 
+Raw Fees Text: 
+==================================================
+
+REQUIRED DOCUMENTS:
+- SNo 1: शपथ पत्र (Mandatory: हाँ)
+  * Supporting Document 1: शपथ पत्र
+- SNo 2: आय प्रमाण (Mandatory: हाँ)
+  * Supporting Document 1: पटवारी/सरपंच/पार्षद से प्रमाण पत्र
+  * Supporting Document 2: नियोक्ता का आय प्रमाण पत्र/फार्म १६
+  * Supporting Document 3: भूमि/घर से आय
+  * Supporting Document 4: अन्य
+  * Supporting Document 5: आवेदन प्रपत्र
+  * Supporting Document 6: फार्म 16
+  * Supporting Document 7: परिवार के अन्य सदस्यों आय
+
+APPLICATION FORM FIELDS:
+- Field: हितग्राही की जानकारी [Type: section lebel, Data: Charactar] (Row: 1, Col: 1)
+- Field: लिंग [Type: drop down, Data: Charactar] (Row: 2, Col: 1)
+- Field: हितग्राही की उम्र [Type: number, Data: Number] (Row: 2, Col: 2)
+- Field: हितग्राही के अभिभावक का प्रकार [Type: drop down, Data: Charactar] (Row: 3, Col: 1)
+- Field: हितग्राही के अभिभावक का नाम [Type: text, Data: Charactar] (Row: 3, Col: 2)
+- Field: हितग्राही के साथ संबंध [Type: drop down, Data: Alfa Numeric] (Row: 4, Col: 1)
+- Field: हितग्राही के पुत्र या पुत्री या पत्नी नाम [Type: text, Data: Number] (Row: 4, Col: 2)
+- Field: जाति [Type: search, Data: Search] (Row: 5, Col: 1)
+- Field: श्रेणी [Type: text, Data: Charactar] (Row: 5, Col: 2)
+- Field: वर्ग का क्रमांक [Type: text, Data: Charactar] (Row: 6, Col: 1)
+- Field: पता का विवरण [Type: section lebel, Data: Charactar] (Row: 7, Col: 1)
+- Field: पता [Type: textarea, Data: Alfa Numeric] (Row: 8, Col: 1)
+- Field: पिन कोड [Type: text, Data: Number] (Row: 8, Col: 2)
+- Field: जिला [Type: drop down, Data: Charactar] (Row: 9, Col: 1)
+- Field: आय का विवरण [Type: section lebel, Data: Charactar] (Row: 10, Col: 1)
+- Field: व्यवसाय या सेवा का विवरण [Type: search, Data: Search] (Row: 11, Col: 1)
+- Field: आवेदन का कारण [Type: Data List, Data: Charactar] (Row: 11, Col: 2)
+- Field: वार्षिक आय [Type: text, Data: Charactar] (Row: 12, Col: 1)
+- Field: विगत 3 वर्षो की औसत वार्षिक आय [Type: text, Data: Charactar] (Row: 12, Col: 2)
+- Field: मैं सहमति देता/देती हूँ कि यदि निर्धारित समय सीमा के भीतर आवेदनित लोक सेवा प्रदान नहीं की जाती है, तो मेरी ओर से सक्षम अधिकारी के समक्ष लोक सेवा गारंटी नियम, 2011 के नियम 6 के अंतर्गत स्वतः शिकायत/अपील दर्ज की जाए। [Type: drop down, Data: Alfa Numeric] (Row: 13, Col: 1)

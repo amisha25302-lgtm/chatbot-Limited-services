@@ -1,0 +1,471 @@
+{
+  "service_id": "3",
+  "language": "hi",
+  "name": "विवाह पंजीकरण एवं प्रमाण पत्र",
+  "department": "नगरीय प्रशासन एवं विकास विभाग",
+  "category": "",
+  "sla": "",
+  "details_link": "https://sewasetu.cgstate.gov.in/instractionPageNew.do?serviceId=3&lang=hi",
+  "required_documents": [
+    {
+      "sno": "1",
+      "document_type": "शपथ पत्र",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "शपथ पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "2",
+      "document_type": "वर एवं वधु का संयुक्त फोटो(2A साईज) प्रमाण पत्र के लिए",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "वर एवं वधु का संयुक्त फोटो(2A साईज) प्रमाण पत्र के लिए",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "3",
+      "document_type": "प्रमाण पत्र",
+      "mandatory": "नहीं",
+      "supporting_documents": [
+        {
+          "name": "विवाह अनुस्थान संपन्न कराने वाले के सत्यापन के लिए उस समय उपस्थित पंडित /पादरी /मौलवी अथवा समाज का प्रमाण पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "4",
+      "document_type": "अन्य कारण",
+      "mandatory": "नहीं",
+      "supporting_documents": [
+        {
+          "name": "अन्य कारण",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "5",
+      "document_type": "आवश्यक दस्तावेज़",
+      "mandatory": "नहीं",
+      "supporting_documents": [
+        {
+          "name": "आवश्यक दस्तावेज़",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "6",
+      "document_type": "वर का जन्म प्रमाण पत्र",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "वर का जन्म प्रमाण पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "7",
+      "document_type": "वधु का जन्म प्रमाण पत्र",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "वधु का जन्म प्रमाण पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "8",
+      "document_type": "वर एव वधु द्वारा हस्ताक्षरित दस्तावेज (प्रथम पेज)",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "वर एव वधु द्वारा हस्ताक्षरित दस्तावेज (प्रथम पेज)",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "9",
+      "document_type": "वर एव वधु द्वारा हस्ताक्षरित दस्तावेज (व्दितीय पेज)",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "वर एव वधु द्वारा हस्ताक्षरित दस्तावेज (व्दितीय पेज)",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "10",
+      "document_type": "चालान की प्रति",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "चालान की प्रति",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "11",
+      "document_type": "विवाह आमंत्रण पत्र",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "विवाह आमंत्रण पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "12",
+      "document_type": "तलाक प्रमाण पत्र",
+      "mandatory": "नहीं",
+      "supporting_documents": [
+        {
+          "name": "तलाक प्रमाण पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "13",
+      "document_type": "विधवा प्रमाण पत्र",
+      "mandatory": "नहीं",
+      "supporting_documents": [
+        {
+          "name": "विधवा प्रमाण पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "14",
+      "document_type": "अंतरधार्मिक विवाह प्रमाण पत्र",
+      "mandatory": "नहीं",
+      "supporting_documents": [
+        {
+          "name": "अंतरधार्मिक विवाह प्रमाण पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    }
+  ],
+  "fees": {
+    "where_to_apply": "",
+    "kiosk_fee": "",
+    "online_fee": "",
+    "raw_text": ""
+  },
+  "contact_details": "",
+  "time_limit": "",
+  "form_fields": [
+    {
+      "attribute_id": "131",
+      "label": "वैवाहिक जानकारी",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "1",
+      "col": "1"
+    },
+    {
+      "attribute_id": "132",
+      "label": "विवाह की तिथि",
+      "input_type": "date",
+      "data_type": "Date",
+      "row": "2",
+      "col": "1"
+    },
+    {
+      "attribute_id": "133",
+      "label": "विवाह का स्थान",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "2",
+      "col": "2"
+    },
+    {
+      "attribute_id": "134",
+      "label": "विवाह का प्रकार",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "3",
+      "col": "1"
+    },
+    {
+      "attribute_id": "135",
+      "label": "क्या विवाह पंजीकृत है",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "3",
+      "col": "2"
+    },
+    {
+      "attribute_id": "136",
+      "label": "पंजीयन क्रमांक",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "4",
+      "col": "1"
+    },
+    {
+      "attribute_id": "137",
+      "label": "अन्य जानकारी",
+      "input_type": "textarea",
+      "data_type": "Charactar",
+      "row": "4",
+      "col": "2"
+    },
+    {
+      "attribute_id": "138",
+      "label": "वर का विवरण",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "5",
+      "col": "1"
+    },
+    {
+      "attribute_id": "139",
+      "label": "वर का नाम स्थानीय भाषा में",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "6",
+      "col": "1"
+    },
+    {
+      "attribute_id": "140",
+      "label": "वर का नाम अंग्रेजी में",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "6",
+      "col": "2"
+    },
+    {
+      "attribute_id": "141",
+      "label": "वर का जन्म तिथि",
+      "input_type": "date",
+      "data_type": "Date",
+      "row": "7",
+      "col": "1"
+    },
+    {
+      "attribute_id": "142",
+      "label": "विवाह के समय उम्र",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "7",
+      "col": "2"
+    },
+    {
+      "attribute_id": "54",
+      "label": "पिता का नाम स्थानीय भाषा में",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "8",
+      "col": "1"
+    },
+    {
+      "attribute_id": "55",
+      "label": "पिता का नाम अंग्रेजी में",
+      "input_type": "textarea",
+      "data_type": "Charactar",
+      "row": "8",
+      "col": "2"
+    },
+    {
+      "attribute_id": "143",
+      "label": "वर की वैवाहिक स्थिति",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "9",
+      "col": "1"
+    },
+    {
+      "attribute_id": "144",
+      "label": "वर का पता",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "10",
+      "col": "1"
+    },
+    {
+      "attribute_id": "145",
+      "label": "वर का वर्तमान पता स्थानीय भाषा में",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "11",
+      "col": "1"
+    },
+    {
+      "attribute_id": "146",
+      "label": "वर का वर्तमान पता अंग्रेजी में",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "11",
+      "col": "2"
+    },
+    {
+      "attribute_id": "147",
+      "label": "वर का स्थाई पता स्थानीय भाषा में",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "12",
+      "col": "1"
+    },
+    {
+      "attribute_id": "149",
+      "label": "वर का स्थाई पता अंग्रेजी में",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "12",
+      "col": "2"
+    },
+    {
+      "attribute_id": "276",
+      "label": "वर पक्ष के गवाह का विवरण",
+      "input_type": "fieldset",
+      "data_type": "Alfa Numeric",
+      "row": "13",
+      "col": "1"
+    },
+    {
+      "attribute_id": "157",
+      "label": "वधु का विवरण",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "14",
+      "col": "1"
+    },
+    {
+      "attribute_id": "158",
+      "label": "वधु का नाम स्थानीय भाषा में",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "15",
+      "col": "1"
+    },
+    {
+      "attribute_id": "159",
+      "label": "वधु का नाम अंग्रेजी में",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "15",
+      "col": "2"
+    },
+    {
+      "attribute_id": "160",
+      "label": "वधु की जन्म तिथि",
+      "input_type": "date",
+      "data_type": "Date",
+      "row": "16",
+      "col": "1"
+    },
+    {
+      "attribute_id": "176",
+      "label": "विवाह के समय वधु की उम्र",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "16",
+      "col": "2"
+    },
+    {
+      "attribute_id": "177",
+      "label": "वधु के पिता का नाम स्थानीय भाषा में",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "17",
+      "col": "1"
+    },
+    {
+      "attribute_id": "178",
+      "label": "वधु के पिता का नाम अंग्रेजी में",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "17",
+      "col": "2"
+    },
+    {
+      "attribute_id": "179",
+      "label": "वधु की वैवाहिक स्थिति",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "18",
+      "col": "1"
+    },
+    {
+      "attribute_id": "199",
+      "label": "वधु का पता",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "19",
+      "col": "1"
+    },
+    {
+      "attribute_id": "200",
+      "label": "वधु का वर्तमान पता स्थानीय भाषा में",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "20",
+      "col": "1"
+    },
+    {
+      "attribute_id": "201",
+      "label": "वधु का वर्तमान पता अंग्रेजी में",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "20",
+      "col": "2"
+    },
+    {
+      "attribute_id": "203",
+      "label": "वधु का स्थायी पता स्थानीय भाषा में",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "21",
+      "col": "1"
+    },
+    {
+      "attribute_id": "204",
+      "label": "वधु की स्थायी पता अंग्रेजी में",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "21",
+      "col": "2"
+    },
+    {
+      "attribute_id": "281",
+      "label": "वधु पक्ष के गवाह का विवरण",
+      "input_type": "fieldset",
+      "data_type": "Alfa Numeric",
+      "row": "22",
+      "col": "1"
+    }
+  ],
+  "downloaded_pdfs": [],
+  "combined_manual_text_path": "scraped_data/extracted_text/combined_manual_3_hi.txt"
+}

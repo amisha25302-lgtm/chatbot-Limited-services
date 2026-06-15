@@ -1,0 +1,361 @@
+{
+  "service_id": "7",
+  "language": "en",
+  "name": "Domicile Certificate",
+  "department": "Revenue and disaster management Department",
+  "category": "",
+  "sla": "7 Days",
+  "details_link": "https://sewasetu.cgstate.gov.in/instractionPageNew.do?serviceId=7&lang=en",
+  "required_documents": [
+    {
+      "sno": "1",
+      "document_type": "Affidavit",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Affidavit",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "2",
+      "document_type": "Other",
+      "mandatory": "No",
+      "supporting_documents": [
+        {
+          "name": "Other Documents",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "3",
+      "document_type": "Proof Of At Least 15 Years Stay",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Birth Certificate",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Father/ Guardian Service Certificate",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Job Service Certificate / Identity Card (If The Applicant Is Under Govt./Semi Govt.)",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Voters Identity Card",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Land And House Document",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Birth Information Form",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Certificate From Ward Member, Local Mla/Mp",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Ration Card",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Electricity Bill",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "4",
+      "document_type": "Educational Certificate",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Middle School Certificate - 8th Standard",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Primary School Certificate - 5th Standard",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "High School(10th) Certificate",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Higher Secondary School Certificate(12th)",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "M.Phil/D.Lit./Ph.D. Certificate",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "School Certificate (As A Proof Of 3 Years Continuous Study)",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Post Graduation Certificate",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Certificate In Technical Subjects",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "5",
+      "document_type": "Proof Of At Least 5 Years Stay",
+      "mandatory": "No",
+      "supporting_documents": [
+        {
+          "name": "Land And House Document",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Persons Service Book.",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    }
+  ],
+  "fees": {
+    "where_to_apply": "",
+    "kiosk_fee": "30.0",
+    "online_fee": "30.0",
+    "raw_text": "Where to Apply? Sewa Setu Kendra : ₹30.0 Online : ₹30.0"
+  },
+  "contact_details": "Sewa Setu Kendra",
+  "time_limit": "7 Days",
+  "form_fields": [
+    {
+      "attribute_id": "76",
+      "label": "General Details",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "1",
+      "col": "1"
+    },
+    {
+      "attribute_id": "78",
+      "label": "Beneficiary Guardian Type",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "2",
+      "col": "1"
+    },
+    {
+      "attribute_id": "79",
+      "label": "Beneficiary Guardian name",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "2",
+      "col": "2"
+    },
+    {
+      "attribute_id": "80",
+      "label": "Guardians Occupation of Beneficiary",
+      "input_type": "search",
+      "data_type": "Search",
+      "row": "3",
+      "col": "1"
+    },
+    {
+      "attribute_id": "81",
+      "label": "Beneficiary place of Birth",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "3",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8",
+      "label": "Gender",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "4",
+      "col": "1"
+    },
+    {
+      "attribute_id": "7",
+      "label": "Date of Birth",
+      "input_type": "date",
+      "data_type": "Date",
+      "row": "4",
+      "col": "2"
+    },
+    {
+      "attribute_id": "119",
+      "label": "Address Details",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "5",
+      "col": "1"
+    },
+    {
+      "attribute_id": "104",
+      "label": "Address",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "6",
+      "col": "1"
+    },
+    {
+      "attribute_id": "82",
+      "label": "PIN Code",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "6",
+      "col": "2"
+    },
+    {
+      "attribute_id": "396",
+      "label": "District",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "7",
+      "col": "1"
+    },
+    {
+      "attribute_id": "83",
+      "label": "Particulars of stay After Birth of Beneficiary",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "8",
+      "col": "1"
+    },
+    {
+      "attribute_id": "250",
+      "label": "Particulars of stay After Birth of Beneficiary",
+      "input_type": "fieldset",
+      "data_type": "Alfa Numeric",
+      "row": "9",
+      "col": "1"
+    },
+    {
+      "attribute_id": "91",
+      "label": "Beneficiary Details of Business or Service",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "10",
+      "col": "1"
+    },
+    {
+      "attribute_id": "251",
+      "label": "Beneficiary Details of Business or service",
+      "input_type": "fieldset",
+      "data_type": "Alfa Numeric",
+      "row": "11",
+      "col": "1"
+    },
+    {
+      "attribute_id": "94",
+      "label": "Beneficiary Education Level",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "12",
+      "col": "1"
+    },
+    {
+      "attribute_id": "252",
+      "label": "Beneficiary Education Level",
+      "input_type": "fieldset",
+      "data_type": "Alfa Numeric",
+      "row": "13",
+      "col": "1"
+    },
+    {
+      "attribute_id": "33",
+      "label": "Other Details",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "14",
+      "col": "1"
+    },
+    {
+      "attribute_id": "99",
+      "label": "Have Beneficiary Voter Id",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "15",
+      "col": "1"
+    },
+    {
+      "attribute_id": "101",
+      "label": "District Name of Beneficiary",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "15",
+      "col": "2"
+    },
+    {
+      "attribute_id": "103",
+      "label": "Living From in Years",
+      "input_type": "number",
+      "data_type": "Date",
+      "row": "16",
+      "col": "1"
+    },
+    {
+      "attribute_id": "253",
+      "label": "Reason for application Domicile",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "16",
+      "col": "2"
+    },
+    {
+      "attribute_id": "106",
+      "label": "Any other detail",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "17",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8384",
+      "label": "I, hereby give my consent to automatic filing of a complaint/Appeal on my behalf before the Competent Officer under Rule 6 of the Lok Seva Guarantee Rules, 2011, in the event that the applied service is not delivered within the stipulated time.",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "17",
+      "col": "2"
+    }
+  ],
+  "downloaded_pdfs": [
+    {
+      "source_url": "https://sewasetu.cgstate.gov.in/resources/edistrict/user-manual/new/7.pdf",
+      "type": "user_manual",
+      "local_path": "scraped_data/pdfs/7_en_7.pdf"
+    }
+  ],
+  "combined_manual_text_path": "scraped_data/extracted_text/combined_manual_7_en.txt"
+}

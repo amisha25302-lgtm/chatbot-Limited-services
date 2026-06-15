@@ -1,0 +1,243 @@
+{
+  "service_id": "6",
+  "language": "en",
+  "name": "Income Certificate",
+  "department": "Revenue and disaster management Department",
+  "category": "",
+  "sla": "7 Days",
+  "details_link": "https://sewasetu.cgstate.gov.in/instractionPageNew.do?serviceId=6&lang=en",
+  "required_documents": [
+    {
+      "sno": "1",
+      "document_type": "Affidavit",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Affidavit",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "2",
+      "document_type": "Income Proof",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Certificate From Patwari/Sarpanch/Parshad",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Income Certificate Employer/Form 16",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Income From Land/House",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Other Documents",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Application Form",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Form 16",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Income Of Other Members Of The Family",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    }
+  ],
+  "fees": {
+    "where_to_apply": "",
+    "kiosk_fee": "30.0",
+    "online_fee": "30.0",
+    "raw_text": "Where to Apply? Sewa Setu Kendra : ₹30.0 Online : ₹30.0"
+  },
+  "contact_details": "Sewa Setu Kendra",
+  "time_limit": "7 Days",
+  "form_fields": [
+    {
+      "attribute_id": "108",
+      "label": "Beneficiary Details",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "1",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8",
+      "label": "Gender",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "2",
+      "col": "1"
+    },
+    {
+      "attribute_id": "109",
+      "label": "Age of Beneficiary",
+      "input_type": "number",
+      "data_type": "Number",
+      "row": "2",
+      "col": "2"
+    },
+    {
+      "attribute_id": "78",
+      "label": "Beneficiary Guardian Type",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "3",
+      "col": "1"
+    },
+    {
+      "attribute_id": "79",
+      "label": "Beneficiary Guardian name",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "3",
+      "col": "2"
+    },
+    {
+      "attribute_id": "1085",
+      "label": "Relation with Applicant",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "4",
+      "col": "1"
+    },
+    {
+      "attribute_id": "112",
+      "label": "Son or Daughter or Wife Name of Beneficiary",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "4",
+      "col": "2"
+    },
+    {
+      "attribute_id": "116",
+      "label": "Caste",
+      "input_type": "search",
+      "data_type": "Search",
+      "row": "5",
+      "col": "1"
+    },
+    {
+      "attribute_id": "117",
+      "label": "Type",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "5",
+      "col": "2"
+    },
+    {
+      "attribute_id": "118",
+      "label": "Class Number",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "6",
+      "col": "1"
+    },
+    {
+      "attribute_id": "119",
+      "label": "Address Details",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "7",
+      "col": "1"
+    },
+    {
+      "attribute_id": "104",
+      "label": "Address",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "8",
+      "col": "1"
+    },
+    {
+      "attribute_id": "82",
+      "label": "PIN Code",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "8",
+      "col": "2"
+    },
+    {
+      "attribute_id": "396",
+      "label": "District",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "9",
+      "col": "1"
+    },
+    {
+      "attribute_id": "223",
+      "label": "Income Details",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "10",
+      "col": "1"
+    },
+    {
+      "attribute_id": "126",
+      "label": "Details of Business or service",
+      "input_type": "search",
+      "data_type": "Search",
+      "row": "11",
+      "col": "1"
+    },
+    {
+      "attribute_id": "105",
+      "label": "Reason for application",
+      "input_type": "Data List",
+      "data_type": "Charactar",
+      "row": "11",
+      "col": "2"
+    },
+    {
+      "attribute_id": "128",
+      "label": "Annual Income",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "12",
+      "col": "1"
+    },
+    {
+      "attribute_id": "130",
+      "label": "Average Income For Last 3 Years",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "12",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8384",
+      "label": "I, hereby give my consent to automatic filing of a complaint/Appeal on my behalf before the Competent Officer under Rule 6 of the Lok Seva Guarantee Rules, 2011, in the event that the applied service is not delivered within the stipulated time.",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "13",
+      "col": "1"
+    }
+  ],
+  "downloaded_pdfs": [
+    {
+      "source_url": "https://sewasetu.cgstate.gov.in/resources/edistrict/user-manual/new/6.pdf",
+      "type": "user_manual",
+      "local_path": "scraped_data/pdfs/6_en_6.pdf"
+    }
+  ],
+  "combined_manual_text_path": "scraped_data/extracted_text/combined_manual_6_en.txt"
+}

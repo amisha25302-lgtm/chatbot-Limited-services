@@ -1,0 +1,58 @@
+==================================================
+SERVICE DETAILS MANUAL: Chief Minister Employment Generation Programme (CMEGP)
+Service ID: 337
+Language: EN
+Department: Rural Industry Department
+Time Limit / SLA: 45 Days
+Contact Details: Sewa Setu Kendra
+Kiosk Fee: 30.0
+Online Fee: 30.0
+Where to Apply: 
+Raw Fees Text: Where to Apply? Sewa Setu Kendra : ₹30.0 Online : ₹30.0
+==================================================
+
+REQUIRED DOCUMENTS:
+- SNo 1: Residential Proof (Mandatory: Yes)
+  * Supporting Document 1: Domicile Certificate
+- SNo 2: Caste Proof (Mandatory: No)
+  * Supporting Document 1: Caste Certificate
+- SNo 3: Affidavit (Mandatory: Yes)
+  * Supporting Document 1: Affidavit [Format: https://sewasetu.cgstate.gov.in/resources/docFormat/24806.pdf]
+- SNo 4: Educational Certificate (Mandatory: Yes)
+  * Supporting Document 1: Educational Certificate
+- SNo 5: Age Proof Document (Mandatory: Yes)
+  * Supporting Document 1: Any Relevant Document
+- SNo 6: Aadhaar Card (Mandatory: Yes)
+  * Supporting Document 1: Aadhaar Card
+- SNo 7: Industry Registration (Mandatory: Yes)
+  * Supporting Document 1: Udyam / Trade License
+- SNo 8: Project Report / Dpr (Mandatory: Yes)
+  * Supporting Document 1: Project Report/Dpr
+- SNo 9: Bank Passbook Front Page (Mandatory: Yes)
+  * Supporting Document 1: Bank Passbook Front Page
+- SNo 10: Passport Size Photo (Mandatory: Yes)
+  * Supporting Document 1: Passport Size Photo
+- SNo 11: Gram Panchayat Noc (Mandatory: Yes)
+  * Supporting Document 1: Gram Panchayat Noc [Format: https://sewasetu.cgstate.gov.in/resources/docFormat/24803.pdf]
+- SNo 12: Land Ownership Proof / Lease Deed/ Rent Agreement (Mandatory: Yes)
+  * Supporting Document 1: Land Ownership Proof / Lease Deed/ Rent Agreement
+
+APPLICATION FORM FIELDS:
+- Field: Father’s Name [Type: text, Data: Alfa Numeric] (Row: 1, Col: 1)
+- Field: Husband Name [Type: text, Data: Charactar] (Row: 1, Col: 2)
+- Field: Date of Birth [Type: date, Data: Date] (Row: 2, Col: 1)
+- Field: Loan Amount (Capital Expenditure + Working Capital) [Type: text, Data: Alfa Numeric] (Row: 2, Col: 2)
+- Field: Gender [Type: drop down, Data: Charactar] (Row: 3, Col: 1)
+- Field: Social Category [Type: drop down, Data: Alfa Numeric] (Row: 3, Col: 2)
+- Field: Special Category [Type: drop down, Data: Alfa Numeric] (Row: 4, Col: 1)
+- Field: Educational Qualification [Type: Data List, Data: Search] (Row: 4, Col: 2)
+- Field: Residential Address [Type: textarea, Data: Charactar] (Row: 5, Col: 1)
+- Field: Proposed Unit Location Address [Type: textarea, Data: Alfa Numeric] (Row: 5, Col: 2)
+- Field: Type of Project [Type: drop down, Data: Alfa Numeric] (Row: 6, Col: 1)
+- Field: Name Of Proposed Unit [Type: text, Data: Alfa Numeric] (Row: 6, Col: 2)
+- Field: Means of Finance [Type: drop down, Data: Alfa Numeric] (Row: 7, Col: 1)
+- Field: PAN Card [Type: text, Data: Charactar] (Row: 7, Col: 2)
+- Field: Name of Financing Bank [Type: drop down, Data: Alfa Numeric] (Row: 8, Col: 1)
+- Field: Branch Name [Type: drop down, Data: Alfa Numeric] (Row: 8, Col: 2)
+- Field: Branch IFSC Code [Type: text, Data: Alfa Numeric] (Row: 9, Col: 1)
+- Field: Bank Address [Type: textarea, Data: Charactar] (Row: 9, Col: 2)
