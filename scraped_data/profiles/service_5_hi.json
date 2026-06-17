@@ -1,0 +1,551 @@
+{
+  "service_id": "5",
+  "language": "hi",
+  "name": "अन्य पिछड़ा वर्ग प्रमाण पत्र",
+  "department": "राजस्व एवं आपदा प्रबंधन विभाग",
+  "category": "",
+  "sla": "",
+  "details_link": "https://sewasetu.cgstate.gov.in/instractionPageNew.do?serviceId=5&lang=hi",
+  "required_documents": [
+    {
+      "sno": "1",
+      "document_type": "निवास का प्रमाण",
+      "mandatory": "नहीं",
+      "supporting_documents": [
+        {
+          "name": "वार्ड सदस्य, स्थानीय विधायक / सांसद से प्रमाण पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "घर या भूमि का दस्तावेज़",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "राशन कार्ड",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "बिजली का बिल",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "मूल निवासी प्रमाण पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "जन्म प्रमाण पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "जन्म सूचना प्रपत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "पिता / अभिभावक की सेवा प्रमाण पत्र / पहचान पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "अनैच्छिक प्रवजन का आदेश",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "2",
+      "document_type": "शपथ पत्र",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "शपथ पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "3",
+      "document_type": "आय प्रमाण",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "पटवारी/सरपंच/पार्षद से प्रमाण पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "नियोक्ता का आय प्रमाण पत्र/फार्म १६",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "राशन कार्ड",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "भूमि/घर से आय",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "अन्य",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "आवेदन प्रपत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "4",
+      "document_type": "अन्य पिछड़ा वर्ग का प्रमाण",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "शैक्षणिक प्रमाण - पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "प्राथमिक स्कूल शिक्षा के प्रमाण पत्र के लिए स्थानांतरण",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "पिता का अ.पि.व. प्रमाण पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "सरपंच / पार्षद से ओबीसी प्रमाणपत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "पिता / अभिभावक की सेवा प्रमाण पत्र / पहचान पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "मिसल",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "अधिकार अभिलेख",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "जमाबंदी",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "१९३१ का जनगणना पंजी",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "1949 का नागरिक पंजी",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "दाखिल / ख़ारिज पंजी",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "असमर्थता / अनुपलब्धता का प्रमाण",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "5",
+      "document_type": "वंशावली",
+      "mandatory": "नहीं",
+      "supporting_documents": [
+        {
+          "name": "वंशावली",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "वंशावली १",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "वंशावली २",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "वंशावली ४",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "वंशावली 3",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "6",
+      "document_type": "ग्राम सभा प्रस्ताव(ग्रामीण क्षेत्र के निवासी के लिए)",
+      "mandatory": "नहीं",
+      "supporting_documents": [
+        {
+          "name": "ग्राम सभा प्रस्ताव(ग्रामीण क्षेत्र के निवासी के लिए)",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "7",
+      "document_type": "मध्यप्रदेश पुनर्गठन अधिनियम 2000(क्रमांक २६-सन २००० की धारा ६७ के अधीन छ. ग. राज्य संवर्ग आबंटन ) का प्रमाण",
+      "mandatory": "नहीं",
+      "supporting_documents": [
+        {
+          "name": "मध्यप्रदेश पुनर्गठन अधिनियम २०००(क्रमांक २६-सन २००० की धारा ६७ के अधीन छ. ग. राज्य संवर्ग आबंटन ) का प्रमाण",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    }
+  ],
+  "fees": {
+    "where_to_apply": "",
+    "kiosk_fee": "",
+    "online_fee": "",
+    "raw_text": ""
+  },
+  "contact_details": "",
+  "time_limit": "",
+  "form_fields": [
+    {
+      "attribute_id": "76",
+      "label": "सामान्य विवरण",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "1",
+      "col": "1"
+    },
+    {
+      "attribute_id": "78",
+      "label": "हितग्राही के अभिभावक का प्रकार",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "2",
+      "col": "1"
+    },
+    {
+      "attribute_id": "79",
+      "label": "हितग्राही के अभिभावक का नाम",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "2",
+      "col": "2"
+    },
+    {
+      "attribute_id": "1128",
+      "label": "हितग्राही के अभिभावक का प्रकार अंग्रेजी में",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "3",
+      "col": "1"
+    },
+    {
+      "attribute_id": "1129",
+      "label": "हितग्राही के अभिभावक का नाम अंग्रेजी में",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "3",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8",
+      "label": "लिंग",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "4",
+      "col": "1"
+    },
+    {
+      "attribute_id": "92",
+      "label": "वैवाहिक स्थिति",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "4",
+      "col": "2"
+    },
+    {
+      "attribute_id": "7",
+      "label": "जन्म तिथि",
+      "input_type": "date",
+      "data_type": "Date",
+      "row": "5",
+      "col": "1"
+    },
+    {
+      "attribute_id": "125",
+      "label": "आवेदक से सम्बन्ध",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "5",
+      "col": "2"
+    },
+    {
+      "attribute_id": "437",
+      "label": "जाति",
+      "input_type": "search",
+      "data_type": "Search",
+      "row": "6",
+      "col": "1"
+    },
+    {
+      "attribute_id": "98",
+      "label": "श्रेणी",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "6",
+      "col": "2"
+    },
+    {
+      "attribute_id": "1132",
+      "label": "जाति अंग्रेजी में",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "7",
+      "col": "1"
+    },
+    {
+      "attribute_id": "1131",
+      "label": "श्रेणी अंग्रेजी में",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "7",
+      "col": "2"
+    },
+    {
+      "attribute_id": "100",
+      "label": "वर्ग का क्रमांक",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "8",
+      "col": "1"
+    },
+    {
+      "attribute_id": "1127",
+      "label": "हितग्राही का नाम अंग्रेजी में",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "8",
+      "col": "2"
+    },
+    {
+      "attribute_id": "148",
+      "label": "आवेदक का वर्तमान पता",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "9",
+      "col": "1"
+    },
+    {
+      "attribute_id": "104",
+      "label": "पता",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "10",
+      "col": "1"
+    },
+    {
+      "attribute_id": "82",
+      "label": "पिन कोड",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "10",
+      "col": "2"
+    },
+    {
+      "attribute_id": "107",
+      "label": "पोस्ट बॉक्स नंबर",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "11",
+      "col": "1"
+    },
+    {
+      "attribute_id": "196",
+      "label": "जिला",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "11",
+      "col": "2"
+    },
+    {
+      "attribute_id": "1130",
+      "label": "पता अंग्रेजी में",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "12",
+      "col": "1"
+    },
+    {
+      "attribute_id": "678",
+      "label": "क्या वर्तमान पता और स्थायी पता एक है",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "12",
+      "col": "2"
+    },
+    {
+      "attribute_id": "102",
+      "label": "आवेदक का स्थाई पता",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "13",
+      "col": "1"
+    },
+    {
+      "attribute_id": "198",
+      "label": "पता",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "14",
+      "col": "1"
+    },
+    {
+      "attribute_id": "202",
+      "label": "पिन कोड",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "14",
+      "col": "2"
+    },
+    {
+      "attribute_id": "206",
+      "label": "पोस्ट बॉक्स नंबर",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "15",
+      "col": "1"
+    },
+    {
+      "attribute_id": "197",
+      "label": "जिला",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "15",
+      "col": "2"
+    },
+    {
+      "attribute_id": "207",
+      "label": "पुलिस थाना",
+      "input_type": "search",
+      "data_type": "Search",
+      "row": "16",
+      "col": "1"
+    },
+    {
+      "attribute_id": "150",
+      "label": "२६ दिसंबर १९८४ को या इससे पहले का पता",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "17",
+      "col": "1"
+    },
+    {
+      "attribute_id": "111",
+      "label": "ग्राम या नगर",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "18",
+      "col": "1"
+    },
+    {
+      "attribute_id": "113",
+      "label": "पटवारी हल्का नंबर",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "18",
+      "col": "2"
+    },
+    {
+      "attribute_id": "114",
+      "label": "तहसील",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "19",
+      "col": "1"
+    },
+    {
+      "attribute_id": "31",
+      "label": "जिला",
+      "input_type": "Data List",
+      "data_type": "Charactar",
+      "row": "19",
+      "col": "2"
+    },
+    {
+      "attribute_id": "115",
+      "label": "इस समय परिवार के मुखिया का नाम",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "20",
+      "col": "1"
+    },
+    {
+      "attribute_id": "129",
+      "label": "आवेदक का परिवार के मुखिया से सम्बन्ध",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "20",
+      "col": "2"
+    },
+    {
+      "attribute_id": "152",
+      "label": "आवेदक या उसके पिता या माता या पालक का २६ दिसंबर १९८४ से अब तक का पता का विवरण",
+      "input_type": "section lebel",
+      "data_type": "Alfa Numeric",
+      "row": "21",
+      "col": "1"
+    },
+    {
+      "attribute_id": "219",
+      "label": "आवेदक के अभिभावक के पते की जानकारी",
+      "input_type": "fieldset",
+      "data_type": "Alfa Numeric",
+      "row": "22",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8384",
+      "label": "मैं सहमति देता/देती हूँ कि यदि निर्धारित समय सीमा के भीतर आवेदनित लोक सेवा प्रदान नहीं की जाती है, तो मेरी ओर से सक्षम अधिकारी के समक्ष लोक सेवा गारंटी नियम, 2011 के नियम 6 के अंतर्गत स्वतः शिकायत/अपील दर्ज की जाए।",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "22",
+      "col": "2"
+    }
+  ],
+  "downloaded_pdfs": [],
+  "combined_manual_text_path": "scraped_data/extracted_text/combined_manual_5_hi.txt"
+}

@@ -1,0 +1,89 @@
+==================================================
+SERVICE DETAILS MANUAL: नाम परिवर्तन के लिए साधारण राजपत्र अधिसूचना
+Service ID: 201
+Language: HI
+Department: शासकीय मुद्रण एवं लेखन सामग्री विभाग
+Time Limit / SLA: 
+Contact Details: 
+Kiosk Fee: 
+Online Fee: 
+Where to Apply: 
+Raw Fees Text: 
+==================================================
+
+REQUIRED DOCUMENTS:
+- SNo 1: 430 रू. (चार सौ तीस रुपये मात्र) का भारतीय स्टेट बैंक की किसी भी शाखा से चालान की मूल प्रति।(हेड – 0058 – मुद्रण तथा लेखन सामग्री, 102 – राजपत्र आदि के प्रकाशन एवं अन्य प्रातियां) (Mandatory: हाँ)
+  * Supporting Document 1: 430 रू. (चार सौ तीस रुपये मात्र) का भारतीय स्टेट बैंक की किसी भी शाखा से चालान की मूल प्रति।(हेड – 0058 – मुद्रण तथा लेखन सामग्री, 102 – राजपत्र आदि के प्रकाशन एवं अन्य प्रातियां)
+- SNo 2: 50 रू. के नॉन ज्यूडिशियल स्टाम्प पेपर में प्ररूप-तीन में नोटराइज्ड शपथ पत्र (आवेदन की तारीख से तीन माह से अधिक पुराना ना हो)। (Mandatory: हाँ)
+  * Supporting Document 1: 50 रू. के नॉन ज्यूडिशियल स्टाम्प पेपर में प्ररूप-तीन में नोटराइज्ड शपथ पत्र (आवेदन की तारीख से तीन माह से अधिक पुराना ना हो)। [Format: https://sewasetu.cgstate.gov.in/resources/docFormat/23842.pdf]
+- SNo 3: स्थानीय समाचार पत्र में नाम परिवर्तन के प्ररूप-एक में सूचना के प्रकाशन की मूल प्रति (आवेदन की तारीख से तीन माह से अधिक पुराना ना हो)। (Mandatory: हाँ)
+  * Supporting Document 1: स्थानीय समाचार पत्र में नाम परिवर्तन के प्ररूप-एक में सूचना के प्रकाशन की मूल प्रति (आवेदन की तारीख से तीन माह से अधिक पुराना ना हो)। [Format: https://sewasetu.cgstate.gov.in/resources/docFormat/23843.pdf]
+- SNo 4: दो गवाहों के नाम, हस्ताक्षर एवं पते के साथ प्ररूप-दो में विलिख प्ररूप की मूल प्रति। (Mandatory: हाँ)
+  * Supporting Document 1: अन्य दस्तावेज़ २
+  * Supporting Document 2: अन्य दस्तावेज़ १ [Format: https://sewasetu.cgstate.gov.in/resources/docFormat/23848.pdf]
+- SNo 5: पुराना नाम और नया नाम सत्यापन दस्तावेज़ (Mandatory: हाँ)
+  * Supporting Document 1: पुराना नाम और नया नाम सत्यापन दस्तावेज़
+- SNo 6: सभी प्रकार के दस्तावेज/पहचान पत्र/आई.डी., जिनका शपथ पत्र में उल्लेख किया गया हो। (Mandatory: हाँ)
+  * Supporting Document 1: सभी प्रकार के दस्तावेज/पहचान पत्र/आई.डी., जिनका शपथ पत्र में उल्लेख किया गया हो।
+- SNo 7: शासन द्वारा जारी आवेदक का पहचान पत्र (Mandatory: हाँ)
+  * Supporting Document 1: शासन द्वारा जारी आवेदक का पहचान पत्र
+- SNo 8: शासन द्वारा जारी गवाहों का पहचान पत्र (Mandatory: हाँ)
+  * Supporting Document 1: शासन द्वारा जारी गवाहों का पहचान पत्र
+
+APPLICATION FORM FIELDS:
+- Field: आवेदक विवरण [Type: section lebel, Data: Charactar] (Row: 1, Col: 1)
+- Field: अधिसूचना प्रकाशन की भाषा [Type: drop down, Data: Alfa Numeric] (Row: 2, Col: 1)
+- Field: परिवर्तन प्रकार [Type: drop down, Data: Alfa Numeric] (Row: 3, Col: 1)
+- Field: अभिभावक का हितग्राही से संबंध [Type: drop down, Data: Alfa Numeric] (Row: 3, Col: 1)
+- Field: हितग्राही का पूरा नाम हिन्दी में [Type: text, Data: Alfa Numeric] (Row: 4, Col: 1)
+- Field: हितग्राही का पूरा नाम अंग्रेजी में [Type: text, Data: Alfa Numeric] (Row: 4, Col: 2)
+- Field: चालान नंबर [Type: text, Data: Alfa Numeric] (Row: 5, Col: 1)
+- Field: जन्म तिथि [Type: date, Data: Date] (Row: 6, Col: 1)
+- Field: लिंग [Type: drop down, Data: Alfa Numeric] (Row: 6, Col: 2)
+- Field: पिता/माता/पति का नाम हिंदी में [Type: text, Data: Alfa Numeric] (Row: 7, Col: 1)
+- Field: पिता/माता/पति का नाम अंग्रेजी में [Type: text, Data: Alfa Numeric] (Row: 7, Col: 2)
+- Field: परिवर्तन किसके लिए है [Type: drop down, Data: Alfa Numeric] (Row: 8, Col: 1)
+- Field: पत्नी/पति का नाम हिन्दी में [Type: text, Data: Alfa Numeric] (Row: 9, Col: 1)
+- Field: पत्नी/पति का नाम अंग्रेजी में [Type: text, Data: Alfa Numeric] (Row: 9, Col: 2)
+- Field: पुत्र / पुत्री का नाम (बदलाव से पहले) हिन्दी में [Type: text, Data: Alfa Numeric] (Row: 12, Col: 1)
+- Field: पुत्र / पुत्री का नाम (बदलाव से पहले) अंग्रेजी में [Type: text, Data: Charactar] (Row: 12, Col: 2)
+- Field: पुत्र / पुत्री का नाम (बदलाव के बाद) हिंदी में [Type: text, Data: Alfa Numeric] (Row: 13, Col: 1)
+- Field: पुत्र / पुत्री का नाम (बदलाव के बाद) अंग्रेजी में [Type: text, Data: Alfa Numeric] (Row: 13, Col: 2)
+- Field: हितग्राही का पूरा नाम (बदलाव के बाद) हिन्दी में [Type: text, Data: Alfa Numeric] (Row: 14, Col: 1)
+- Field: हितग्राही का पूरा नाम (बदलाव के बाद) अंग्रेजी में [Type: text, Data: Alfa Numeric] (Row: 14, Col: 2)
+- Field: नाम परिवर्तन संबंधित दस्तावेजों का विवरण [Type: textarea, Data: Alfa Numeric] (Row: 17, Col: 1)
+- Field: संपर्क जानकारी [Type: section lebel, Data: Alfa Numeric] (Row: 18, Col: 1)
+- Field: आवासीय पता [Type: textarea, Data: Charactar] (Row: 19, Col: 1)
+- Field: जिला [Type: drop down, Data: Alfa Numeric] (Row: 19, Col: 2)
+- Field: गाँव /शहर [Type: text, Data: Alfa Numeric] (Row: 20, Col: 1)
+- Field: तहसील [Type: drop down, Data: Alfa Numeric] (Row: 20, Col: 2)
+- Field: पिन कोड [Type: text, Data: Alfa Numeric] (Row: 21, Col: 1)
+
+
+==================================================
+EXTRACTED PDF DOCUMENT TEXTS
+==================================================
+
+--- [Document: 201_hi_23842.pdf (DOCUMENT_FORMAT)] ---
+--- Page 1 ---
+Affix Photo
+
+--- Page 2 ---
+52 (4) 
+ 
+ 
+फोटो संलग्न करें
+
+--- [Document: 201_hi_23843.pdf (DOCUMENT_FORMAT)] ---
+--- Page 1 ---
+52 (7)
+
+--- Page 2 ---
+52 (2)
+
+--- [Document: 201_hi_23848.pdf (DOCUMENT_FORMAT)] ---
+--- Page 1 ---
+52 (8)
+
+--- Page 2 ---
+52 (3)

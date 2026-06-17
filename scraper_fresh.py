@@ -11,7 +11,7 @@ from pypdf import PdfReader
 sys.stdout.reconfigure(encoding='utf-8')
 
 # Configuration
-SERVICE_IDS = [354, 24, 337, 7, 6, 3]
+SERVICE_IDS = [354, 24, 337, 7, 6, 3, 4, 5, 201]
 LANGUAGES = ["en", "hi"]
 BASE_URL = "https://sewasetu.cgstate.gov.in"
 API_URL = "https://api-ed.cgstate.gov.in/api/application-management/edistrict2/applicationFormPreviewByServiceId"

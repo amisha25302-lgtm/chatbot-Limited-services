@@ -1,0 +1,113 @@
+==================================================
+SERVICE DETAILS MANUAL: Ordinary Gazette Notification for Name Change
+Service ID: 201
+Language: EN
+Department: Government Printing and Stationery Department
+Time Limit / SLA: 29 Days
+Contact Details: Sewa Setu Kendra
+Kiosk Fee: 30.0
+Online Fee: 30.0
+Where to Apply: 
+Raw Fees Text: Where to Apply? Sewa Setu Kendra : ₹30.0 Online : ₹30.0
+==================================================
+
+REQUIRED DOCUMENTS:
+- SNo 1: The Original Copy Of A Challan Of ₹ 430/- From Any Branch Of The State Bank Of India. (Head – 0058 Printing And Stationery, 102 Publication Of Gazette, Etc., And Other Receipts). (Mandatory: Yes)
+  * Supporting Document 1: The Original Copy Of A Challan Of ₹ 430/- From Any Branch Of The State Bank Of India. (Head – 0058 Printing And Stationery, 102 Publication Of Gazette, Etc., And Other Receipts).
+- SNo 2: A Notarized Affidavit In Form-Iii On A ₹ 50 Non-Judicial Stamp Paper(Should Not Be More Than 03 Months Old From The Date Of Application). (Mandatory: Yes)
+  * Supporting Document 1: A Notarized Affidavit In Form-Iii On A ₹ 50 Non-Judicial Stamp Paper(Should Not Be More Than 03 Months Old From The Date Of Application). [Format: https://sewasetu.cgstate.gov.in/resources/docFormat/23842.pdf]
+- SNo 3: The Original Copy Of The Publication Of The Notice For Name Change In Form-I In A Local Newspaper(Should Not Be More Than 03 Months Old From The Date Of Application). (Mandatory: Yes)
+  * Supporting Document 1: The Original Copy Of The Publication Of The Notice For Name Change In Form-I In A Local Newspaper (Should Not Be More Than 03 Months Old From The Date Of Application). [Format: https://sewasetu.cgstate.gov.in/resources/docFormat/23843.pdf]
+- SNo 4: The Original Copy Of The Deed Form In Form-Ii With The Names, Signatures And Addresses Of 02 Witnesses. (Mandatory: Yes)
+  * Supporting Document 1: Other Document 2
+  * Supporting Document 2: Other Document 1 [Format: https://sewasetu.cgstate.gov.in/resources/docFormat/23848.pdf]
+- SNo 5: Old Name & New Name Verification Document (Mandatory: Yes)
+  * Supporting Document 1: Old Name & New Name Verification Document
+- SNo 6: All Types Of Documents/Identity Cards/Ids That Have Been Mentioned In The Affidavit. (Mandatory: Yes)
+  * Supporting Document 1: All Types Of Documents/Identity Cards/Ids That Have Been Mentioned In The Affidavit.
+- SNo 7: Identity card of the applicant issued by the government (Mandatory: Yes)
+  * Supporting Document 1: Identity card of the applicant issued by the government
+- SNo 8: Identity card of witnesses issued by the government (Mandatory: Yes)
+  * Supporting Document 1: Identity card of witnesses issued by the government
+
+APPLICATION FORM FIELDS:
+- Field: Applicant Details [Type: section lebel, Data: Charactar] (Row: 1, Col: 1)
+- Field: Language of publication of notification [Type: drop down, Data: Alfa Numeric] (Row: 2, Col: 1)
+- Field: Change Type [Type: drop down, Data: Alfa Numeric] (Row: 3, Col: 1)
+- Field: Relationship of guardian to beneficiary [Type: drop down, Data: Alfa Numeric] (Row: 3, Col: 1)
+- Field: Full Name In Hindi [Type: text, Data: Alfa Numeric] (Row: 4, Col: 1)
+- Field: Full Name (Before Change) In English [Type: text, Data: Alfa Numeric] (Row: 4, Col: 2)
+- Field: Challn Number [Type: text, Data: Alfa Numeric] (Row: 5, Col: 1)
+- Field: Date of Birth [Type: date, Data: Date] (Row: 6, Col: 1)
+- Field: Gender [Type: drop down, Data: Alfa Numeric] (Row: 6, Col: 2)
+- Field: Father/Mother/Husband Name In Hindi [Type: text, Data: Alfa Numeric] (Row: 7, Col: 1)
+- Field: Father/Mother/Husband Name In English [Type: text, Data: Alfa Numeric] (Row: 7, Col: 2)
+- Field: Change applicable to [Type: drop down, Data: Alfa Numeric] (Row: 8, Col: 1)
+- Field: Wife/Husband Name In Hindi [Type: text, Data: Alfa Numeric] (Row: 9, Col: 1)
+- Field: Wife/Husband Name In English [Type: text, Data: Alfa Numeric] (Row: 9, Col: 2)
+- Field: Son/Daughter Name (before change) in Hindi [Type: text, Data: Alfa Numeric] (Row: 12, Col: 1)
+- Field: Son/Daughter Name (Before Change) In English [Type: text, Data: Charactar] (Row: 12, Col: 2)
+- Field: Son/Daughter Name (after change) in Hindi [Type: text, Data: Alfa Numeric] (Row: 13, Col: 1)
+- Field: Son/Daughter Name (after change) in English [Type: text, Data: Alfa Numeric] (Row: 13, Col: 2)
+- Field: Full Name (After Change) In Hindi [Type: text, Data: Alfa Numeric] (Row: 14, Col: 1)
+- Field: Full Name (After Change) In English [Type: text, Data: Alfa Numeric] (Row: 14, Col: 2)
+- Field: Details of documents related to name change [Type: textarea, Data: Alfa Numeric] (Row: 17, Col: 1)
+- Field: Contact Information [Type: section lebel, Data: Alfa Numeric] (Row: 18, Col: 1)
+- Field: Residential Address [Type: textarea, Data: Charactar] (Row: 19, Col: 1)
+- Field: District [Type: drop down, Data: Alfa Numeric] (Row: 19, Col: 2)
+- Field: Village/City [Type: text, Data: Alfa Numeric] (Row: 20, Col: 1)
+- Field: Tehsil [Type: drop down, Data: Alfa Numeric] (Row: 20, Col: 2)
+- Field: PIN Code [Type: text, Data: Alfa Numeric] (Row: 21, Col: 1)
+
+
+==================================================
+EXTRACTED PDF DOCUMENT TEXTS
+==================================================
+
+--- [Document: 201_en_23842.pdf (DOCUMENT_FORMAT)] ---
+--- Page 1 ---
+Affix Photo
+
+--- Page 2 ---
+52 (4) 
+ 
+ 
+फोटो संलग्न करें
+
+--- [Document: 201_en_23843.pdf (DOCUMENT_FORMAT)] ---
+--- Page 1 ---
+52 (7)
+
+--- Page 2 ---
+52 (2)
+
+--- [Document: 201_en_23848.pdf (DOCUMENT_FORMAT)] ---
+--- Page 1 ---
+52 (8)
+
+--- Page 2 ---
+52 (3)
+
+--- [Document: 201_en_23842.pdf (DOCUMENT_FORMAT)] ---
+--- Page 1 ---
+Affix Photo
+
+--- Page 2 ---
+52 (4) 
+ 
+ 
+फोटो संलग्न करें
+
+--- [Document: 201_en_23843.pdf (DOCUMENT_FORMAT)] ---
+--- Page 1 ---
+52 (7)
+
+--- Page 2 ---
+52 (2)
+
+--- [Document: 201_en_23848.pdf (DOCUMENT_FORMAT)] ---
+--- Page 1 ---
+52 (8)
+
+--- Page 2 ---
+52 (3)

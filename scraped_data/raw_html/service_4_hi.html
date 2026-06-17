@@ -1,0 +1,2846 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+    function loaderShow(flag){
+
+        const loader = document.getElementById("loader");
+
+        if(flag === 1){
+            loader.style.display = "flex";   // show loader
+        }else{
+            loader.style.display = "none";   // hide loader
+        }
+
+    }
+</script>
+
+<style>
+    .loader-container{
+        position: fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background: rgba(255,255,255,0.7);
+        display:none;
+        justify-content:center;
+        align-items:center;
+        z-index:9999;
+    }
+
+    .spinner{
+        width:60px;
+        height:60px;
+        border:6px solid #ddd;
+        border-top:6px solid #3498db;
+        border-radius:50%;
+        animation: spin 1s linear infinite;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            top: 0px;
+    }
+
+    @keyframes spin{
+        0%{ transform: rotate(0deg); }
+        100%{ transform: rotate(360deg); }
+    }
+</style>
+<!--
+<style>
+
+
+/* Loader Full Screen */
+#preloader{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#ffffff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    z-index:99999;
+    transition:opacity 0.5s ease;
+}
+
+/* GIF Image */
+#preloader img{
+    width:140px;
+    height:140px;
+    object-fit:contain;
+}
+
+/* Text */
+.loading-text{
+    margin-top:15px;
+    font-size:18px;
+    color:#333;
+    font-weight:bold;
+}
+
+/* Hide Smoothly */
+#preloader.hide{
+    opacity:0;
+    visibility:hidden;
+    display:none;
+}
+
+/* Main Content */
+.content{
+    padding:50px;
+    text-align:center;
+}
+</style>
+
+
+<div id="preloader">
+     <img src="/resources/homenewui/images/edistrict_loader_T.gif" alt="Loading..." >
+    <div class="loading-text">लोड हो रहा है</div>
+</div>
+
+<script>
+window.addEventListener("load", function () {
+    setTimeout(function () {
+        document.getElementById("preloader").classList.add("hide");
+    }, 100);   // Half second = 100ms
+});
+</script>-->
+
+
+<!DOCTYPE html  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html translate="no">
+
+<head>
+    <meta charset="utf-8" content="">
+   <link rel="icon" type="image/png" href="/resources/homenewui/images/new-logo-hi.png">
+    
+    
+
+    <meta name="description" content="Apply for Chhattisgarh government services online with the sewasetu portal. Fast, secure applications, real-time status tracking, and easy certificate downloads.">
+    <meta name="google" content="notranslate">
+    <!-- Keywords -->
+    <meta name="keywords" content="sewasetu, cg sewasetu, sewasetu cg, sewasetu Chhattisgarh, government services online, Chhattisgarh certificates, online applications, CG Sewa Setu , Domicile Certificate,Income Certificate,Caste certificates,Birth certificates,Death certificates,Guarantee Adhiniyam,License,Solution One Day,Citizen Services,Citizen Registration,Schemes,Tatkal,LSk,KIOSK,CM,Janseva,Daily,Dashboard,Permits,Revenue,Pension,Agriculture">
+
+    <!-- Robots -->
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://sewasetu.cgstate.gov.in/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="sewasetu Chhattisgarh – Online Services Portal">
+    <meta property="og:description" content="Fast, secure online services for citizens of Chhattisgarh. Apply, track status, and download certificates.">
+    <meta property="og:url" content="https://sewasetu.cgstate.gov.in/">
+    <meta property="og:image" content="https://sewasetu.cgstate.gov.in/resources/edistrict/images/logo.png">
+    <meta property="og:site_name" content="sewasetu Chhattisgarh">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://x.com/chipscggov/">
+    <meta name="twitter:title" content="sewasetu Chhattisgarh – Online Services Portal">
+    <meta name="twitter:description" content="Fast, secure online services for citizens of Chhattisgarh.">
+    <meta name="twitter:image" content="https://sewasetu.cgstate.gov.in/resources/edistrict/images/logo.png">
+
+    <!-- Facebook Card -->
+    <meta name="facebook:card" content="summary_large_image">
+    <meta name="facebook:url" content="https://www.facebook.com/CHiPSCgGov/">
+    <meta name="facebook:title" content="sewasetu Chhattisgarh – Online Services Portal">
+    <meta name="facebook:description" content="Fast, secure online services for citizens of Chhattisgarh.">
+    <meta name="facebook:image" content="https://sewasetu.cgstate.gov.in/resources/edistrict/images/logo.png">
+
+    
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>|| सेवा सेतु ||</title>
+
+    <link href="/resources/homenewui/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/resources/homenewui/css/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="/resources/homenewui/fonts/css2.css" rel="stylesheet">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+    <script src="/resources/homenewui/js/bootstrap.bundle.js"></script>
+    
+    
+    
+    
+    
+
+    <script>
+        let appmgt = "https://api-ed.cgstate.gov.in/api/application-management/";
+        let usrmg = "https://api-ed.cgstate.gov.in/api/user-management/";
+        let admurl = "https://admin-ed.cgstate.gov.in/";
+        let wwwurl = "https://sewasetu.cgstate.gov.in/";
+        
+        
+        localStorage.setItem("APPLICATION_MANAGEMENT", appmgt)
+        localStorage.setItem("USER_MANAGEMENT", usrmg)
+        localStorage.setItem("ADMIN_URL", admurl)
+        localStorage.setItem("WWW", wwwurl)
+
+        function callDigitalLockerSSO(event) {
+            event.preventDefault()
+            let digiClientId = 'IAB95A0AEE';
+            let baseUrl = 'https://sewasetu.cgstate.gov.in/';
+            fetch("generatePkce", {
+                method: "GET",
+                headers: {
+                    "Accept": "application/json"
+                }
+            })
+                .then(function (response) {
+                    if (!response.ok) {
+                        throw new Error("Network response was not ok");
+                    }
+                    return response.json();
+                })
+                .then(function (data) {
+
+                    var codeChallenge = data.code_challenge;
+                    var codeVerifier = data.code_verifier;
+
+                    var authUrl =
+                        'https://api.digitallocker.gov.in/public/oauth2/2/authorize?' +
+                        'response_type=code' +
+                        '&state=' + encodeURIComponent(codeVerifier) +
+                        '&code_challenge=' + encodeURIComponent(codeChallenge) +
+                        '&code_challenge_method=S256' +
+                        '&client_id=' + encodeURIComponent(digiClientId) +
+                        '&redirect_uri=' + encodeURIComponent(baseUrl + 'digiLockerSSO.do');
+
+                    // Same behavior as window.open(..., '_self')
+                    window.location.href = authUrl;
+                })
+                .catch(function (error) {
+                    alert("Unable to generate PKCE values!");
+                    console.error(error);
+                });
+
+        }
+    //TODO disable inspector in browoser
+        // Disable Right Click
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        // Disable Key Shortcuts
+        document.addEventListener('keydown', function (e) {
+
+            // F12 (DevTools)
+            if (e.key === "F12") {
+                e.preventDefault();
+            }
+
+            // Ctrl + Shift + I (Inspect)
+            if (e.ctrlKey && e.shiftKey && e.key === "I") {
+                e.preventDefault();
+            }
+
+            // Ctrl + Shift + J (Console)
+            if (e.ctrlKey && e.shiftKey && e.key === "J") {
+                e.preventDefault();
+            }
+
+            // Ctrl + Shift + C (Inspect Element)
+            if (e.ctrlKey && e.shiftKey && e.key === "C") {
+                e.preventDefault();
+            }
+
+            // Ctrl + U (View Source)
+            if (e.ctrlKey && e.key === "u") {
+                e.preventDefault();
+            }
+
+            // Ctrl + S (Save Page)
+            if (e.ctrlKey && e.key === "s") {
+                e.preventDefault();
+            }
+
+        });
+
+    </script>
+    <script src="/resources/homenew/home.js"></script>
+
+</head>
+<body>
+<style>
+#floatinbtn {
+    /* position: fixed; */
+    right: 20px;
+    bottom: 30px;
+    z-index: 999;
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 5px 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+#floatinbtn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 123, 255, 0.6);
+}
+
+/* Click effect */
+#floatinbtn:active {
+    transform: scale(0.95);
+}
+
+/* Optional icon spacing (if you add icon later) */
+#floatinbtn i {
+    margin-right: 6px;
+}
+
+/* Mobile responsive */
+@media (max-width: 576px) {
+    #floatinbtn {
+        right: 15px;
+        bottom: 20px;
+        padding: 10px 18px;
+        font-size: 13px;
+    }
+}
+/*#loginBox {*/
+/*    display: none;*/
+/*}*/
+.zoom-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 8px;
+    color: #fff;
+}
+
+.zoom-controls button {
+    width: 29px;
+    height: 21px;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.zoom-controls button:hover {
+    color:#FFF;
+}
+.zoom-controls button:active {
+    transform: scale(0.9);
+}
+</style>
+<div id="loader" class="loader-container">
+    <div class="spinner"></div>
+</div>
+
+<div class="topbar">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+        <!-- Left side -->
+        <div class="" style="display: flex; align-items: center; ">
+               <input type="hidden" name="flag" id="flag" value=""/>
+                          
+
+<style>
+    .bhashini-plugin-container svg path {
+        fill: white;
+    }
+    .bhashini-dropdown {
+        position: fixed;
+        z-index: 9999 !important;
+    }
+
+    .language-link {
+        text-decoration: none;
+        color: #333;
+        cursor: pointer;
+        margin: 0 4px;
+        font-size: 14px;
+    }
+
+    .language-link.active {
+        font-weight: bold;
+        color: #0d6efd;
+    }
+
+#bhashiniContainer {
+    display: none;
+}
+
+.language-option.selected {
+    background-color: #e6f2ff;
+    font-weight: 600;
+}
+.bhashini-toast{
+display: none !important;
+}
+</style>
+
+
+
+<div class="bhashini-plugin-container"></div>
+<script src="https://translation-plugin.bhashini.co.in/v3/website_translation_utility.js"></script>
+<script>
+
+
+
+    function toggleBhashiniPlugin(lang) {
+        const pluginDiv = document.querySelector(".bhashini-plugin-container");
+        if (!pluginDiv) return;
+        if (lang === "en") {
+             pluginDiv.style.display = "block";   // ✅ enable
+            pluginDiv.classList.remove("disabled");
+
+        } else {
+            pluginDiv.style.display = "none";    // ❌ disable
+            pluginDiv.classList.add("disabled");
+        }
+
+
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const dropdown = document.getElementById("bhashiniLanguageDropdown");
+        if (!dropdown) {};
+
+        dropdown.querySelectorAll('.language-option[data-value="hi"]')
+            .forEach(option => option.remove());
+         //localStorage.setItem("preferredLanguage", "hi")
+    });
+
+
+
+
+</script>
+
+
+
+
+                           <span id="langSwitcher"></span>
+                           <span class="d-none d-md-inline">
+                           <div class="zoom-controls">
+                           <button onclick="zoomIn()">A+</button>
+                            <button onclick="zoomOut()">A-</button>
+                            <button onclick="resetZoom()">A</button>
+                           </div>
+
+                           </span>
+                             
+
+               </div>
+
+        <!-- Right side -->
+        <div>
+            <div class="social-top-ic">
+            <a href="https://www.facebook.com/CHiPSCgGov/" target="_blank"  class="local"><i class="bi bi-facebook fs-5"></i> </a>
+            <a href="https://wa.me/919203406400" target="_blank" class="local"><i class="bi bi-whatsapp fs-5"></i> </a>
+            <a href="https://twitter.com/chipscggov/" target="_blank" class="local"><i class="bi bi-twitter-x fs-5"></i> </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- STICKY HEADER WRAPPER -->
+<header class="sticky-top">
+    <!-- TOP HEADER -->
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm p-0 border-bottom">
+        <div class="container d-flex justify-content-between min-scren">
+            <a class="navbar-brand d-flex align-items-center gap-3 local" href="/home?lang=hi">
+                <span class="rounded-circle d-inline-flex align-items-center justify-content-center">
+                    
+                        
+                            <img src="/resources/homenewui/images/new-logo-hi.png"
+                                 alt="Hindi Logo" class="rounded-circle-logo">
+                        
+                        
+                    
+                </span>
+               
+
+            </a>
+            <div class="d-flex align-items-center text-end">
+                <span class="d-inline-flex align-items-center justify-content-center cmji-logo">
+                    <img src="/resources/homenewui/images/cm-img.png" alt="logo">
+                </span>
+                <span class="ms-2">
+                   <div class="fw-bold cm-info">श्री विष्णु देव साय</div>
+                          <div class="small cg-cm" >माननीय मुख्यमंत्री</div>
+
+
+                </span>
+                <!-- MOBILE TOGGLER -->
+                <button class="navbar-toggler ms-3" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- MAIN MENU BAR -->
+    <nav class="navbar navbar-expand-lg bg-blue-l shadow-sm">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center menu-color">
+                    <li class="nav-item mx-1">
+                        <a href="/home?lang=hi" class="nav-link active">होम </a>
+                    </li>
+                       <li class="nav-item mx-1 ">
+                                            <a href="MisDashboard.do?lang=hi" target="_self" class="nav-link external-remove">सांख्यिकी</a>
+                                        </li>
+                                        <li class="nav-item mx-1">
+
+                                            <a href="redirectPage1.do?pageName=about-us&lang=hi" class="nav-link">हमारे बारे में</a>
+                                        </li>
+                                        <li class="nav-item mx-1">
+
+                                            <a href="ServiceListHomeNew.do?lang=hi&flag=1&dataId=100" class="nav-link">सेवाओं की जानकारी</a>
+                                        </li>
+
+                                        <li class="nav-item mx-1">
+
+                                           <a href="redirectPage1.do?pageName=district-link-web-page&lang=hi"
+                                                                                        class="nav-link ">जिलों की सूची</a>
+                                        </li>
+
+
+                                    
+                                    <li class="nav-item mx-1">
+
+
+                                                <a href="distMapFilter.do?lang=hi" class="nav-link ">निकटतम कियोस्क</a>
+
+                                    </li>
+
+                    <li class="nav-item mx-1">
+
+
+                        <a href="ticketingForm.do?lang=hi"  class="nav-link ">शिकायत/सूचना</a>
+
+                    </li>
+                    <li class="nav-item mx-1">
+
+
+                        <a class="dropdown-item" href="redirectPage1.do?pageName=contact&lang=hi">संपर्क</a>
+
+                    </li>
+                                        
+
+                </ul>
+            </div>
+           
+  
+        </div>
+    </nav>
+
+</header>
+<script>
+function toggleLoginAndScroll() {
+    let path = window.location.pathname;
+
+    // 1. Redirect if not home
+    if (!path.includes("home")) {
+        window.location.href = "home";
+        return;
+    }
+
+    let isAtTop = window.scrollY === 0;
+
+    // 2. If NOT at top → scroll to top
+    if (!isAtTop) {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+        // scroll hone ke baad show kare
+        setTimeout(() => {
+            toggleLoginSection();
+        }, 400);
+
+    } else {
+        // 3. Already top pe ho → toggle directly
+        toggleLoginSection();
+    }
+}
+
+// 🔁 Toggle function
+function toggleLoginSection() {
+    let loginBox = document.getElementById("loginBox"); // id same rakho
+
+    if (loginBox) {
+        if (loginBox.style.display === "none" || loginBox.style.display === "") {
+            loginBox.style.display = "block";
+        } else {
+            loginBox.style.display = "none";
+        }
+    }
+}
+</script>
+
+<script>
+let zoomLevel = 100;
+
+function zoomIn() {
+    zoomLevel += 10;
+    if (zoomLevel > 200) zoomLevel = 200; // max limit
+    applyZoom();
+}
+
+function zoomOut() {
+    zoomLevel -= 10;
+    if (zoomLevel < 50) zoomLevel = 50; // min limit
+    applyZoom();
+}
+
+function resetZoom() {
+    zoomLevel = 100; // default
+    applyZoom();
+}
+
+function applyZoom() {
+    document.body.style.zoom = zoomLevel + "%";
+}
+</script>
+
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        <
+        /
+        head >
+
+        <
+        style >
+        .card-header {
+            padding: 0px 14px;
+            font-size: 14pt;
+            border-bottom: 40px solid #1351a8;
+            border-right: 55px solid transparent;
+            height: 0px;
+            color: #f3f3f3;
+            width: 400px;
+            font-weight: 100;
+            background: none;
+            line-height: 2;
+        }
+
+        .language-select {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .language-select label {
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .language-select input[type="radio"] {
+            margin-right: 5px;
+            accent-color: #007bff;
+        }
+    </style>
+<body>
+<div class="container">
+    <!-- Header -->
+    <div class="col-md-12">
+        <div class="service-header">
+                <span class="rounded-circle d-inline-flex align-items-center justify-content-center">
+              <img src="/resources/homenewui/images/cg.png" alt="logo" class="rounded-circle-logo-lsk">
+            </span>
+            <div class="service-title">
+                <h4 class="fw-bold">अनुसूचित जाति / अनुसूचित जनजाति  प्रमाण पत्र</h4>
+                <span class="text-muted">राजस्व एवं आपदा प्रबंधन विभाग</span>
+            </div>
+
+        </div>
+    </div>
+
+
+    
+
+
+    <div class="row mt-3">
+        <div class="col-md-8 col-xs-12">
+            <div class="main-boxtag">
+                
+                
+
+                    <!-- Left Section -->
+
+                    <!-- आवश्यक दस्तावेज -->
+                    <div class="infonic-doc">📑 परिचय</div>
+                    <div class="main-info-b">
+
+                            
+                            <!DOCTYPE html>
+ <html lang="hi">
+ 
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>अनुसूचित जाति / अनुसूचित जनजाति प्रमाण पत्र</title>
+   <style>
+ .main-in{
+ padding :10px;
+ }
+ </style>
+ </head>
+ 
+ <body>
+ 
+     <div class="main-in">       
+ 
+         <p>
+           अनुसूचित जाति (एससी) या अनुसूचित जनजाति (एसटी) वर्ग के लिए सरकार द्वारा शिक्षा, रोज़गार, स्वास्थ्य, छात्रवृत्ति से संबंधित एवं अन्य कई कल्याणकारी योजनाएँ चलाई जाती हैं। शासन की सुविधाओं और योजनाओं का लाभ उठाने के लिए अनुसूचित जाति (एससी) या अनुसूचित जनजाति (एसटी) प्रमाणपत्र प्रस्तुत करना होता है। अब छत्तीसगढ़ में सेवा सेतु पोर्टल के माध्यम से यह प्रमाण पत्र आसानी से समय सीमा में बनवाया जा सकता है।
+         </p>
+ 
+         <p>
+            प्रमाण पत्र बनवाने के लिए आवेदकों को सर्वप्रथम व्यक्तिगत विवरण के साथ पंजीकरण करना होता है। इसके लिए वे सेवा सेतु केंद्र (एलएसके) अथवा कॉमन सर्विस सेंटर (सीएससी) सुविधा का लाभ उठा सकते हैं। 
+         </p>
+ 
+         <p>
+           पंजीकरण के बाद की प्रक्रिया - आवेदक सेवा सेतु पोर्टल में जाकर ‘एससी/एसटी प्रमाणपत्र’ सेवा का चयन करें। प्रस्तुत आवेदन पत्र भरें और उसके बाद आवश्यक दस्तावेज अपलोड करें। 
+         </p>
+ 
+         <p>
+          आवेदन जमा करने के पश्चात् एक विशिष्ट पावती संख्या (एआरएन) उत्पन्न होती है। इस पावती संख्या की सहायता से आवेदक आवेदन की स्थिति का पता लगा सकते हैं।
+         </p>
+		<p>
+         जब आवेदन स्वीकृत हो जाता है, तो एसएमएस के माध्यम से सूचना दे दी जाती है। आवेदक पोर्टल से डिजिटल हस्ताक्षरयुक्त एससी/एसटी प्रमाणपत्र सीधे डाउनलोड कर सकते हैं। यह प्रमाणपत्र स्थायी रूप से मान्य रहता है, जब तक कि जारी करने वाले अधिकारी द्वारा अन्यथा निर्देशित न किया जाए। इसे राज्य भर में सभी सरकारी व कानूनी कार्यों के लिए उपयोग किया जा सकता है।
+         </p>
+        
+     </div>
+ 
+ </body>
+ 
+ </html>
+                    </div>
+
+                
+
+
+                <!-- आवश्यक दस्तावेज -->
+                <div class="main-boxtag">
+                    <div class="infonic-doc">📑 आवश्यक दस्तावेज</div>
+                    <div class="main-info-b">
+                        <div class="table-responsive table-responsive-sm">
+                            <table class="table table-sm">
+                                <thead>
+                                <tr>
+                                    <th>&#2325;&#2381;&#2352;&#2350; &#2360;&#2306;</th>
+                                    <th>&#2342;&#2360;&#2381;&#2340;&#2366;&#2357;&#2375;&#2332;&#2364; &#2346;&#2381;&#2352;&#2325;&#2366;&#2352;</th>
+                                    <th>&#2360;&#2361;&#2366;&#2351;&#2325; &#2342;&#2360;&#2381;&#2340;&#2366;&#2357;&#2375;&#2332;</th>
+                                    <th>&#2309;&#2344;&#2367;&#2357;&#2366;&#2352;&#2381;&#2351;</th>
+                                    <th>&#2346;&#2381;&#2352;&#2366;&#2352;&#2370;&#2346;</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                
+                                
+
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                                1
+                                                
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                                निवास का प्रमाण
+                                            
+                                        </td>
+                                        <td>मूल निवासी प्रमाण पत्र</td>
+                                        <td>
+                                            
+                                                
+                                                नहीं
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>बिजली का बिल</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>राशन कार्ड</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>टेलीफोन बिल</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>जन्म प्रमाण पत्र</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>वोटिंग कार्ड</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>बी.पी.एल. प्रमाण पत्र</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>घर या भूमि का दस्तावेज़</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>ड्राइविंग लाइसेंस</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>अन्य</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>वार्ड सदस्य, स्थानीय विधायक / सांसद से प्रमाण पत्र</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>फोटो परिचय पत्र</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>पिता / पालक की नौकरी का प्रमाण - पत्र</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>अनैच्छिक प्रवजन का आदेश</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>मूल निवासी प्रमाण पत्र</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                                2
+                                                
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                                जाति का प्रमाण
+                                            
+                                        </td>
+                                        <td>अन्य राज्य के अनुसूचित जाति / जनजाति प्रमाणपत्र</td>
+                                        <td>
+                                            
+                                                हाँ
+                                                
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>सरपंच / पार्षद / विधायक / साँसद से जाति प्रमाण-पत्र</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>प्राथमिक शाला या जिला शिक्षा अधिकारी द्वारा प्रमाणित प्राथमिक शाला द्वारा जारी स्थानान्तरण प्रमाण-पत्र</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>पिता / अभिभावक की सेवा प्रमाण पत्र / पहचान पत्र</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>शैक्षणिक प्रमाण पत्र</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>आवेदक को या उसके किसी परिवारजन को जारी हुआ जाति प्रमाण पत्र</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>प्राथमिक परीक्षा उत्तीर्ण प्रमाण-पत्र</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>जन्म सूचना प्रपत्र</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>मिसल</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>अधिकार अभिलेख</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>जमाबंदी</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>१९३१ का जनगणना पंजी</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>1949 का नागरिक पंजी</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>दाखिल / ख़ारिज पंजी</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>असमर्थता / अनुपलब्धता का प्रमाण</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="">
+                                        <td>
+                                            
+                                                3
+                                                
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                                शपथ पत्र
+                                            
+                                        </td>
+                                        <td>शपथ पत्र</td>
+                                        <td>
+                                            
+                                                
+                                                नहीं
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                                4
+                                                
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                                वंशावली
+                                            
+                                        </td>
+                                        <td>वंशावली</td>
+                                        <td>
+                                            
+                                                
+                                                नहीं
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>वंशावली १</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>वंशावली २</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="no-border">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>वंशावली ४</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="">
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>वंशावली 3</td>
+                                        <td>
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+                                        
+                                    
+
+                                    <tr class="">
+                                        <td>
+                                            
+                                                5
+                                                
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                                ग्राम सभा प्रस्ताव(ग्रामीण क्षेत्र के निवासी के लिए)
+                                            
+                                        </td>
+                                        <td>ग्राम सभा प्रस्ताव(ग्रामीण क्षेत्र के निवासी के लिए)</td>
+                                        <td>
+                                            
+                                                
+                                                नहीं
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                    
+                                    
+
+                                    <tr class="">
+                                        <td>
+                                            
+                                                6
+                                                
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                                मध्यप्रदेश पुनर्गठन अधिनियम 2000(क्रमांक २६-सन २००० की धारा ६७ के अधीन छ. ग. राज्य संवर्ग आबंटन ) का प्रमाण
+                                            
+                                        </td>
+                                        <td>मध्यप्रदेश पुनर्गठन अधिनियम २०००(क्रमांक २६-सन २००० की धारा ६७ के अधीन छ. ग. राज्य संवर्ग आबंटन  ) का प्रमाण</td>
+                                        <td>
+                                            
+                                                
+                                                नहीं
+                                            
+                                        </td>
+                                        <td>
+                                            
+                                            
+                                        </td>
+                                    </tr>
+
+                                    
+                                
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    .no-border td {
+                        border-bottom-width: 0 !important;
+                    }
+
+                </style>
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+
+                
+                
+
+                
+                
+
+            </div>
+
+
+        </div>
+        <!-- Right Section -->
+        <div class="col-md-4 col-xs-12">
+            <div class="main-boxtag">
+                <div class="infonic-doc">🔐 लॉगिन करें</div>
+                <div class="main-info-b p-4 text-center">
+
+                    <a href="/home?lang=hi" class="btn btn-sm btn-success"
+                       style="padding: 4px 24px;font-size: 16px;border-radius: 8px;">लॉगिन</a>
+                </div>
+            </div>
+            <!-- फॉर्म -->
+            <div class="main-boxtag">
+                <div class="infonic-doc">🧾 फॉर्म देखें</div>
+                <div class="main-info-b p-4 text-center">
+
+                    <!-- Button -->
+                    
+
+<div class="container" style="margin: 0; padding: 10px;">
+    <style>
+        /*body {*/
+        /*    font-family: Arial, sans-serif;*/
+        /*    margin: 20px;*/
+        /*    font-size: 10px;*/
+        /*}*/
+
+        h2 {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        h3 {
+            color: #444;
+            margin-top: 20px;
+        }
+
+        .form-section {
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 15px;
+            align-items: baseline;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        fieldset {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        .container1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .left {
+            font-weight: bold;
+        }
+
+        .right {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .signature {
+            margin-top: 40px;
+        }
+
+        #formContainer {
+
+            margin: auto;
+            padding: 10mm;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border: 1px solid #000;
+            /* font-size: 10px; */
+        }
+
+        @media print {}
+    </style>
+    <!-- Button trigger modal -->
+    <a href="#" class="btn btn-outline-primary btn-sm see-form" data-bs-toggle="modal" data-bs-target="#formModal">
+        फॉर्म देखें <i class="bi bi-eye-fill"></i>
+    </a>
+
+    <!-- Modal -->
+    <div class="modal fade" id="formModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-sm modal-lg">
+            <div class="modal-content">
+
+                <!-- Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title">सेवा आवेदन फॉर्म </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                    <div id="formContainer" class="container text-start"></div>
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">बंद करें</button>
+
+
+
+                    <button class="btn btn-danger" onclick="downloadAsPDF()">
+                        <i class="bi bi-file-earmark-pdf"></i> पीडीएफ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+        function downloadAsPDF() {
+            const element = document.getElementById("formContainer");
+
+            const opt = {
+                margin: 0.5,
+                filename: 'form.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
+            };
+
+            html2pdf().set(opt).from(element).save();
+        }
+
+        function downloadAsWord() {
+            let content = document.getElementById("formContainer").innerHTML;
+            // Bootstrap CSS fetch करके embed करना
+
+            let htmlContent = `
+        <html xmlns:o='urn:schemas-microsoft-com:office:office'
+              xmlns:w='urn:schemas-microsoft-com:office:word'
+              xmlns='http://www.w3.org/TR/REC-html40'>
+        <head>
+            <meta charset="utf-8">
+            <title>Exported Document</title>
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            font-size: 10px;
+        }
+
+        h2 {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        h3 {
+            color: #444;
+            margin-top: 20px;
+        }
+
+        .form-section {
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 15px;
+            align-items: baseline;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        fieldset {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        .container1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .left {
+            font-weight: bold;
+        }
+
+        .right {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .signature {
+            margin-top: 40px;
+        }
+
+        #formContainer {
+
+            margin: auto;
+            padding: 20mm;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border: 1px solid #000;
+            /* font-size: 10px; */
+        }
+
+    </style>
+        </head>
+        <body>
+            ${content}
+        </body>
+        </html>
+    `;
+
+            let blob = new Blob(['\ufeff', htmlContent], {
+                type: 'application/msword'
+            });
+
+            let url = URL.createObjectURL(blob);
+            let link = document.createElement("a");
+            link.href = url;
+            link.download = "form.doc"; // Word file
+            link.click();
+        }
+
+
+        async function loadApplication() {
+            // Current URL से parameters निकालना
+            const urlParams = new URLSearchParams(window.location.search);
+
+            // Particular parameters
+            const serviceId = urlParams.get("serviceId");
+            let lang = urlParams.get("lang");
+            if(lang==null){
+                lang = urlParams.get("instLangCode");
+            }
+
+            console.log("Service ID:", serviceId); // 95
+            console.log("Language:", lang);        // hi
+            let apiUrl = localStorage.getItem("APPLICATION_MANAGEMENT") + "edistrict2/applicationFormPreviewByServiceId?lang=" + lang
+            const response = await fetch(apiUrl, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "*/*",
+                },
+                body: JSON.stringify({ serviceId: serviceId })
+            });
+
+            if (!response.ok) {
+                console.error("HTTP Error:", response.status, response.statusText);
+                return;
+            }
+
+            let result = await response.json();
+
+            console.log(result);
+            renderForm(result.data)
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            loadApplication()
+        })
+
+
+       /* function renderForm(data) {
+            const container = document.getElementById("formContainer");
+            container.innerHTML = "";
+
+            if (!data || data.length === 0) return;
+//             let wrapper1 = document.createElement("div");
+//             wrapper1.classList.add("d-flex", "justify-content-between","mb-3");
+//             let img1 = document.createElement("img");
+//             img1.src = "/resources/homenew/cg.png";
+//             img1.alt = "logo";
+//             img1.className = "rounded-circle";
+//             img1.style.width = "64px";
+//             img1.style.height = "64px";
+//             img1.style.objectFit = "cover";
+//
+//             let img2 = document.createElement("img");
+//             img2.src = "/resources/homenew/chips.jpg";
+//             img2.style.width = "98px";
+//             img2.alt = "chips";
+//
+//             wrapper1.appendChild(img1);
+//             wrapper1.appendChild(img2);
+//
+//             let wrapper = document.createElement("div");
+//             wrapper.classList.add("text-center", "d-flex", "justify-content-center","mb-3");
+//
+// // पहला h5 - Application Form / आवेदन पत्र
+//             let app = document.createElement("h4");
+//             app.textContent = getLang() === 'hi' ? 'आवेदन पत्र : ' : 'Application Form : ';
+//
+// // दूसरा h5 - serviceName
+//             const serviceName = data[0].serviceName;
+//             const h5 = document.createElement("h4");
+//             h5.textContent = " " + serviceName;
+//             h5.classList.add("ms-1")
+// // दोनों को wrapper div में जोड़ें
+//             wrapper.appendChild(app);
+//             wrapper.appendChild(h5);
+//
+// // container में wrapper जोड़ें
+//             container.innerHTML = "";
+//             container.appendChild(wrapper1);
+//             container.appendChild(wrapper);
+            let wrapper1 = document.createElement("div");
+            wrapper1.classList.add("d-flex", "align-items-center", "justify-content-between", "mb-3");
+
+// Left image (CG Govt)
+            let img1 = document.createElement("img");
+            img1.src = "/resources/homenew/cg.png";
+            img1.alt = "logo";
+            img1.className = "rounded-circle";
+            img1.style.width = "64px";
+            img1.style.height = "64px";
+            img1.style.objectFit = "cover";
+
+// Center text wrapper
+            let textWrapper = document.createElement("div");
+            textWrapper.classList.add("flex-grow-1", "text-center"); // center और stretch middle
+
+            let app = document.createElement("h4");
+            app.textContent = getLang() === 'hi' ? 'आवेदन पत्र : ' : 'Application Form : ';
+
+            const serviceName = data[0].serviceName;
+            const h5 = document.createElement("h4");
+            h5.textContent = " " + serviceName;
+            h5.classList.add("d-inline"); // inline ताकि app के साथ ही दिखे
+
+// दोनों texts को एक साथ inline दिखाने के लिए span या inline-block
+            app.classList.add("d-inline", "me-1");
+            textWrapper.appendChild(app);
+            textWrapper.appendChild(h5);
+
+// Right image (Chips)
+            let img2 = document.createElement("img");
+            img2.src = "/resources/homenew/chips.jpg";
+            img2.alt = "chips";
+            img2.style.width = "98px";
+
+// Assemble
+            wrapper1.appendChild(img1);
+            wrapper1.appendChild(textWrapper);
+            wrapper1.appendChild(img2);
+
+// container में जोड़ो
+            container.innerHTML = "";
+            container.appendChild(wrapper1);
+
+            let currentSection = null;
+            let sectionWrapper = null;
+
+            data.forEach(item => {
+                if (item.inputTypeName.toLowerCase() === "section lebel") {
+                    const sectionTitle = document.createElement("label");
+                    sectionTitle.textContent = item.attributeLabel;
+                    container.appendChild(sectionTitle);
+
+                    sectionWrapper = document.createElement("div");
+                    sectionWrapper.className = "form-section";
+                    container.appendChild(sectionWrapper);
+
+                    currentSection = {};
+                } else {
+                    if (!sectionWrapper) return;
+
+                    const rowIndex = parseInt(item.attributeRow) || 1;
+                    const colIndex = parseInt(item.attributeCol) || 1;
+
+                    if (!currentSection[rowIndex]) {
+                        const rowDiv = document.createElement("div");
+                        rowDiv.className = "row";
+                        sectionWrapper.appendChild(rowDiv);
+                        currentSection[rowIndex] = rowDiv;
+                    }
+
+                    const rowDiv = currentSection[rowIndex];
+                    const colDiv = document.createElement("div");
+                    colDiv.className = "col-md-6 col-6";
+
+                    const formGroup = document.createElement("div");
+                    formGroup.className = "form-group";
+                    let inputEl;
+                    if (item.inputTypeName.toLowerCase() === "fieldset") {
+                       //  const fieldset = document.createElement("fieldset");
+                       //  const legend = document.createElement("legend");
+                       //  legend.textContent = item.attributeLabel;
+                       //  fieldset.appendChild(legend);
+                       // formGroup.appendChild(fieldset);
+
+                        const label = document.createElement("div");
+                        label.textContent = item.attributeLabel;
+                        formGroup.appendChild(label);
+
+                        inputEl = document.createElement("div");
+                        inputEl.style.borderBottom = "1px dotted #000";
+                        inputEl.style.width = "100%";
+                        inputEl.style.height = "40px";
+                        formGroup.appendChild(inputEl);
+
+                    } else {
+                        const label = document.createElement("div");
+                        label.textContent = item.attributeLabel;
+                        formGroup.appendChild(label);
+
+
+                        switch (item.inputTypeName.toLowerCase()) {
+                            // case "text":
+                            // case "date":
+                            // case "number":
+                            // case "search":
+                            //     inputEl = document.createElement("input");
+                            //     inputEl.type = item.inputTypeName.toLowerCase();
+                            //     break;
+                            // case "drop down":
+                            //     inputEl = document.createElement("select");
+                            //     inputEl.innerHTML = "<option>Select</option>";
+                            //     break;
+                            // case "textarea":
+                            //     inputEl = document.createElement("textarea");
+                            //     break;
+                            // default:
+                            //     inputEl = document.createElement("input");
+                            //     inputEl.type = "text";
+                            case "text":
+                            case "date":
+                            case "number":
+                            case "search":
+                            case "drop down":
+                            case "textarea":
+                                inputEl = document.createElement("div");
+                                inputEl.style.borderBottom = "1px dotted #000";
+                                inputEl.style.width = "100%";
+                                inputEl.style.height = "40px";
+                                break;
+
+                            default:
+                                inputEl = document.createElement("div");
+                                inputEl.style.borderBottom = "1px dotted #000";
+                                inputEl.style.width = "100%";
+                                inputEl.style.height = "20px";
+                                break;
+                        }
+                        formGroup.appendChild(inputEl);
+                    }
+
+                    colDiv.appendChild(formGroup);
+                    rowDiv.appendChild(colDiv);
+                }
+            });
+
+            let sig = `
+<div class="container1 mt-5">
+  <div class="left">
+    ${getLang()==='hi' ? 'दिनांक' : 'Date'} : <br><br>
+    ${getLang()==='hi' ? 'स्थान' : 'Place'} :
+  </div>
+  <div class="right">
+    (${getLang()==='hi' ? 'हस्ताक्षर' : 'Signature'}) <br><br>
+    ${getLang()==='hi' ? 'आवेदक का नाम' : 'Applicant Name'}
+  </div>
+</div>
+`;
+            container.innerHTML += sig;
+        }*/
+
+        function renderForm(data) {
+            const container = document.getElementById("formContainer");
+            container.innerHTML = "";
+
+            if (!data || data.length === 0) return;
+
+            /* ---------------- HEADER ---------------- */
+            let wrapper1 = document.createElement("div");
+            wrapper1.className = "d-flex align-items-center justify-content-between mb-3";
+
+            let img1 = document.createElement("img");
+            img1.src = "/resources/homenew/cg.png";
+            img1.className = "rounded-circle";
+            img1.style.width = "64px";
+            img1.style.height = "64px";
+
+            let textWrapper = document.createElement("div");
+            textWrapper.className = "flex-grow-1 text-center";
+
+            let app = document.createElement("h4");
+            app.textContent = getLang() === "hi" ? "आवेदन पत्र :" : "Application Form :";
+            app.className = "d-inline me-1";
+
+            let h5 = document.createElement("h4");
+            h5.textContent = data[0].serviceName || "";
+            h5.className = "d-inline";
+
+            textWrapper.appendChild(app);
+            textWrapper.appendChild(h5);
+
+            let img2 = document.createElement("img");
+            img2.src = "/resources/homenew/chips.jpg";
+            img2.style.width = "98px";
+
+            wrapper1.appendChild(img1);
+            wrapper1.appendChild(textWrapper);
+            wrapper1.appendChild(img2);
+            container.appendChild(wrapper1);
+
+            /* ---------------- DEFAULT SECTION ---------------- */
+            let sectionWrapper = document.createElement("div");
+            sectionWrapper.className = "form-section";
+            container.appendChild(sectionWrapper);
+
+            let currentSection = {};
+
+            /* ---------------- FORM BODY ---------------- */
+            data.forEach((item) => {
+                const type = item.inputTypeName?.toLowerCase();
+
+                /* ---- SECTION LABEL (OPTIONAL) ---- */
+                if (type === "section lebel") {
+                    const sectionTitle = document.createElement("label");
+                    sectionTitle.textContent = item.attributeLabel;
+                    sectionTitle.className = "fw-bold mt-3";
+                    container.appendChild(sectionTitle);
+
+                    sectionWrapper = document.createElement("div");
+                    sectionWrapper.className = "form-section";
+                    container.appendChild(sectionWrapper);
+
+                    currentSection = {};
+                    return;
+                }
+
+                /* ---- ROW INDEX (DEFAULT 1) ---- */
+                const rowIndex = parseInt(item.attributeRow) || 1;
+
+                if (!currentSection[rowIndex]) {
+                    const rowDiv = document.createElement("div");
+                    rowDiv.className = "row";
+                    sectionWrapper.appendChild(rowDiv);
+                    currentSection[rowIndex] = rowDiv;
+                }
+
+                const rowDiv = currentSection[rowIndex];
+
+                /* ---- COLUMN LOGIC ---- */
+                const colDiv = document.createElement("div");
+                if (item.attributeCol) {
+                    colDiv.className = "col-md-6 col-12";
+                } else {
+                    colDiv.className = "col-md-12 col-12";
+                }
+
+                const formGroup = document.createElement("div");
+                formGroup.className = "form-group mb-2";
+
+                const label = document.createElement("div");
+                label.textContent = item.attributeLabel || "";
+                formGroup.appendChild(label);
+
+                let inputEl = document.createElement("div");
+                inputEl.style.borderBottom = "1px dotted #000";
+                inputEl.style.width = "100%";
+
+                switch (type) {
+                    case "text":
+                    case "date":
+                    case "number":
+                    case "search":
+                    case "drop down":
+                    case "textarea":
+                    case "fieldset":
+                        inputEl.style.height = "40px";
+                        break;
+                    default:
+                        inputEl.style.height = "20px";
+                }
+
+                formGroup.appendChild(inputEl);
+                colDiv.appendChild(formGroup);
+                rowDiv.appendChild(colDiv);
+            });
+
+            /* ---------------- SIGNATURE ---------------- */
+            container.innerHTML += `
+    <div class="container1 mt-5">
+      <div class="left">
+        ${getLang() === "hi" ? "दिनांक" : "Date"} : <br><br>
+        ${getLang() === "hi" ? "स्थान" : "Place"} :
+      </div>
+      <div class="right">
+        (${getLang() === "hi" ? "हस्ताक्षर" : "Signature"}) <br><br>
+        ${getLang() === "hi" ? "आवेदक का नाम" : "Applicant Name"}
+      </div>
+    </div>
+  `;
+        }
+
+
+
+        function printDiv() {
+            let printContents = document.getElementById("formContainer").innerHTML;
+
+            let width = 800;
+            let height = 600;
+
+            // स्क्रीन का center निकालो
+            let left = (screen.width / 2) - (width / 2);
+            let top = (screen.height / 2) - (height / 2);
+
+            let printWindow = window.open('', '', `width=,height=,top=,left=`);
+
+
+            printWindow.document.write(`
+    <html>
+      <head>
+        <title>Print Form</title>
+       <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            font-size: 10px;
+        }
+
+        h2 {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        h3 {
+            color: #444;
+            margin-top: 20px;
+        }
+
+        .form-section {
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 15px;
+                align-items: baseline;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        fieldset {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+          .container1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .left {
+            font-weight: bold;
+        }
+
+        .right {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .signature {
+            margin-top: 40px;
+        }
+          #formContainer{
+
+      margin: auto;
+      padding: 20mm;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      border: 1px solid #000;
+      /* font-size: 10px; */
+        }
+        @media print {
+
+}
+    </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      </head>
+      <body>
+        <div class="form-container">
+          ${printContents}
+        </div>
+      </body>
+    </html>
+  `);
+
+            // अब document बंद करो
+            printWindow.document.close();
+
+            // load होने के बाद ही print करना
+            printWindow.onload = function () {
+                printWindow.focus();   // popup पर focus लाओ
+                printWindow.print();   // print dialog खोलो
+                printWindow.close();   // dialog के बाद window बंद
+            };
+        }
+
+
+    </script>
+</div>
+
+
+
+                    
+                </div>
+            </div>
+
+            <!-- शुल्क जानकारी -->
+            <div class="main-boxtag">
+                <div class="infonic-doc">₹ शुल्क संबंधित जानकारी</div>
+                <div class="main-info-b">
+                    <p style="text-align:center;"><strong>आवेदन कहाँ करें?</strong></p>
+                    <div class="mb-2" style=" display: flex; justify-content: center;align-items: center;">
+
+                        <span class="" style="width:150px;">सेवा सेतु केंद्र :</span>
+                        <span class=""
+                              style="background: #0e9b5a; padding: 1px 15px;border-radius: 21px;color: #FFF; margin-left: 17px;">₹30.0</span>
+                        
+                        
+                    </div>
+                    <div class="" style=" display: flex; justify-content: center;align-items: center;">
+                        <span class="" style="width:150px;">ऑनलाइन :</span>
+                        <span class=""
+                              style="background: #0e9b5a; padding: 1px 15px;border-radius: 21px;color: #FFF; margin-left: 17px;">₹30.0</span>
+                        
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- संपर्क -->
+            <div class="main-boxtag">
+                <div class="infonic-doc">📞 संपर्क</div>
+                <div class="main-info-b text-center">
+                    सेवा सेतु केंद्र
+                </div>
+            </div>
+
+            <!-- समय सीमा -->
+            <div class="main-boxtag">
+                <div class="infonic-doc">⏳ समय सीमा</div>
+
+                <div class="main-info-b">
+                    <p style="text-align:center;"><strong>22 दिन</strong>
+                    </p>
+
+                    
+                    
+                    
+                </div>
+
+
+                
+                <div class="main-boxtag">
+                    <div class="infonic-doc"> 🙍‍♂️ उपयोग पुस्तिका</div>
+                    <div class="main-info-b p-4 text-center">
+                        <a target="_blank" href="/resources/edistrict/user-manual/new/4.pdf" title="user manual"
+                           class="btn btn-outline-primary btn-sm see-form">
+                            देखें <i class="bi bi-eye-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            
+                
+
+
+                
+                    <div class="main-boxtag">
+                        <div class="infonic-doc"> ⏳ समय सीमा</div>
+                        <div class="main-info-b p-4 text-center">
+                            <a class="btn btn-outline-primary btn-sm see-form" href="/resources/docFormat/citizenCharter.pdf" target="_blank">समय सीमा <i class="bi bi-eye-fill"></i></a>
+                        </div>
+                    </div>
+
+
+                
+                
+                <div class="main-boxtag" id="serviceCard" style="display:none;">
+                    <div class="infonic-doc"> 📌 निर्देश</div>
+                    <div class="main-info-b p-4 text-center">
+                    <a href="/resources/instructionPage/201.pdf"
+                       class="btn btn-outline-primary btn-sm see-form view-pdf"
+                       data-filename="निर्देश.pdf">
+                        देखें <i class="bi bi-eye-fill"></i>
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card -->
+
+
+
+            <!-- PDF Modal -->
+            <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="pdfModalLabel">PDF Viewer</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body p-0">
+                            <iframe id="pdfViewer" src="" width="100%" height="600px" style="border:none;"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+<style>
+html {
+    scroll-behavior: smooth;
+}
+
+#footersc {
+    scroll-margin-top: 120px; /* 👈 sticky header height */
+}
+</style>
+
+
+
+<footer id="footer" class="site-footer pt-5 ">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                    <div class="f-logo d-inline-flex align-items-center justify-content-center" style=" background: #FFF; padding: 4px; border-radius: 2px;">
+                         
+                                                
+                                                    <img src="/resources/homenewui/images/new-logo-hi.png"
+                                                         alt="Hindi Logo" class="rounded-circle-logo">
+                                                
+                                                
+                                            
+                    </div>
+                    
+                </div>
+                <p class="small mb-2">छत्तीसगढ़ शासन का आधिकारिक पोर्टल जिसके माध्यम से हितग्राहियों तक शासकीय सेवाओं और कल्याणकारी योजनाओं की पहुँच आसान बनाई गई है। सेवा सेतु पोर्टल के माध्यम से प्रदेश के नागरिक जनकेंद्रित योजनाओं और सेवाओं के लाभ आसानी से निर्धारित समय सीमा में उठा सकते हैं।  </p>
+
+            </div>
+<div class="col-md-1"> </div>
+
+            <div class="col-md-3">
+                <h6>अन्य</h6>
+                <ul class="small">
+                    <li><a class="link-opacity-75 local" href="redirectPage1.do?pageName=terms-condition&lang=hi">नियम और शर्तें</a></li>
+                    <li><a class="link-opacity-75 local" href="redirectPage1.do?pageName=privacy-policy&lang=hi"> गोपनीयता नीति</a></li>
+                    <li><a class="link-opacity-75 local" href="redirectPage1.do?pageName=cancellation-refundpolicy&lang=hi">रद्दीकरण/धन-वापसी</a>
+                    </li>
+                    <li><a class="link-opacity-75 local" href="redirectPage1.do?pageName=faq&lang=hi">सामान्य प्रश्न</a></li>
+                    <li><a class="link-opacity-75 local" href="redirectPage1.do?pageName=copyright-policy&lang=hi"> सर्वाधिकार नीति</a></a></li>
+                    <li>
+                        <a href="redirectPage1.do?pageName=hyperlink-policy&lang=hi" class="link-opacity-75 local">
+                            हाइपरलिंक नीति</a>
+                    </li>
+
+
+                    <li>
+                        <a href="redirectPage1.do?pageName=feedback&lang=hi" class="link-opacity-75 local">
+                            फीडबैक</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+           
+
+            <div class="col-md-4">
+                <h6 id="contact">संपर्क करें</h6>
+
+                <div class="small">
+                    
+                    <div class="mb-2">
+                        <div class="text-white"><strong>ईमेल</strong></div>
+                        <strong>
+                            <div class="chipadres"><a href="mailto:sewasetu.helpline@cgchips.in"
+                                                      class="text-white text-decoration-none">
+                                sewasetu.helpline@cgchips.in
+                            </a></div>
+                        </strong></div>
+                    <strong>
+                        <div>
+                            <div class="text-white">&#2346;&#2340;&#2366;</div>
+                            <div class="chipadres">तृतीय तल, स्टेट डाटा सेंटर बिल्डिंग, न्यू सर्किट हाउस के सामने, सिविल लाइंस, रायपुर-492001, छत्तीसगढ़।
+                            </div>
+                        </div>
+                    </strong></div>
+                <strong>
+                </strong></div>
+            <strong>
+            </strong></div>
+        <strong>
+            <div class="copyright-text theme-color">
+                <style>
+                    .site-footer img, .site-footer svg {
+                        vertical-align: middle;
+                        width: 153px;
+                    }
+
+                    img {
+                        max-width: 100%;
+                    }
+                </style>
+
+            </div>
+
+        </strong></div>
+    <strong>
+        <div class="footer-border mt-4 pt-3 pb-2 d-flex flex-wrap justify-content-between align-items-center">
+            <div class="small">© 2026 <a href="#" class="local">cgstate.gov.in</a> | सर्वाधिकार सुरक्षित.</div>
+            
+
+            <div class="small">अंतिम अपडेट: 16 June 2026</div>
+        </div>
+    </strong></footer>
+
+<script>
+document.querySelectorAll('a[href="#footersc"]').forEach(function(anchor) {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const target = document.querySelector("#footersc");
+
+        window.scrollTo({
+            top: target.offsetTop - 300, // 👈 header height adjust karo
+            behavior: "smooth"
+        });
+    });
+});
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("tr").forEach(row => {
+            const secondTd = row.querySelector("td:nth-child(2)");
+            const downloadLink = row.querySelector("td:nth-child(5) a");
+
+            if (secondTd && downloadLink) {
+                // 2nd td का text लेना
+                const fileName = secondTd.innerText.trim();
+
+                // safe filename बनाना
+                let safeName = fileName
+                    .replace(/\s+/g, "_")         // spaces → underscore
+                // .replace(/[^\w\-\.]/g, "");   // special chars हटाओ
+
+                // fallback
+                if (!safeName) {
+                    safeName = "document";
+                }
+
+                // download attribute में नाम set करना
+                downloadLink.setAttribute("download", safeName + ".pdf");
+            }
+        });
+
+    });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // ✅ URL param निकालना
+        const urlParams = new URLSearchParams(window.location.search);
+        const serviceId = urlParams.get("serviceId");
+
+        // ✅ अगर serviceId = 201 है तो card दिखाओ
+        if (serviceId === "201") {
+            document.getElementById("serviceCard").style.display = "block";
+        }
+
+        // ✅ PDF modal logic
+        document.querySelectorAll(".view-pdf").forEach(link => {
+            link.addEventListener("click", function(e) {
+                e.preventDefault();
+
+                const pdfUrl = this.getAttribute("href");
+                const fileName = this.dataset.filename || "Document";
+
+                document.getElementById("pdfModalLabel").innerText = fileName;
+                document.getElementById("pdfViewer").setAttribute("src", pdfUrl);
+
+                const pdfModal = new bootstrap.Modal(document.getElementById("pdfModal"));
+                pdfModal.show();
+            });
+        });
+    });
+</script>

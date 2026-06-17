@@ -1,0 +1,274 @@
+==================================================
+SERVICE DETAILS MANUAL: SC/ST Certificate
+Service ID: 4
+Language: EN
+Department: Revenue and disaster management Department
+Time Limit / SLA: 22 Days
+Contact Details: Sewa Setu Kendra
+Kiosk Fee: 30.0
+Online Fee: 30.0
+Where to Apply: 
+Raw Fees Text: Where to Apply? Sewa Setu Kendra : ₹30.0 Online : ₹30.0
+==================================================
+
+REQUIRED DOCUMENTS:
+- SNo 1: Residential Proof (Mandatory: No)
+  * Supporting Document 1: Domicile Certificate
+  * Supporting Document 2: Electricity Bill
+  * Supporting Document 3: Ration Card
+  * Supporting Document 4: Telephone Bill
+  * Supporting Document 5: Birth Certificate
+  * Supporting Document 6: Voters Identity Card
+  * Supporting Document 7: Bpl Certificate
+  * Supporting Document 8: Land And House Document
+  * Supporting Document 9: Driving License
+  * Supporting Document 10: Other Documents
+  * Supporting Document 11: Certificate From Ward Member, Local Mla/Mp
+  * Supporting Document 12: Photo Identity Card
+  * Supporting Document 13: Service Certificate Of Father / Guardian
+  * Supporting Document 14: Order Of Involuntary Migration
+  * Supporting Document 15: Domicile Certificate
+- SNo 2: Caste Proof (Mandatory: Yes)
+  * Supporting Document 1: Sc/St Certificate Of Other State
+  * Supporting Document 2: Sc/St Certificate From Sarpanch / Parshad / Mla / Mp
+  * Supporting Document 3: Transfer Certificate From Any Recognized School Or Any School Countersigned By Deo
+  * Supporting Document 4: Father/Guardians Service Certificate/Identity Card
+  * Supporting Document 5: Educational Certificate
+  * Supporting Document 6: Caste Certificate Issued Earlier To The Applicant Or Any Member Of His Family
+  * Supporting Document 7: Primary School Certificate
+  * Supporting Document 8: Birth Information Form
+  * Supporting Document 9: Misal
+  * Supporting Document 10: Adhikar Abhilekh
+  * Supporting Document 11: Jamabandi
+  * Supporting Document 12: Census Register Of 1931
+  * Supporting Document 13: Citizen Register Of 1949
+  * Supporting Document 14: Dakhil / Kharij Panji
+  * Supporting Document 15: Disability / Unavailability Proof
+- SNo 3: Affidavit (Mandatory: No)
+  * Supporting Document 1: Affidavit
+- SNo 4: Vanshavali (Mandatory: No)
+  * Supporting Document 1: Vanshavali
+  * Supporting Document 2: Vanshavali 1
+  * Supporting Document 3: Vanshavali 2
+  * Supporting Document 4: Vanshavali 3
+  * Supporting Document 5: Vanshavali 4
+- SNo 5: Gram Sabha Proposal (Resident Of Rural Areas People) (Mandatory: No)
+  * Supporting Document 1: Gram Sabha Proposal (Resident Of Rural Areas People)
+- SNo 6: Madhya Pradesh Reorganization Act 2000 (No. 26 Of 2000 Under Section 67 C.G. State Cadre Allocation) Proof (Mandatory: No)
+  * Supporting Document 1: Madhya Pradesh Reorganization Act 2000 (No. 26 Of 2000 Under Section 67 C.G. State Cadre Allocation) Proof
+
+APPLICATION FORM FIELDS:
+- Field: General Details [Type: section lebel, Data: Charactar] (Row: 1, Col: 1)
+- Field: Beneficiary Guardian Type [Type: drop down, Data: Charactar] (Row: 2, Col: 1)
+- Field: Beneficiary Guardian name [Type: text, Data: Charactar] (Row: 2, Col: 2)
+- Field: Beneficiary Guardian Type in English [Type: drop down, Data: Charactar] (Row: 3, Col: 1)
+- Field: Beneficiary Guardian name in English [Type: text, Data: Charactar] (Row: 3, Col: 2)
+- Field: Gender [Type: drop down, Data: Charactar] (Row: 4, Col: 1)
+- Field: Marital Status [Type: drop down, Data: Charactar] (Row: 4, Col: 2)
+- Field: Date of Birth [Type: date, Data: Date] (Row: 5, Col: 1)
+- Field: Relation to Applicant [Type: drop down, Data: Charactar] (Row: 5, Col: 2)
+- Field: Caste STSC [Type: search, Data: Search] (Row: 6, Col: 1)
+- Field: Category [Type: text, Data: Charactar] (Row: 6, Col: 2)
+- Field: Caste In English [Type: text, Data: Charactar] (Row: 7, Col: 1)
+- Field: Category In English [Type: text, Data: Charactar] (Row: 7, Col: 2)
+- Field: Category Number [Type: text, Data: Charactar] (Row: 8, Col: 1)
+- Field: Beneficiary name in English [Type: text, Data: Charactar] (Row: 8, Col: 2)
+- Field: Present Address of Applicant [Type: section lebel, Data: Charactar] (Row: 9, Col: 1)
+- Field: Address [Type: textarea, Data: Alfa Numeric] (Row: 10, Col: 1)
+- Field: PIN Code [Type: text, Data: Number] (Row: 10, Col: 2)
+- Field: Post Box Number [Type: text, Data: Alfa Numeric] (Row: 11, Col: 1)
+- Field: District [Type: drop down, Data: Charactar] (Row: 11, Col: 2)
+- Field: Address In English [Type: textarea, Data: Alfa Numeric] (Row: 12, Col: 1)
+- Field: Is Present Address and Permanent Address is same [Type: drop down, Data: Charactar] (Row: 12, Col: 2)
+- Field: Permanent Address of Applicant [Type: section lebel, Data: Charactar] (Row: 13, Col: 1)
+- Field: Address [Type: textarea, Data: Alfa Numeric] (Row: 14, Col: 1)
+- Field: PIN Code [Type: text, Data: Number] (Row: 14, Col: 2)
+- Field: District [Type: drop down, Data: Charactar] (Row: 15, Col: 1)
+- Field: Post Box Number [Type: text, Data: Alfa Numeric] (Row: 15, Col: 1)
+- Field: Police Station [Type: search, Data: Search] (Row: 16, Col: 2)
+- Field: Permanent Address on or Before Date 10 August 1950 [Type: section lebel, Data: Charactar] (Row: 17, Col: 1)
+- Field: Village or Town [Type: text, Data: Charactar] (Row: 18, Col: 1)
+- Field: Patwari Halka Number [Type: text, Data: Number] (Row: 18, Col: 2)
+- Field: Tehsil [Type: text, Data: Charactar] (Row: 19, Col: 1)
+- Field: District [Type: Data List, Data: Charactar] (Row: 19, Col: 2)
+- Field: Name of Head Of Family on This Date [Type: text, Data: Charactar] (Row: 20, Col: 1)
+- Field: Applicant Relation to Head of Family [Type: drop down, Data: Charactar] (Row: 20, Col: 2)
+- Field: Address Details of Year 10 August 1950 SC or 06 September 1950 ST to till Date Applicant or his Father or Mother or Guardian [Type: section lebel, Data: Charactar] (Row: 21, Col: 1)
+- Field: Is Applicant or his Father or Mother or Guardian Year 1950 to till Date live in Chhattisgarh [Type: drop down, Data: Number] (Row: 22, Col: 1)
+- Field: Address Details of Applicants Guardian [Type: fieldset, Data: Alfa Numeric] (Row: 23, Col: 1)
+- Field: Other Details [Type: section lebel, Data: Charactar] (Row: 24, Col: 1)
+- Field: Have Applicant issued scst certificate before [Type: drop down, Data: Charactar] (Row: 25, Col: 1)
+- Field: Details of document to proof that Beneficiary belongs to SC ST [Type: textarea, Data: Charactar] (Row: 25, Col: 2)
+- Field: I, hereby give my consent to automatic filing of a complaint/Appeal on my behalf before the Competent Officer under Rule 6 of the Lok Seva Guarantee Rules, 2011, in the event that the applied service is not delivered within the stipulated time. [Type: drop down, Data: Alfa Numeric] (Row: 26, Col: 1)
+
+
+==================================================
+EXTRACTED PDF DOCUMENT TEXTS
+==================================================
+
+--- [Document: 4_en_4.pdf (USER_MANUAL)] ---
+--- Page 1 ---
+छत्तीसगढ़ इन्फोटेक प्रमोशन सोसायटी        
+उपयोगकर्ाा मागादर्शिका 
+ 
+  
+अनुसूचिर् जातर्/अनुसूचिर् जनजातर् प्रमाण पत्र हेर्ु छत्तीसगढ़ ई-डिस्ट्रिक्ट पोटाल पर 
+ऑनलाइन आवेदन
+
+--- Page 2 ---
+तवषय सूिी 
+होम पेज: छत्तीसगढ़ ई-डिस्ट्रिक्ट पोटाल ................................ ................................ ................................ ................................ .......... 2 
+िरण 1: छत्तीसगढ़ ई-डिस्ट्रिक्ट पोटाल पर पंजीयन ................................ ................................ ................................ .................... 3 
+िरण 3: पंजीक ृ र् उपयोगकर्ाा लॉगगन................................ ................................ ................................ ................................ ............ 4 
+िरण 3: योजना खोज ................................ ................................ ................................ ................................ ................................ ............. 5 
+िरण 4: आधार ई-प्रमाणीकरण ................................ ................................ ................................ ................................ ........................ 8 
+िरण 5: अनुसूचिर् जातर्/अनुसूचिर् जनजातर् प्रमाण पत्र के र्लए आवेदन ................................ ................................ .. 9 
+िरण 6: आवश्यक दस्तावेज़ अपलोि करना ................................ ................................ ................................ ............................ 10 
+िरण 7: पूवाावलोकन और आवेदन जमा करना ................................ ................................ ................................ ......................... 11 
+िरण 8: शुल्क का भुगर्ान ................................ ................................ ................................ ................................ ................................ .. 0 
+िरण 9: पावर्ी सुरक्षिर् रखना ................................ ................................ ................................ ................................ .......................... 1
+
+--- Page 3 ---
+होम पेज: छत्तीसगढ़ ई-डिस्ट्रिक्ट पोटाल 
+अनुसूचित जातत/अनुसूचित जनजातत प्रमाण पत्र क े  लिए ऑनिाइन आवेदन हेतु अपने कम्प्यूटर या िैपटॉप क े  
+वेब ब्राउज़र में टाइप करें 
+cgedistrict.cgstate.gov.in 
+ 
+छत्तीसगढ़ ई-डिस्ट्रिक्ट पोटटि का होम पेज खुिेगा। 
+ 
+चित्र क्रमाांक 1
+
+--- Page 4 ---
+िरण 1: छत्तीसगढ़ ई-डिस्ट्रिक्ट पोटाल पर पंजीयन 
+अगर आप नए यूज़र हैं तो छत्तीसगढ़ ई-डिस्ट्रिक्ट पोटटि पर डनम्न प्रक्रक्रया द्वारा रचजस्टर करें। 
+ 
+चित्र क्रमाांक 2 
+िरण 1.1: नए पांजीयन हेतु क्रदए गए लििंक पर क्लिक करें, डनम्नानुसार नागररक पांजीकरण पेज खुिेगा। 
+ 
+चित्र क्रमाांक 3 
+ 
+िरण 1.2: नागररक पांजीकरण पेज पर आवेदक उपयोगकताट नाम दजट करें। 
+िरण 1.2: फॉमट में पूछी गई ज़रूरी जानकाररयााँ दजट करें। 
+िरण 1.2: “जमा करें” बटन पर क्लिक करें। इस तरह रचजरिेशन प्रक्रक्रया पूणट होती है।
+
+--- Page 5 ---
+िरण 3: पंजीक ृ र् उपयोगकर्ाा लॉगगन 
+डनम्न प्रक्रक्रया द्वारा पांजीक ृ त उपयोगकताट िॉतगन करें। 
+ 
+चित्र क्रमाांक 4 
+1. यूज़रनेम दजट करें। 
+2. पासविा दजट करें। 
+3. “ओटीपी भेजें” पर क्लिक करें। 
+4. अपने पांजीक ृ त नांबर पर प्राप्त ओटीपी यहााँ दजट करें।  
+5. लॉगगन बटन पर क्लिक करें।
+
+--- Page 6 ---
+िरण 3: योजना खोज 
+िरण 3.1: योजना खोज पेज में दी गई जानकारी भरें। 
+िरण 3.2: खोजें पर क्लिक करें। 
+ 
+चित्र क्रमाांक 5 
+ 
+िरण 3.3: सेवाओां की सूिी खुिेगी। इसमें  अनुसूचिर् जातर् / अनुसूचिर् जनजातर् प्रमाण पत्र देखें।  
+िरण 3.4: यक्रद यह सेवा सूिी में शातमि नहीं है तो ऊपर क्रदए गए होम बटन पर क्लिक करें। डनम्नानुसार पेज 
+खुिेगा। 
+ 
+चित्र क्रमाांक 6
+
+--- Page 7 ---
+िरण 3.5: इस पेज पर “सभी सेवाए ँ  देखें” पर क्लिक करें। सेवाओां की सूिी खुिेगी। 
+ 
+चित्र क्रमाांक 7 
+ 
+िरण 3.6: सेवाओां की सूिी में से अनुसूचित जातत/अनुसूचित जनजातत प्रमाण पत्र खोजने क े  लिए सिट बार में 
+सेवा का नाम टाइप करें। 
+ 
+ 
+चित्र क्रमाांक 8
+
+--- Page 8 ---
+िरण 3.7: अब चित्र क्रमाांक 8 क े  अनुसार अनुसूचित जाचत/अनुसूचित जनजाचत प्रमाण पत्र क े  सामने दिए गए 
+बटन पर क्लिक करें। दनम्नानुसार पेज खुलेगा 
+ 
+ 
+चित्र क्रमाांक 9 
+िरण 3.7: आधार ई-प्रमाणीकरण प्रक्रक्रया क े  लिए आगे बटन पर क्लिक करें। 
+इस पेज पर अनुसूचित जातत/अनुसूचित जनजातत प्रमाण पत्र हेतु आवश्यक दस्तावेज़़ों की सूिी देखी सकती है। 
+ 
+चित्र क्रमाांक 10
+
+--- Page 9 ---
+िरण 4: आधार ई-प्रमाणीकरण 
+आधार ई-प्रमाणीकरण क े  लिए डनम्नलिखखत प्रक्रक्रया का पािन करें। 
+ 
+चित्र क्रमाांक 11 
+िरण 4.1: फॉमट में पूछी गई जानकाररयााँ दजट कर Aadhaar e-Authentication पर क्लिक करें। डनम्नानुसार 
+एक पॉप-अप तविंिो खुिेगा। 
+ 
+चित्र क्रमाांक 12 
+िरण 4.2: आधार का तववरण भरें। 
+िरण 4.3: सहमतत देने क े  लिए डनधाटररत बॉक्स पर क्लिक करें। 
+िरण 4.4: जानकारी भरकर Authentication बटन पर क्लिक करें। 
+िरण 4.5: चित्र क्रमाांक 11 क े  अनुसार पेज पर क्रदए गए जमा करें बटन पर क्लिक करें।
+
+--- Page 10 ---
+िरण 5: अनुसूचिर् जातर्/अनुसूचिर् जनजातर् प्रमाण पत्र क े  र्लए आवेदन 
+िरण 5.1: आवेदन फॉमट में सामान्य तववरण और वतटमान पता दजट करें। 
+ 
+चित्र क्रमाांक 13 
+ 
+िरण 5.2: स्थायी पते का तववरण दजट करें, सहेजें और पूवाावलोकन बटन पर क्लिक करें। 
+ 
+चित्र क्रमाांक 14
+
+--- Page 11 ---
+िरण 6: आवश्यक दस्तावेज़ अपलोि करना 
+अनुिग्नक का तववरण पेज खुिेगा, इसमें आवश्यक दस्तावेज़ अपिोि करने क े  लिए डनम्न प्रक्रक्रया का पािन करें। 
+ 
+चित्र क्रमाांक 15 
+ 
+ 
+चित्र क्रमाांक 16 
+िरण 6.1: “Choose File”  पर क्लिक कर अपने कम्प्यूटर या िैपटॉप से दस्तावेज की स्क ै न कॉपी िुनें। 
+िरण 6.2: फाइि सिेक्ट करने क े  बाद “UPLOAD”  पर क्लिक करें। 
+िरण 6.3: दस्तावेज अपिोि करने क े  बाद “अनुलग्नक सहेजें” पर क्लिक करें। 
+िरण 6.4: पुक्रिकरण क े  लिए िॉयिॉग बॉक्स खुिेगा, इसे ओक े कर दें।
+
+--- Page 12 ---
+िरण 7: पूवाावलोकन और आवेदन जमा करना 
+शुल्क क े  भुगतान क े  पश्चात् डनम्न चित्रानुसार पेज खुिेगा। 
+ 
+चित्र क्रमाांक 18 
+ 
+ 
+चित्र क्रमाांक 19 
+िरण 7.1 घोषणा: घोषणा हेतु डनधाटररत बॉक्स पर क्लिक करें। 
+िरण 7.2: घोषणा पर क्लिक करते ही “जमा करें” बटन क्रदखाई देगा। इस पर क्लिक करते ही आपका फॉमट 
+जमा हो जाएगा।
+
+--- Page 13 ---
+िरण 8: शुल्क का भुगर्ान 
+ 
+चित्र क्रमाांक 17 
+िरण 8.1: डनधाटररत शुल्क का भुगतान करें। 
+िरण 8.2: “जमा करें” पर क्लिक करें। 
+ 
+नोट: 
+• िोकसेवा क ें द्र/ सीएससी/डकयोस्क क े  लिए सेवा शुल्क रु. 30 डनधाटररत है। 
+• अचधकतम पााँि दस्तावेज़़ों तक स्क ैडनिंग डनिःशुल्क है। 
+• इसक े  अततररक्त और कोई शुल्क देय नहीं है।
+
+--- Page 14 ---
+िरण 9: पावर्ी सुरक्षिर् रखना 
+आवेदन सफितापूवटक जमा होने क े  पश्चात् पावती जेनरेट होती है। इसमें आवेदन संदभा क्रमांक देखा जा सकता 
+है। इस पावती का क्रप्रिंट आउट िेकर सुरलित रखें। 
+ 
+चित्र क्रमाांक 20 
+आवेदन संदभा क्रमांक की सहायता से आवेदन की स्थस्थतत छत्तीसगढ़ ई-डिस्ट्रिक्ट क े  पोटटि पर देखी जा सकती 
+है। 
+ 
+उपयोगी जानकारी: 
+• आवेदन जमा करने क े  बाद डनधाटररत 22 क्रदऩों की समय-सीमा क े  अ ां दर आवेदन का डनराकरण कर क्रदया जाता है। 
+• ई-डिस्ट्रिक्ट पोटटि पर आवेदन की स्थस्थतत देखी जा सकती है। 
+• अनुसूचित जातत अथवा जनजातत प्रमाण पत्र जारी होने क े  उपराांत इसकी डिचजटि प्रतत ई-डिस्ट्रिक्ट पोटटि से िाउनिोि की 
+जा सकती है।

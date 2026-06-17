@@ -1,6 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
 import './App.css';
 
+// API base: allow overriding with Vite env var, otherwise use backend directly in dev
+const API_BASE = import.meta.env.VITE_API_BASE || (import.meta.env.DEV ? 'http://127.0.0.1:8000' : '');
+
 // Translation dictionary for English and Hindi support
 const translations = {
   en: {
@@ -161,7 +164,7 @@ function App() {
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const response = await fetch('/api/services');
+        const response = await fetch(`${API_BASE}/api/services`);
         if (response.ok) {
           const data = await response.json();
           setServices(data);
@@ -185,7 +188,7 @@ function App() {
     const fetchDetails = async () => {
       setIsDetailsLoading(true);
       try {
-        const response = await fetch(`/api/services/${selectedSno}?lang=${lang}`);
+        const response = await fetch(`${API_BASE}/api/services/${selectedSno}?lang=${lang}`);
         if (response.ok) {
           const data = await response.json();
           setDetails(data);
@@ -247,7 +250,7 @@ function App() {
 
     // Smart Catalog Mapping: Call search endpoint to see if query maps to a specific catalog item
     try {
-      const searchRes = await fetch('/api/search', {
+      const searchRes = await fetch(`${API_BASE}/api/search`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query: userQuery, language: lang })
@@ -265,7 +268,7 @@ function App() {
 
     // Call chat endpoint
     try {
-      const response = await fetch('/api/chat', {
+      const response = await fetch(`${API_BASE}/api/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

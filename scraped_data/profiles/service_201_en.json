@@ -1,0 +1,371 @@
+{
+  "service_id": "201",
+  "language": "en",
+  "name": "Ordinary Gazette Notification for Name Change",
+  "department": "Government Printing and Stationery Department",
+  "category": "",
+  "sla": "29 Days",
+  "details_link": "https://sewasetu.cgstate.gov.in/instractionPageNew.do?serviceId=201&lang=en",
+  "required_documents": [
+    {
+      "sno": "1",
+      "document_type": "The Original Copy Of A Challan Of ₹ 430/- From Any Branch Of The State Bank Of India. (Head – 0058 Printing And Stationery, 102 Publication Of Gazette, Etc., And Other Receipts).",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "The Original Copy Of A Challan Of ₹ 430/- From Any Branch Of The State Bank Of India. (Head – 0058 Printing And Stationery, 102 Publication Of Gazette, Etc., And Other Receipts).",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "2",
+      "document_type": "A Notarized Affidavit In Form-Iii On A ₹ 50 Non-Judicial Stamp Paper(Should Not Be More Than 03 Months Old From The Date Of Application).",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "A Notarized Affidavit In Form-Iii On A ₹ 50 Non-Judicial Stamp Paper(Should Not Be More Than 03 Months Old From The Date Of Application).",
+          "format_link": "https://sewasetu.cgstate.gov.in/resources/docFormat/23842.pdf",
+          "local_pdf_path": "scraped_data/pdfs/201_en_23842.pdf"
+        }
+      ]
+    },
+    {
+      "sno": "3",
+      "document_type": "The Original Copy Of The Publication Of The Notice For Name Change In Form-I In A Local Newspaper(Should Not Be More Than 03 Months Old From The Date Of Application).",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "The Original Copy Of The Publication Of The Notice For Name Change In Form-I In A Local Newspaper (Should Not Be More Than 03 Months Old From The Date Of Application).",
+          "format_link": "https://sewasetu.cgstate.gov.in/resources/docFormat/23843.pdf",
+          "local_pdf_path": "scraped_data/pdfs/201_en_23843.pdf"
+        }
+      ]
+    },
+    {
+      "sno": "4",
+      "document_type": "The Original Copy Of The Deed Form In Form-Ii With The Names, Signatures And Addresses Of 02 Witnesses.",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Other Document 2",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Other Document 1",
+          "format_link": "https://sewasetu.cgstate.gov.in/resources/docFormat/23848.pdf",
+          "local_pdf_path": "scraped_data/pdfs/201_en_23848.pdf"
+        }
+      ]
+    },
+    {
+      "sno": "5",
+      "document_type": "Old Name & New Name Verification Document",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Old Name & New Name Verification Document",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "6",
+      "document_type": "All Types Of Documents/Identity Cards/Ids That Have Been Mentioned In The Affidavit.",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "All Types Of Documents/Identity Cards/Ids That Have Been Mentioned In The Affidavit.",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "7",
+      "document_type": "Identity card of the applicant issued by the government",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Identity card of the applicant issued by the government",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "8",
+      "document_type": "Identity card of witnesses issued by the government",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Identity card of witnesses issued by the government",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    }
+  ],
+  "fees": {
+    "where_to_apply": "",
+    "kiosk_fee": "30.0",
+    "online_fee": "30.0",
+    "raw_text": "Where to Apply? Sewa Setu Kendra : ₹30.0 Online : ₹30.0"
+  },
+  "contact_details": "Sewa Setu Kendra",
+  "time_limit": "29 Days",
+  "form_fields": [
+    {
+      "attribute_id": "1068",
+      "label": "Applicant Details",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "1",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3789",
+      "label": "Language of publication of notification",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "2",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3758",
+      "label": "Change Type",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "3",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3788",
+      "label": "Relationship of guardian to beneficiary",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "3",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3759",
+      "label": "Full Name In Hindi",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "4",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3760",
+      "label": "Full Name (Before Change) In English",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "4",
+      "col": "2"
+    },
+    {
+      "attribute_id": "3787",
+      "label": "Challn Number",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "5",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3762",
+      "label": "Date of Birth",
+      "input_type": "date",
+      "data_type": "Date",
+      "row": "6",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3763",
+      "label": "Gender",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "6",
+      "col": "2"
+    },
+    {
+      "attribute_id": "3784",
+      "label": "Father/Mother/Husband Name In Hindi",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "7",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3761",
+      "label": "Father/Mother/Husband Name In English",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "7",
+      "col": "2"
+    },
+    {
+      "attribute_id": "3783",
+      "label": "Change applicable to",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "8",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3786",
+      "label": "Wife/Husband Name In Hindi",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "9",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3785",
+      "label": "Wife/Husband Name In English",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "9",
+      "col": "2"
+    },
+    {
+      "attribute_id": "3780",
+      "label": "Son/Daughter Name (before change) in Hindi",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "12",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3779",
+      "label": "Son/Daughter Name (Before Change) In English",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "12",
+      "col": "2"
+    },
+    {
+      "attribute_id": "3781",
+      "label": "Son/Daughter Name (after change) in Hindi",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "13",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3782",
+      "label": "Son/Daughter Name (after change) in English",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "13",
+      "col": "2"
+    },
+    {
+      "attribute_id": "3774",
+      "label": "Full Name (After Change) In Hindi",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "14",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3778",
+      "label": "Full Name (After Change) In English",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "14",
+      "col": "2"
+    },
+    {
+      "attribute_id": "3773",
+      "label": "Details of documents related to name change",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "17",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3775",
+      "label": "Contact Information",
+      "input_type": "section lebel",
+      "data_type": "Alfa Numeric",
+      "row": "18",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3767",
+      "label": "Residential Address",
+      "input_type": "textarea",
+      "data_type": "Charactar",
+      "row": "19",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3768",
+      "label": "District",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "19",
+      "col": "2"
+    },
+    {
+      "attribute_id": "3769",
+      "label": "Village/City",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "20",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3790",
+      "label": "Tehsil",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "20",
+      "col": "2"
+    },
+    {
+      "attribute_id": "3771",
+      "label": "PIN Code",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "21",
+      "col": "1"
+    }
+  ],
+  "downloaded_pdfs": [
+    {
+      "source_url": "https://sewasetu.cgstate.gov.in/resources/docFormat/23842.pdf",
+      "type": "document_format",
+      "local_path": "scraped_data/pdfs/201_en_23842.pdf"
+    },
+    {
+      "source_url": "https://sewasetu.cgstate.gov.in/resources/docFormat/23843.pdf",
+      "type": "document_format",
+      "local_path": "scraped_data/pdfs/201_en_23843.pdf"
+    },
+    {
+      "source_url": "https://sewasetu.cgstate.gov.in/resources/docFormat/23848.pdf",
+      "type": "document_format",
+      "local_path": "scraped_data/pdfs/201_en_23848.pdf"
+    },
+    {
+      "source_url": "https://sewasetu.cgstate.gov.in/resources/docFormat/23842.pdf",
+      "type": "document_format",
+      "local_path": "scraped_data/pdfs/201_en_23842.pdf"
+    },
+    {
+      "source_url": "https://sewasetu.cgstate.gov.in/resources/docFormat/23843.pdf",
+      "type": "document_format",
+      "local_path": "scraped_data/pdfs/201_en_23843.pdf"
+    },
+    {
+      "source_url": "https://sewasetu.cgstate.gov.in/resources/docFormat/23848.pdf",
+      "type": "document_format",
+      "local_path": "scraped_data/pdfs/201_en_23848.pdf"
+    }
+  ],
+  "combined_manual_text_path": "scraped_data/extracted_text/combined_manual_201_en.txt"
+}

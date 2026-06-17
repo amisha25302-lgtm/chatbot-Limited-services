@@ -1,6 +1,7 @@
 import os
 import json
 import time
+import sys
 import requests
 import re
 from fastapi import FastAPI, HTTPException, BackgroundTasks, Body
@@ -8,6 +9,12 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Optional, Dict, Any
 from dotenv import load_dotenv
+
+# Force stdout/stderr to UTF-8 to prevent encoding issues (e.g. UnicodeEncodeError on Windows)
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
+if hasattr(sys.stderr, 'reconfigure'):
+    sys.stderr.reconfigure(encoding='utf-8')
 
 # Load env variables
 load_dotenv()
@@ -199,7 +206,7 @@ def chat_with_bot(request: ChatRequest):
         print(f"[API] Error querying vector store: {e}")
     finally:
         retrieval_elapsed = time.perf_counter() - retrieval_start
-        print(f"\n[TIMING] ⏱  Chunk retrieval took: {retrieval_elapsed:.3f}s")
+        print(f"\n[TIMING] Chunk retrieval took: {retrieval_elapsed:.3f}s")
         
     # Budget-based context compile with source labeling
     context_parts = []
@@ -248,7 +255,7 @@ def chat_with_bot(request: ChatRequest):
             "आप SewaSetu (सेवा सेतु) छत्तीसगढ़ पोर्टल के एक विशेषज्ञ सहायक हैं।\n"
             "आपका उद्देश्य नागरिकों को सरकारी सेवाओं के आवेदन, आवश्यक दस्तावेजों और शुल्कों को समझने में मदद करना है।\n\n"
             "उत्तर देने के लिए केवल और केवल प्रदान किए गए संदर्भ (Context) का उपयोग करें। ढांचागत आवश्यकताओं, समय सीमा (SLA), शुल्क और आवश्यक दस्तावेजों के लिए '[Official Service Specification Profile]' वाले हिस्से को ही अंतिम और प्राथमिक आधार मानें। विस्तृत विवरण, दिशा-निर्देशों या चरण-दर-चरण निर्देशों के लिए '[User Manual & Guidelines]' वाले हिस्सों का उपयोग करें।\n\n"
-            "यदि संदर्भ में उपयोगकर्ता के प्रश्न का उत्तर पर्याप्त रूप से उपलब्ध नहीं है, तो आपको अनिवार्य रूप से केवल यही उत्तर देना होगा: 'जानकारी उपलब्ध नहीं है।' और कुछ भी नहीं जोड़ना है। अपनी ओर से कोई काल्पनिक बात या बाहरी ज्ञान का उपयोग न करें।\n\n"
+            "यदि संदर्भ में उपयोगकर्ता के प्रश्न का उत्तर पर्याप्त रूप से उपलब्ध नहीं है, तो आपको 'जानकारी उपलब्ध नहीं है।' उत्तर देना होगा। अपनी ओर से कोई काल्पनिक बात या बाहरी ज्ञान का उपयोग न करें।\n\n"
             "आवश्यक दस्तावेजों के लिए महत्वपूर्ण निर्देश:\n"
             "- आपको आवश्यक दस्तावेजों की सूची केवल और केवल '[Official Service Specification Profile]' खंड से प्राप्त करनी होगी। आवश्यक दस्तावेजों की सूची के लिए '[User Manual & Guidelines]' को न देखें, क्योंकि यह अपूर्ण, कटी हुई या विरोधाभासी हो सकती है।\n"
             "- आपको संदर्भ में '## Required Documents' (या '## आवश्यक दस्तावेज़') के अंतर्गत '[Official Service Specification Profile]' में दी गई प्रत्येक दस्तावेज़ श्रेणी (जैसे Category [1], Category [2] आदि) को अनिवार्य रूप से पूरी तरह सूचीबद्ध करना होगा।\n"
@@ -264,7 +271,7 @@ def chat_with_bot(request: ChatRequest):
         system_instruction = (
             "You are an expert assistant for the SewaSetu Chhattisgarh portal.\n"
             "Your goal is to help citizens understand how to apply for services, check required documents, kiosk/online fees, and timelines.\n\n"
-            "Answer the question using ONLY the relevant context below. Use the '[Official Service Specification Profile]' chunk as the absolute primary authority for structured requirements, SLAs, fees, and required documents. Use the '[User Manual & Guidelines]' chunks for details, descriptions, or step-by-step instructions. If the context does not contain the answer or if there is insufficient information to answer the question, you MUST respond with exactly: 'Information not available.' and nothing else. Do not make up a response, extrapolate, or use outside knowledge.\n\n"
+            "Answer the question using ONLY the relevant context below. Use the '[Official Service Specification Profile]' chunk as the absolute primary authority for structured requirements, SLAs, fees, and required documents. Use the '[User Manual & Guidelines]' chunks for details, descriptions, or step-by-step instructions. If the context does not contain the answer or if there is insufficient information to answer the question, you MUST respond with: 'Information not available.' Do not make up a response, extrapolate, or use outside knowledge.\n\n"
             "CRITICAL REQUIREMENT FOR REQUIRED DOCUMENTS:\n"
             "- You MUST retrieve the list of required documents ONLY from the '[Official Service Specification Profile]' section. Do NOT use or look at '[User Manual & Guidelines]' for listing required documents, as it may be incomplete, truncated, or conflicting.\n"
             "- You MUST list EVERY single document category (Category [1], Category [2], Category [3], Category [4], etc.) present under the '## Required Documents' section in '[Official Service Specification Profile]'.\n"
@@ -307,8 +314,8 @@ def chat_with_bot(request: ChatRequest):
             
             if res.status_code == 200:
                 generation_elapsed = time.perf_counter() - generation_start
-                print(f"[TIMING] ⚡ Answer generation (Sarvam AI) took: {generation_elapsed:.3f}s")
-                print(f"[TIMING] 📊 Total request time: {retrieval_elapsed + generation_elapsed:.3f}s\n")
+                print(f"[TIMING] Answer generation (Sarvam AI) took: {generation_elapsed:.3f}s")
+                print(f"[TIMING] Total request time: {retrieval_elapsed + generation_elapsed:.3f}s\n")
                 bot_reply = res.json()["choices"][0]["message"]["content"].strip()
                 # Clean reasoning/thinking tags
                 bot_reply = re.sub(r'<think>.*?</think>', '', bot_reply, flags=re.DOTALL)
@@ -316,7 +323,7 @@ def chat_with_bot(request: ChatRequest):
                 return {"response": bot_reply}
             else:
                 generation_elapsed = time.perf_counter() - generation_start
-                print(f"[TIMING] ⚡ Sarvam AI generation failed after: {generation_elapsed:.3f}s")
+                print(f"[TIMING] Sarvam AI generation failed after: {generation_elapsed:.3f}s")
                 raise HTTPException(
                     status_code=500, 
                     detail=f"Sarvam AI API returned code {res.status_code}: {res.text}"
@@ -349,8 +356,8 @@ def chat_with_bot(request: ChatRequest):
             res = requests.post(url, json=payload, timeout=150)
             if res.status_code == 200:
                 generation_elapsed = time.perf_counter() - generation_start
-                print(f"[TIMING] ⚡ Answer generation took: {generation_elapsed:.3f}s")
-                print(f"[TIMING] 📊 Total request time: {retrieval_elapsed + generation_elapsed:.3f}s\n")
+                print(f"[TIMING] Answer generation took: {generation_elapsed:.3f}s")
+                print(f"[TIMING] Total request time: {retrieval_elapsed + generation_elapsed:.3f}s\n")
                 bot_reply = res.json().get("response", "").strip()
                 # Clean reasoning/thinking tags
                 bot_reply = re.sub(r'<think>.*?</think>', '', bot_reply, flags=re.DOTALL)
@@ -358,7 +365,7 @@ def chat_with_bot(request: ChatRequest):
                 return {"response": bot_reply}
             else:
                 generation_elapsed = time.perf_counter() - generation_start
-                print(f"[TIMING] ⚡ Answer generation failed after: {generation_elapsed:.3f}s")
+                print(f"[TIMING] Answer generation failed after: {generation_elapsed:.3f}s")
                 raise HTTPException(status_code=500, detail=f"Ollama server returned code {res.status_code}")
                 
         except Exception as e:
@@ -488,3 +495,5 @@ def trigger_ingestion(background_tasks: BackgroundTasks):
             
     background_tasks.add_task(run_process)
     return {"message": "Ingestion pipeline triggered in the background."}
+
+# Trigger Uvicorn Reload for manifest update

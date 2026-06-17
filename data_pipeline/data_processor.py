@@ -20,7 +20,7 @@ PROCESSED_DIR = os.path.join(WORKSPACE_DIR, "processed_data")
 MD_OUT_DIR_EN = os.path.join(PROCESSED_DIR, "markdown_details", "en")
 MD_OUT_DIR_HI = os.path.join(PROCESSED_DIR, "markdown_details", "hi")
 
-SERVICE_IDS = [3, 6, 7, 24, 337, 354]
+SERVICE_IDS = [3, 4, 5, 6, 7, 24, 201, 337, 354]
 LANGUAGES = ["en", "hi"]
 
 def setup_directories():

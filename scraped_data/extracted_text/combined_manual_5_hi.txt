@@ -1,0 +1,96 @@
+==================================================
+SERVICE DETAILS MANUAL: अन्य पिछड़ा वर्ग प्रमाण पत्र
+Service ID: 5
+Language: HI
+Department: राजस्व एवं आपदा प्रबंधन विभाग
+Time Limit / SLA: 
+Contact Details: 
+Kiosk Fee: 
+Online Fee: 
+Where to Apply: 
+Raw Fees Text: 
+==================================================
+
+REQUIRED DOCUMENTS:
+- SNo 1: निवास का प्रमाण (Mandatory: नहीं)
+  * Supporting Document 1: वार्ड सदस्य, स्थानीय विधायक / सांसद से प्रमाण पत्र
+  * Supporting Document 2: घर या भूमि का दस्तावेज़
+  * Supporting Document 3: राशन कार्ड
+  * Supporting Document 4: बिजली का बिल
+  * Supporting Document 5: मूल निवासी प्रमाण पत्र
+  * Supporting Document 6: जन्म प्रमाण पत्र
+  * Supporting Document 7: जन्म सूचना प्रपत्र
+  * Supporting Document 8: पिता / अभिभावक की सेवा प्रमाण पत्र / पहचान पत्र
+  * Supporting Document 9: अनैच्छिक प्रवजन का आदेश
+- SNo 2: शपथ पत्र (Mandatory: हाँ)
+  * Supporting Document 1: शपथ पत्र
+- SNo 3: आय प्रमाण (Mandatory: हाँ)
+  * Supporting Document 1: पटवारी/सरपंच/पार्षद से प्रमाण पत्र
+  * Supporting Document 2: नियोक्ता का आय प्रमाण पत्र/फार्म १६
+  * Supporting Document 3: राशन कार्ड
+  * Supporting Document 4: भूमि/घर से आय
+  * Supporting Document 5: अन्य
+  * Supporting Document 6: आवेदन प्रपत्र
+- SNo 4: अन्य पिछड़ा वर्ग का प्रमाण (Mandatory: हाँ)
+  * Supporting Document 1: शैक्षणिक प्रमाण - पत्र
+  * Supporting Document 2: प्राथमिक स्कूल शिक्षा के प्रमाण पत्र के लिए स्थानांतरण
+  * Supporting Document 3: पिता का अ.पि.व. प्रमाण पत्र
+  * Supporting Document 4: सरपंच / पार्षद से ओबीसी प्रमाणपत्र
+  * Supporting Document 5: पिता / अभिभावक की सेवा प्रमाण पत्र / पहचान पत्र
+  * Supporting Document 6: मिसल
+  * Supporting Document 7: अधिकार अभिलेख
+  * Supporting Document 8: जमाबंदी
+  * Supporting Document 9: १९३१ का जनगणना पंजी
+  * Supporting Document 10: 1949 का नागरिक पंजी
+  * Supporting Document 11: दाखिल / ख़ारिज पंजी
+  * Supporting Document 12: असमर्थता / अनुपलब्धता का प्रमाण
+- SNo 5: वंशावली (Mandatory: नहीं)
+  * Supporting Document 1: वंशावली
+  * Supporting Document 2: वंशावली १
+  * Supporting Document 3: वंशावली २
+  * Supporting Document 4: वंशावली ४
+  * Supporting Document 5: वंशावली 3
+- SNo 6: ग्राम सभा प्रस्ताव(ग्रामीण क्षेत्र के निवासी के लिए) (Mandatory: नहीं)
+  * Supporting Document 1: ग्राम सभा प्रस्ताव(ग्रामीण क्षेत्र के निवासी के लिए)
+- SNo 7: मध्यप्रदेश पुनर्गठन अधिनियम 2000(क्रमांक २६-सन २००० की धारा ६७ के अधीन छ. ग. राज्य संवर्ग आबंटन ) का प्रमाण (Mandatory: नहीं)
+  * Supporting Document 1: मध्यप्रदेश पुनर्गठन अधिनियम २०००(क्रमांक २६-सन २००० की धारा ६७ के अधीन छ. ग. राज्य संवर्ग आबंटन ) का प्रमाण
+
+APPLICATION FORM FIELDS:
+- Field: सामान्य विवरण [Type: section lebel, Data: Charactar] (Row: 1, Col: 1)
+- Field: हितग्राही के अभिभावक का प्रकार [Type: drop down, Data: Charactar] (Row: 2, Col: 1)
+- Field: हितग्राही के अभिभावक का नाम [Type: text, Data: Charactar] (Row: 2, Col: 2)
+- Field: हितग्राही के अभिभावक का प्रकार अंग्रेजी में [Type: drop down, Data: Charactar] (Row: 3, Col: 1)
+- Field: हितग्राही के अभिभावक का नाम अंग्रेजी में [Type: text, Data: Charactar] (Row: 3, Col: 2)
+- Field: लिंग [Type: drop down, Data: Charactar] (Row: 4, Col: 1)
+- Field: वैवाहिक स्थिति [Type: drop down, Data: Charactar] (Row: 4, Col: 2)
+- Field: जन्म तिथि [Type: date, Data: Date] (Row: 5, Col: 1)
+- Field: आवेदक से सम्बन्ध [Type: drop down, Data: Charactar] (Row: 5, Col: 2)
+- Field: जाति [Type: search, Data: Search] (Row: 6, Col: 1)
+- Field: श्रेणी [Type: text, Data: Charactar] (Row: 6, Col: 2)
+- Field: जाति अंग्रेजी में [Type: text, Data: Charactar] (Row: 7, Col: 1)
+- Field: श्रेणी अंग्रेजी में [Type: text, Data: Charactar] (Row: 7, Col: 2)
+- Field: वर्ग का क्रमांक [Type: text, Data: Charactar] (Row: 8, Col: 1)
+- Field: हितग्राही का नाम अंग्रेजी में [Type: text, Data: Charactar] (Row: 8, Col: 2)
+- Field: आवेदक का वर्तमान पता [Type: section lebel, Data: Charactar] (Row: 9, Col: 1)
+- Field: पता [Type: textarea, Data: Alfa Numeric] (Row: 10, Col: 1)
+- Field: पिन कोड [Type: text, Data: Number] (Row: 10, Col: 2)
+- Field: पोस्ट बॉक्स नंबर [Type: text, Data: Alfa Numeric] (Row: 11, Col: 1)
+- Field: जिला [Type: drop down, Data: Charactar] (Row: 11, Col: 2)
+- Field: पता अंग्रेजी में [Type: textarea, Data: Alfa Numeric] (Row: 12, Col: 1)
+- Field: क्या वर्तमान पता और स्थायी पता एक है [Type: drop down, Data: Charactar] (Row: 12, Col: 2)
+- Field: आवेदक का स्थाई पता [Type: section lebel, Data: Charactar] (Row: 13, Col: 1)
+- Field: पता [Type: textarea, Data: Alfa Numeric] (Row: 14, Col: 1)
+- Field: पिन कोड [Type: text, Data: Number] (Row: 14, Col: 2)
+- Field: पोस्ट बॉक्स नंबर [Type: text, Data: Alfa Numeric] (Row: 15, Col: 1)
+- Field: जिला [Type: drop down, Data: Charactar] (Row: 15, Col: 2)
+- Field: पुलिस थाना [Type: search, Data: Search] (Row: 16, Col: 1)
+- Field: २६ दिसंबर १९८४ को या इससे पहले का पता [Type: section lebel, Data: Charactar] (Row: 17, Col: 1)
+- Field: ग्राम या नगर [Type: text, Data: Charactar] (Row: 18, Col: 1)
+- Field: पटवारी हल्का नंबर [Type: text, Data: Number] (Row: 18, Col: 2)
+- Field: तहसील [Type: text, Data: Charactar] (Row: 19, Col: 1)
+- Field: जिला [Type: Data List, Data: Charactar] (Row: 19, Col: 2)
+- Field: इस समय परिवार के मुखिया का नाम [Type: text, Data: Charactar] (Row: 20, Col: 1)
+- Field: आवेदक का परिवार के मुखिया से सम्बन्ध [Type: drop down, Data: Charactar] (Row: 20, Col: 2)
+- Field: आवेदक या उसके पिता या माता या पालक का २६ दिसंबर १९८४ से अब तक का पता का विवरण [Type: section lebel, Data: Alfa Numeric] (Row: 21, Col: 1)
+- Field: आवेदक के अभिभावक के पते की जानकारी [Type: fieldset, Data: Alfa Numeric] (Row: 22, Col: 1)
+- Field: मैं सहमति देता/देती हूँ कि यदि निर्धारित समय सीमा के भीतर आवेदनित लोक सेवा प्रदान नहीं की जाती है, तो मेरी ओर से सक्षम अधिकारी के समक्ष लोक सेवा गारंटी नियम, 2011 के नियम 6 के अंतर्गत स्वतः शिकायत/अपील दर्ज की जाए। [Type: drop down, Data: Alfa Numeric] (Row: 22, Col: 2)

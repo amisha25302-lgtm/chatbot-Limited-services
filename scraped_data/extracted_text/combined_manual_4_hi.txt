@@ -1,0 +1,102 @@
+==================================================
+SERVICE DETAILS MANUAL: अनुसूचित जाति / अनुसूचित जनजाति प्रमाण पत्र
+Service ID: 4
+Language: HI
+Department: राजस्व एवं आपदा प्रबंधन विभाग
+Time Limit / SLA: 
+Contact Details: 
+Kiosk Fee: 
+Online Fee: 
+Where to Apply: 
+Raw Fees Text: 
+==================================================
+
+REQUIRED DOCUMENTS:
+- SNo 1: निवास का प्रमाण (Mandatory: नहीं)
+  * Supporting Document 1: मूल निवासी प्रमाण पत्र
+  * Supporting Document 2: बिजली का बिल
+  * Supporting Document 3: राशन कार्ड
+  * Supporting Document 4: टेलीफोन बिल
+  * Supporting Document 5: जन्म प्रमाण पत्र
+  * Supporting Document 6: वोटिंग कार्ड
+  * Supporting Document 7: बी.पी.एल. प्रमाण पत्र
+  * Supporting Document 8: घर या भूमि का दस्तावेज़
+  * Supporting Document 9: ड्राइविंग लाइसेंस
+  * Supporting Document 10: अन्य
+  * Supporting Document 11: वार्ड सदस्य, स्थानीय विधायक / सांसद से प्रमाण पत्र
+  * Supporting Document 12: फोटो परिचय पत्र
+  * Supporting Document 13: पिता / पालक की नौकरी का प्रमाण - पत्र
+  * Supporting Document 14: अनैच्छिक प्रवजन का आदेश
+  * Supporting Document 15: मूल निवासी प्रमाण पत्र
+- SNo 2: जाति का प्रमाण (Mandatory: हाँ)
+  * Supporting Document 1: अन्य राज्य के अनुसूचित जाति / जनजाति प्रमाणपत्र
+  * Supporting Document 2: सरपंच / पार्षद / विधायक / साँसद से जाति प्रमाण-पत्र
+  * Supporting Document 3: प्राथमिक शाला या जिला शिक्षा अधिकारी द्वारा प्रमाणित प्राथमिक शाला द्वारा जारी स्थानान्तरण प्रमाण-पत्र
+  * Supporting Document 4: पिता / अभिभावक की सेवा प्रमाण पत्र / पहचान पत्र
+  * Supporting Document 5: शैक्षणिक प्रमाण पत्र
+  * Supporting Document 6: आवेदक को या उसके किसी परिवारजन को जारी हुआ जाति प्रमाण पत्र
+  * Supporting Document 7: प्राथमिक परीक्षा उत्तीर्ण प्रमाण-पत्र
+  * Supporting Document 8: जन्म सूचना प्रपत्र
+  * Supporting Document 9: मिसल
+  * Supporting Document 10: अधिकार अभिलेख
+  * Supporting Document 11: जमाबंदी
+  * Supporting Document 12: १९३१ का जनगणना पंजी
+  * Supporting Document 13: 1949 का नागरिक पंजी
+  * Supporting Document 14: दाखिल / ख़ारिज पंजी
+  * Supporting Document 15: असमर्थता / अनुपलब्धता का प्रमाण
+- SNo 3: शपथ पत्र (Mandatory: नहीं)
+  * Supporting Document 1: शपथ पत्र
+- SNo 4: वंशावली (Mandatory: नहीं)
+  * Supporting Document 1: वंशावली
+  * Supporting Document 2: वंशावली १
+  * Supporting Document 3: वंशावली २
+  * Supporting Document 4: वंशावली ४
+  * Supporting Document 5: वंशावली 3
+- SNo 5: ग्राम सभा प्रस्ताव(ग्रामीण क्षेत्र के निवासी के लिए) (Mandatory: नहीं)
+  * Supporting Document 1: ग्राम सभा प्रस्ताव(ग्रामीण क्षेत्र के निवासी के लिए)
+- SNo 6: मध्यप्रदेश पुनर्गठन अधिनियम 2000(क्रमांक २६-सन २००० की धारा ६७ के अधीन छ. ग. राज्य संवर्ग आबंटन ) का प्रमाण (Mandatory: नहीं)
+  * Supporting Document 1: मध्यप्रदेश पुनर्गठन अधिनियम २०००(क्रमांक २६-सन २००० की धारा ६७ के अधीन छ. ग. राज्य संवर्ग आबंटन ) का प्रमाण
+
+APPLICATION FORM FIELDS:
+- Field: सामान्य विवरण [Type: section lebel, Data: Charactar] (Row: 1, Col: 1)
+- Field: हितग्राही के अभिभावक का प्रकार [Type: drop down, Data: Charactar] (Row: 2, Col: 1)
+- Field: हितग्राही के अभिभावक का नाम [Type: text, Data: Charactar] (Row: 2, Col: 2)
+- Field: हितग्राही के अभिभावक का प्रकार अंग्रेजी में [Type: drop down, Data: Charactar] (Row: 3, Col: 1)
+- Field: हितग्राही के अभिभावक का नाम अंग्रेजी में [Type: text, Data: Charactar] (Row: 3, Col: 2)
+- Field: लिंग [Type: drop down, Data: Charactar] (Row: 4, Col: 1)
+- Field: वैवाहिक स्थिति [Type: drop down, Data: Charactar] (Row: 4, Col: 2)
+- Field: जन्म तिथि [Type: date, Data: Date] (Row: 5, Col: 1)
+- Field: आवेदक से सम्बन्ध [Type: drop down, Data: Charactar] (Row: 5, Col: 2)
+- Field: जाति [Type: search, Data: Search] (Row: 6, Col: 1)
+- Field: श्रेणी [Type: text, Data: Charactar] (Row: 6, Col: 2)
+- Field: जाति अंग्रेजी में [Type: text, Data: Charactar] (Row: 7, Col: 1)
+- Field: श्रेणी अंग्रेजी में [Type: text, Data: Charactar] (Row: 7, Col: 2)
+- Field: वर्ग का क्रमांक [Type: text, Data: Charactar] (Row: 8, Col: 1)
+- Field: हितग्राही का नाम अंग्रेजी में [Type: text, Data: Charactar] (Row: 8, Col: 2)
+- Field: आवेदक का वर्तमान पता [Type: section lebel, Data: Charactar] (Row: 9, Col: 1)
+- Field: पता [Type: textarea, Data: Alfa Numeric] (Row: 10, Col: 1)
+- Field: पिन कोड [Type: text, Data: Number] (Row: 10, Col: 2)
+- Field: पोस्ट बॉक्स नंबर [Type: text, Data: Alfa Numeric] (Row: 11, Col: 1)
+- Field: जिला [Type: drop down, Data: Charactar] (Row: 11, Col: 2)
+- Field: पता अंग्रेजी में [Type: textarea, Data: Alfa Numeric] (Row: 12, Col: 1)
+- Field: क्या वर्तमान पता और स्थायी पता एक है [Type: drop down, Data: Charactar] (Row: 12, Col: 2)
+- Field: आवेदक का स्थाई पता [Type: section lebel, Data: Charactar] (Row: 13, Col: 1)
+- Field: पता [Type: textarea, Data: Alfa Numeric] (Row: 14, Col: 1)
+- Field: पिन कोड [Type: text, Data: Number] (Row: 14, Col: 2)
+- Field: जिला [Type: drop down, Data: Charactar] (Row: 15, Col: 1)
+- Field: पोस्ट बॉक्स नंबर [Type: text, Data: Alfa Numeric] (Row: 15, Col: 1)
+- Field: पुलिस थाना [Type: search, Data: Search] (Row: 16, Col: 2)
+- Field: 10 अगस्त 1950 से पहले का स्थाई पता [Type: section lebel, Data: Charactar] (Row: 17, Col: 1)
+- Field: ग्राम या नगर [Type: text, Data: Charactar] (Row: 18, Col: 1)
+- Field: पटवारी हल्का नंबर [Type: text, Data: Number] (Row: 18, Col: 2)
+- Field: तहसील [Type: text, Data: Charactar] (Row: 19, Col: 1)
+- Field: जिला [Type: Data List, Data: Charactar] (Row: 19, Col: 2)
+- Field: इस समय परिवार के मुखिया का नाम [Type: text, Data: Charactar] (Row: 20, Col: 1)
+- Field: आवेदक का परिवार के मुखिया से सम्बन्ध [Type: drop down, Data: Charactar] (Row: 20, Col: 2)
+- Field: आवेदक या उसके पिता या माता या पालक का 10 अगस्त 1950 अ.जा. या 06 सितम्बर 1950 अ.ज.जा. से अब तक का पता का विवरण [Type: section lebel, Data: Charactar] (Row: 21, Col: 1)
+- Field: क्या आवेदक या उसके पिता या माता या पालक का सन 1950 से अब तक छत्तीसगढ़ में रहते है [Type: drop down, Data: Number] (Row: 22, Col: 1)
+- Field: आवेदक के अभिभावक के पते की जानकारी [Type: fieldset, Data: Alfa Numeric] (Row: 23, Col: 1)
+- Field: अन्य विवरण [Type: section lebel, Data: Charactar] (Row: 24, Col: 1)
+- Field: क्या आवेदक को इससे पहले एस सी एस टी प्रमण पत्र जारी किया गया है [Type: drop down, Data: Charactar] (Row: 25, Col: 1)
+- Field: हितग्राही के एससी अथवा एसटी होने के प्रमाण पत्र का विवरण [Type: textarea, Data: Charactar] (Row: 25, Col: 2)
+- Field: मैं सहमति देता/देती हूँ कि यदि निर्धारित समय सीमा के भीतर आवेदनित लोक सेवा प्रदान नहीं की जाती है, तो मेरी ओर से सक्षम अधिकारी के समक्ष लोक सेवा गारंटी नियम, 2011 के नियम 6 के अंतर्गत स्वतः शिकायत/अपील दर्ज की जाए। [Type: drop down, Data: Alfa Numeric] (Row: 26, Col: 1)

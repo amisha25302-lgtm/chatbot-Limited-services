@@ -1,0 +1,557 @@
+{
+  "service_id": "5",
+  "language": "en",
+  "name": "OBC Certificate",
+  "department": "Revenue and disaster management Department",
+  "category": "",
+  "sla": "22 Days",
+  "details_link": "https://sewasetu.cgstate.gov.in/instractionPageNew.do?serviceId=5&lang=en",
+  "required_documents": [
+    {
+      "sno": "1",
+      "document_type": "Residential Proof",
+      "mandatory": "No",
+      "supporting_documents": [
+        {
+          "name": "Certificate From Ward Member, Local Mla/Mp",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Land And House Document",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Ration Card",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Electricity Bill",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Domicile Certificate",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Birth Certificate",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Birth Information Form",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Service Certificate / Identity Card Of Father / Guardian",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Order Of Involuntary Migration",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "2",
+      "document_type": "Affidavit",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Affidavit",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "3",
+      "document_type": "Income Proof",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Certificate From Patwari/Sarpanch/Parshad",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Income Certificate Employer/Form 16",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Ration Card",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Income From Land/House",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Other Documents",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Application Form",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "4",
+      "document_type": "Obc Proof",
+      "mandatory": "Yes",
+      "supporting_documents": [
+        {
+          "name": "Educational Certificate",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Transfer Certificate Of Primary School Education",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Obc Certificate Of Father",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Obc Certificate From Sarpanch / Parshad",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Father/Guardians Service Certificate/Identity Card",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Misal",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Adhikar Abhilekh",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Jamabandi",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Census Register Of 1931",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Citizen Register Of 1949",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Dakhil / Kharij Panji",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Disability / Unavailability Proof",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "5",
+      "document_type": "Vanshavali",
+      "mandatory": "No",
+      "supporting_documents": [
+        {
+          "name": "Vanshavali",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Vanshavali 1",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Vanshavali 2",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Vanshavali 3",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "Vanshavali 4",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "6",
+      "document_type": "Gram Sabha Proposal (Resident Of Rural Areas People)",
+      "mandatory": "No",
+      "supporting_documents": [
+        {
+          "name": "Gram Sabha Proposal (Resident Of Rural Areas People)",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "7",
+      "document_type": "Madhya Pradesh Reorganization Act 2000 (No. 26 Of 2000 Under Section 67 C.G. State Cadre Allocation) Proof",
+      "mandatory": "No",
+      "supporting_documents": [
+        {
+          "name": "Madhya Pradesh Reorganization Act 2000 (No. 26 Of 2000 Under Section 67 C.G. State Cadre Allocation) Proof",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    }
+  ],
+  "fees": {
+    "where_to_apply": "",
+    "kiosk_fee": "30.0",
+    "online_fee": "30.0",
+    "raw_text": "Where to Apply? Sewa Setu Kendra : ₹30.0 Online : ₹30.0"
+  },
+  "contact_details": "Sewa Setu Kendra",
+  "time_limit": "22 Days",
+  "form_fields": [
+    {
+      "attribute_id": "76",
+      "label": "General Details",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "1",
+      "col": "1"
+    },
+    {
+      "attribute_id": "78",
+      "label": "Beneficiary Guardian Type",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "2",
+      "col": "1"
+    },
+    {
+      "attribute_id": "79",
+      "label": "Beneficiary Guardian name",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "2",
+      "col": "2"
+    },
+    {
+      "attribute_id": "1128",
+      "label": "Beneficiary Guardian Type in English",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "3",
+      "col": "1"
+    },
+    {
+      "attribute_id": "1129",
+      "label": "Beneficiary Guardian name in English",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "3",
+      "col": "2"
+    },
+    {
+      "attribute_id": "8",
+      "label": "Gender",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "4",
+      "col": "1"
+    },
+    {
+      "attribute_id": "92",
+      "label": "Marital Status",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "4",
+      "col": "2"
+    },
+    {
+      "attribute_id": "7",
+      "label": "Date of Birth",
+      "input_type": "date",
+      "data_type": "Date",
+      "row": "5",
+      "col": "1"
+    },
+    {
+      "attribute_id": "125",
+      "label": "Relation to Applicant",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "5",
+      "col": "2"
+    },
+    {
+      "attribute_id": "437",
+      "label": "Caste OBC",
+      "input_type": "search",
+      "data_type": "Search",
+      "row": "6",
+      "col": "1"
+    },
+    {
+      "attribute_id": "98",
+      "label": "Category",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "6",
+      "col": "2"
+    },
+    {
+      "attribute_id": "1132",
+      "label": "Caste In English",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "7",
+      "col": "1"
+    },
+    {
+      "attribute_id": "1131",
+      "label": "Category In English",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "7",
+      "col": "2"
+    },
+    {
+      "attribute_id": "100",
+      "label": "Category Number",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "8",
+      "col": "1"
+    },
+    {
+      "attribute_id": "1127",
+      "label": "Beneficiary name in English",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "8",
+      "col": "2"
+    },
+    {
+      "attribute_id": "148",
+      "label": "Present Address of Applicant",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "9",
+      "col": "1"
+    },
+    {
+      "attribute_id": "104",
+      "label": "Address",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "10",
+      "col": "1"
+    },
+    {
+      "attribute_id": "82",
+      "label": "PIN Code",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "10",
+      "col": "2"
+    },
+    {
+      "attribute_id": "107",
+      "label": "Post Box Number",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "11",
+      "col": "1"
+    },
+    {
+      "attribute_id": "196",
+      "label": "District",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "11",
+      "col": "2"
+    },
+    {
+      "attribute_id": "1130",
+      "label": "Address In English",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "12",
+      "col": "1"
+    },
+    {
+      "attribute_id": "678",
+      "label": "Is Present Address and Permanent Address is same",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "12",
+      "col": "2"
+    },
+    {
+      "attribute_id": "102",
+      "label": "Permanent Address of Applicant",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "13",
+      "col": "1"
+    },
+    {
+      "attribute_id": "198",
+      "label": "Address",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "14",
+      "col": "1"
+    },
+    {
+      "attribute_id": "202",
+      "label": "PIN Code",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "14",
+      "col": "2"
+    },
+    {
+      "attribute_id": "206",
+      "label": "Post Box Number",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "15",
+      "col": "1"
+    },
+    {
+      "attribute_id": "197",
+      "label": "District",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "15",
+      "col": "2"
+    },
+    {
+      "attribute_id": "207",
+      "label": "Police Station",
+      "input_type": "search",
+      "data_type": "Search",
+      "row": "16",
+      "col": "1"
+    },
+    {
+      "attribute_id": "150",
+      "label": "Address Before or on Date 26/12/1984",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "17",
+      "col": "1"
+    },
+    {
+      "attribute_id": "111",
+      "label": "Village or Town",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "18",
+      "col": "1"
+    },
+    {
+      "attribute_id": "113",
+      "label": "Patwari Halka Number",
+      "input_type": "text",
+      "data_type": "Number",
+      "row": "18",
+      "col": "2"
+    },
+    {
+      "attribute_id": "114",
+      "label": "Tehsil",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "19",
+      "col": "1"
+    },
+    {
+      "attribute_id": "31",
+      "label": "District",
+      "input_type": "Data List",
+      "data_type": "Charactar",
+      "row": "19",
+      "col": "2"
+    },
+    {
+      "attribute_id": "115",
+      "label": "Name of Head Of Family on This Date",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "20",
+      "col": "1"
+    },
+    {
+      "attribute_id": "129",
+      "label": "Applicant Relation to Head of Family",
+      "input_type": "drop down",
+      "data_type": "Charactar",
+      "row": "20",
+      "col": "2"
+    },
+    {
+      "attribute_id": "152",
+      "label": "Address Details of Applicant/his Father / Mother/ Guardian from Year 26/12/1984 to till Date",
+      "input_type": "section lebel",
+      "data_type": "Alfa Numeric",
+      "row": "21",
+      "col": "1"
+    },
+    {
+      "attribute_id": "219",
+      "label": "Address Details of Applicants Guardian",
+      "input_type": "fieldset",
+      "data_type": "Alfa Numeric",
+      "row": "22",
+      "col": "1"
+    },
+    {
+      "attribute_id": "8384",
+      "label": "I, hereby give my consent to automatic filing of a complaint/Appeal on my behalf before the Competent Officer under Rule 6 of the Lok Seva Guarantee Rules, 2011, in the event that the applied service is not delivered within the stipulated time.",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "22",
+      "col": "2"
+    }
+  ],
+  "downloaded_pdfs": [
+    {
+      "source_url": "https://sewasetu.cgstate.gov.in/resources/edistrict/user-manual/new/5.pdf",
+      "type": "user_manual",
+      "local_path": "scraped_data/pdfs/5_en_5.pdf"
+    }
+  ],
+  "combined_manual_text_path": "scraped_data/extracted_text/combined_manual_5_en.txt"
+}

@@ -15,6 +15,32 @@
     },
     {
       "sno": "2",
+      "service_id": "4",
+      "name_en": "SC/ST Certificate",
+      "name_hi": "अनुसूचित जाति / अनुसूचित जनजाति प्रमाण पत्र",
+      "dept_en": "Revenue and disaster management Department",
+      "dept_hi": "राजस्व एवं आपदा प्रबंधन विभाग",
+      "is_internal": true,
+      "path_en": "scraped_data/profiles/service_4_en.json",
+      "path_hi": "scraped_data/profiles/service_4_hi.json",
+      "manual_path_en": "scraped_data/extracted_text/combined_manual_4_en.txt",
+      "manual_path_hi": "scraped_data/extracted_text/combined_manual_4_hi.txt"
+    },
+    {
+      "sno": "3",
+      "service_id": "5",
+      "name_en": "OBC Certificate",
+      "name_hi": "अन्य पिछड़ा वर्ग प्रमाण पत्र",
+      "dept_en": "Revenue and disaster management Department",
+      "dept_hi": "राजस्व एवं आपदा प्रबंधन विभाग",
+      "is_internal": true,
+      "path_en": "scraped_data/profiles/service_5_en.json",
+      "path_hi": "scraped_data/profiles/service_5_hi.json",
+      "manual_path_en": "scraped_data/extracted_text/combined_manual_5_en.txt",
+      "manual_path_hi": "scraped_data/extracted_text/combined_manual_5_hi.txt"
+    },
+    {
+      "sno": "4",
       "service_id": "6",
       "name_en": "Income Certificate",
       "name_hi": "आय प्रमाण पत्र",
@@ -27,7 +53,7 @@
       "manual_path_hi": "scraped_data/extracted_text/combined_manual_6_hi.txt"
     },
     {
-      "sno": "3",
+      "sno": "5",
       "service_id": "7",
       "name_en": "Domicile Certificate",
       "name_hi": "मूल निवासी प्रमाण पत्र",
@@ -40,7 +66,7 @@
       "manual_path_hi": "scraped_data/extracted_text/combined_manual_7_hi.txt"
     },
     {
-      "sno": "4",
+      "sno": "6",
       "service_id": "24",
       "name_en": "Application for Water Tap Connection",
       "name_hi": "नल कनेक्शन हेतु आवेदन",
@@ -53,7 +79,20 @@
       "manual_path_hi": "scraped_data/extracted_text/combined_manual_24_hi.txt"
     },
     {
-      "sno": "5",
+      "sno": "7",
+      "service_id": "201",
+      "name_en": "Ordinary Gazette Notification for Name Change",
+      "name_hi": "नाम परिवर्तन के लिए साधारण राजपत्र अधिसूचना",
+      "dept_en": "Government Printing and Stationery Department",
+      "dept_hi": "शासकीय मुद्रण एवं लेखन सामग्री विभाग",
+      "is_internal": true,
+      "path_en": "scraped_data/profiles/service_201_en.json",
+      "path_hi": "scraped_data/profiles/service_201_hi.json",
+      "manual_path_en": "scraped_data/extracted_text/combined_manual_201_en.txt",
+      "manual_path_hi": "scraped_data/extracted_text/combined_manual_201_hi.txt"
+    },
+    {
+      "sno": "8",
       "service_id": "337",
       "name_en": "Chief Minister Employment Generation Programme (CMEGP)",
       "name_hi": "मुख्यमंत्री रोजगार सृजन कार्यक्रम हेतु आवेदन",
@@ -66,7 +105,7 @@
       "manual_path_hi": "scraped_data/extracted_text/combined_manual_337_hi.txt"
     },
     {
-      "sno": "6",
+      "sno": "9",
       "service_id": "354",
       "name_en": "Application for subsidy in feature film",
       "name_hi": "फीचर फिल्म पर सब्सिडी हेतु आवेदन",

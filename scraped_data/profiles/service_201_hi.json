@@ -1,0 +1,356 @@
+{
+  "service_id": "201",
+  "language": "hi",
+  "name": "नाम परिवर्तन के लिए साधारण राजपत्र अधिसूचना",
+  "department": "शासकीय मुद्रण एवं लेखन सामग्री विभाग",
+  "category": "",
+  "sla": "",
+  "details_link": "https://sewasetu.cgstate.gov.in/instractionPageNew.do?serviceId=201&lang=hi",
+  "required_documents": [
+    {
+      "sno": "1",
+      "document_type": "430 रू. (चार सौ तीस रुपये मात्र) का भारतीय स्टेट बैंक की किसी भी शाखा से चालान की मूल प्रति।(हेड – 0058 – मुद्रण तथा लेखन सामग्री, 102 – राजपत्र आदि के प्रकाशन एवं अन्य प्रातियां)",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "430 रू. (चार सौ तीस रुपये मात्र) का भारतीय स्टेट बैंक की किसी भी शाखा से चालान की मूल प्रति।(हेड – 0058 – मुद्रण तथा लेखन सामग्री, 102 – राजपत्र आदि के प्रकाशन एवं अन्य प्रातियां)",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "2",
+      "document_type": "50 रू. के नॉन ज्यूडिशियल स्टाम्प पेपर में प्ररूप-तीन में नोटराइज्ड शपथ पत्र (आवेदन की तारीख से तीन माह से अधिक पुराना ना हो)।",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "50 रू. के नॉन ज्यूडिशियल स्टाम्प पेपर में प्ररूप-तीन में नोटराइज्ड शपथ पत्र (आवेदन की तारीख से तीन माह से अधिक पुराना ना हो)।",
+          "format_link": "https://sewasetu.cgstate.gov.in/resources/docFormat/23842.pdf",
+          "local_pdf_path": "scraped_data/pdfs/201_hi_23842.pdf"
+        }
+      ]
+    },
+    {
+      "sno": "3",
+      "document_type": "स्थानीय समाचार पत्र में नाम परिवर्तन के प्ररूप-एक में सूचना के प्रकाशन की मूल प्रति (आवेदन की तारीख से तीन माह से अधिक पुराना ना हो)।",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "स्थानीय समाचार पत्र में नाम परिवर्तन के प्ररूप-एक में सूचना के प्रकाशन की मूल प्रति (आवेदन की तारीख से तीन माह से अधिक पुराना ना हो)।",
+          "format_link": "https://sewasetu.cgstate.gov.in/resources/docFormat/23843.pdf",
+          "local_pdf_path": "scraped_data/pdfs/201_hi_23843.pdf"
+        }
+      ]
+    },
+    {
+      "sno": "4",
+      "document_type": "दो गवाहों के नाम, हस्ताक्षर एवं पते के साथ प्ररूप-दो में विलिख प्ररूप की मूल प्रति।",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "अन्य दस्तावेज़ २",
+          "format_link": "",
+          "local_pdf_path": ""
+        },
+        {
+          "name": "अन्य दस्तावेज़ १",
+          "format_link": "https://sewasetu.cgstate.gov.in/resources/docFormat/23848.pdf",
+          "local_pdf_path": "scraped_data/pdfs/201_hi_23848.pdf"
+        }
+      ]
+    },
+    {
+      "sno": "5",
+      "document_type": "पुराना नाम और नया नाम सत्यापन दस्तावेज़",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "पुराना नाम और नया नाम सत्यापन दस्तावेज़",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "6",
+      "document_type": "सभी प्रकार के दस्तावेज/पहचान पत्र/आई.डी., जिनका शपथ पत्र में उल्लेख किया गया हो।",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "सभी प्रकार के दस्तावेज/पहचान पत्र/आई.डी., जिनका शपथ पत्र में उल्लेख किया गया हो।",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "7",
+      "document_type": "शासन द्वारा जारी आवेदक का पहचान पत्र",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "शासन द्वारा जारी आवेदक का पहचान पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    },
+    {
+      "sno": "8",
+      "document_type": "शासन द्वारा जारी गवाहों का पहचान पत्र",
+      "mandatory": "हाँ",
+      "supporting_documents": [
+        {
+          "name": "शासन द्वारा जारी गवाहों का पहचान पत्र",
+          "format_link": "",
+          "local_pdf_path": ""
+        }
+      ]
+    }
+  ],
+  "fees": {
+    "where_to_apply": "",
+    "kiosk_fee": "",
+    "online_fee": "",
+    "raw_text": ""
+  },
+  "contact_details": "",
+  "time_limit": "",
+  "form_fields": [
+    {
+      "attribute_id": "1068",
+      "label": "आवेदक विवरण",
+      "input_type": "section lebel",
+      "data_type": "Charactar",
+      "row": "1",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3789",
+      "label": "अधिसूचना प्रकाशन की भाषा",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "2",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3758",
+      "label": "परिवर्तन प्रकार",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "3",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3788",
+      "label": "अभिभावक का हितग्राही से संबंध",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "3",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3759",
+      "label": "हितग्राही का पूरा नाम हिन्दी में",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "4",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3760",
+      "label": "हितग्राही का पूरा नाम अंग्रेजी में",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "4",
+      "col": "2"
+    },
+    {
+      "attribute_id": "3787",
+      "label": "चालान नंबर",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "5",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3762",
+      "label": "जन्म तिथि",
+      "input_type": "date",
+      "data_type": "Date",
+      "row": "6",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3763",
+      "label": "लिंग",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "6",
+      "col": "2"
+    },
+    {
+      "attribute_id": "3784",
+      "label": "पिता/माता/पति का नाम हिंदी में",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "7",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3761",
+      "label": "पिता/माता/पति का नाम अंग्रेजी में",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "7",
+      "col": "2"
+    },
+    {
+      "attribute_id": "3783",
+      "label": "परिवर्तन किसके लिए है",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "8",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3786",
+      "label": "पत्नी/पति का नाम हिन्दी में",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "9",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3785",
+      "label": "पत्नी/पति का नाम अंग्रेजी में",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "9",
+      "col": "2"
+    },
+    {
+      "attribute_id": "3780",
+      "label": "पुत्र / पुत्री का नाम (बदलाव से पहले) हिन्दी में",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "12",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3779",
+      "label": "पुत्र / पुत्री का नाम (बदलाव से पहले) अंग्रेजी में",
+      "input_type": "text",
+      "data_type": "Charactar",
+      "row": "12",
+      "col": "2"
+    },
+    {
+      "attribute_id": "3781",
+      "label": "पुत्र / पुत्री का नाम (बदलाव के बाद) हिंदी में",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "13",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3782",
+      "label": "पुत्र / पुत्री का नाम (बदलाव के बाद) अंग्रेजी में",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "13",
+      "col": "2"
+    },
+    {
+      "attribute_id": "3774",
+      "label": "हितग्राही का पूरा नाम (बदलाव के बाद) हिन्दी में",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "14",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3778",
+      "label": "हितग्राही का पूरा नाम (बदलाव के बाद) अंग्रेजी में",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "14",
+      "col": "2"
+    },
+    {
+      "attribute_id": "3773",
+      "label": "नाम परिवर्तन संबंधित दस्तावेजों का विवरण",
+      "input_type": "textarea",
+      "data_type": "Alfa Numeric",
+      "row": "17",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3775",
+      "label": "संपर्क जानकारी",
+      "input_type": "section lebel",
+      "data_type": "Alfa Numeric",
+      "row": "18",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3767",
+      "label": "आवासीय पता",
+      "input_type": "textarea",
+      "data_type": "Charactar",
+      "row": "19",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3768",
+      "label": "जिला",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "19",
+      "col": "2"
+    },
+    {
+      "attribute_id": "3769",
+      "label": "गाँव /शहर",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "20",
+      "col": "1"
+    },
+    {
+      "attribute_id": "3790",
+      "label": "तहसील",
+      "input_type": "drop down",
+      "data_type": "Alfa Numeric",
+      "row": "20",
+      "col": "2"
+    },
+    {
+      "attribute_id": "3771",
+      "label": "पिन कोड",
+      "input_type": "text",
+      "data_type": "Alfa Numeric",
+      "row": "21",
+      "col": "1"
+    }
+  ],
+  "downloaded_pdfs": [
+    {
+      "source_url": "https://sewasetu.cgstate.gov.in/resources/docFormat/23842.pdf",
+      "type": "document_format",
+      "local_path": "scraped_data/pdfs/201_hi_23842.pdf"
+    },
+    {
+      "source_url": "https://sewasetu.cgstate.gov.in/resources/docFormat/23843.pdf",
+      "type": "document_format",
+      "local_path": "scraped_data/pdfs/201_hi_23843.pdf"
+    },
+    {
+      "source_url": "https://sewasetu.cgstate.gov.in/resources/docFormat/23848.pdf",
+      "type": "document_format",
+      "local_path": "scraped_data/pdfs/201_hi_23848.pdf"
+    }
+  ],
+  "combined_manual_text_path": "scraped_data/extracted_text/combined_manual_201_hi.txt"
+}
