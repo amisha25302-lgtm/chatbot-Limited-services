@@ -156,6 +156,22 @@ function App() {
   const [inputText, setInputText] = useState('');
   const [isChatLoading, setIsChatLoading] = useState(false);
 
+  // Auth States
+  const [userToken, setUserToken] = useState(() => localStorage.getItem('token'));
+  const [userData, setUserData] = useState(() => {
+    const stored = localStorage.getItem('user');
+    try {
+      return stored ? JSON.parse(stored) : null;
+    } catch (e) {
+      return null;
+    }
+  });
+  const [showLoginModal, setShowLoginModal] = useState(false);
+  const [loginEmail, setLoginEmail] = useState('');
+  const [loginPassword, setLoginPassword] = useState('');
+  const [loginError, setLoginError] = useState('');
+  const [isLoggingIn, setIsLoggingIn] = useState(false);
+
   // References
   const messagesEndRef = useRef(null);
   const t = translations[lang];
@@ -233,13 +249,16 @@ function App() {
     );
   });
 
-  // Handle RAG Chat submit
-  const handleSendMessage = async (e) => {
+  // Helper for direct query sending (e.g. from quick-reply chips)
+  const handleSendMessage = async (e, overrideText) => {
     if (e) e.preventDefault();
-    if (!inputText.trim() || isChatLoading) return;
+    const queryText = overrideText || inputText;
+    if (!queryText.trim() || isChatLoading) return;
 
-    const userQuery = inputText.trim();
-    setInputText('');
+    const userQuery = queryText.trim();
+    if (!overrideText) {
+      setInputText('');
+    }
 
     // Append user message to state
     const newMessages = [...chatMessages, { role: 'user', content: userQuery }];
@@ -268,9 +287,13 @@ function App() {
 
     // Call chat endpoint
     try {
+      const headers = { 'Content-Type': 'application/json' };
+      if (userToken) {
+        headers['Authorization'] = `Bearer ${userToken}`;
+      }
       const response = await fetch(`${API_BASE}/api/chat`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: headers,
         body: JSON.stringify({
           messages: newMessages,
           selected_sno: activeSno,
@@ -301,6 +324,70 @@ function App() {
     }
   };
 
+  // Auth helper functions
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    localStorage.removeItem('user');
+    setUserData(null);
+    setUserToken(null);
+    setChatMessages([]);
+  };
+
+  const handleLoginSubmit = async (e) => {
+    e.preventDefault();
+    setIsLoggingIn(true);
+    setLoginError('');
+    try {
+      const response = await fetch(`${API_BASE}/api/auth/login`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: loginEmail, password: loginPassword })
+      });
+      if (response.ok) {
+        const data = await response.json();
+        localStorage.setItem('token', data.token);
+        localStorage.setItem('user', JSON.stringify(data.user));
+        setUserData(data.user);
+        setUserToken(data.token);
+        setShowLoginModal(false);
+        setLoginEmail('');
+        setLoginPassword('');
+        setChatMessages([]);
+      } else {
+        const errData = await response.json();
+        setLoginError(errData.detail || 'Login failed. Please check credentials.');
+      }
+    } catch (err) {
+      console.error('Login error:', err);
+      setLoginError('Error connecting to backend server.');
+    } finally {
+      setIsLoggingIn(false);
+    }
+  };
+
+  const getQuickReplies = () => {
+    if (!userData) {
+      return [
+        { label: lang === 'hi' ? 'विवाह प्रमाण पत्र शुल्क?' : 'Marriage Certificate fees?', query: 'What are the fees for Marriage Certificate?' },
+        { label: lang === 'hi' ? 'मूल निवासी प्रमाण पत्र?' : 'Domicile Certificate process?', query: 'What is the process to get Domicile Certificate?' },
+        { label: lang === 'hi' ? 'जन्म प्रमाण पत्र SLA?' : 'Birth Certificate SLA?', query: 'What is the SLA time limit for Birth Certificate?' }
+      ];
+    } else if (userData.role === 'citizen') {
+      return [
+        { label: lang === 'hi' ? 'मेरे आवेदनों की सूची' : 'My applications list', query: 'Show my applications list' },
+        { label: lang === 'hi' ? 'मूल निवासी आवेदन की स्थिति' : 'Domicile application status', query: 'What is the status of my domicile application APP-2026-00123?' },
+        { label: lang === 'hi' ? 'समग्र आईडी आवेदन में दस्तावेज़' : 'Missing docs for Samagra', query: 'Are there any missing documents for application APP-2025-03158?' }
+      ];
+    } else if (userData.role === 'officer') {
+      return [
+        { label: lang === 'hi' ? 'लंबित आवेदनों की कतार' : 'My pending queue', query: 'Show my pending queue' },
+        { label: lang === 'hi' ? 'SLA उल्लंघन की जांच' : 'Check SLA breaches', query: 'Show SLA status and breached applications' },
+        { label: lang === 'hi' ? 'आवेदन विवरण APP-2025-04642' : 'Details for APP-2025-04642', query: 'Show details for application APP-2025-04642' }
+      ];
+    }
+    return [];
+  };
+
   const handleKeyDown = (e) => {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();
@@ -317,6 +404,22 @@ function App() {
             <h1>{t.brand_title}</h1>
             <div className="brand-subtitle">{t.brand_sub}</div>
           </div>
+
+          {/* User Profile / Login trigger card */}
+          {userData ? (
+            <div className="user-profile-card">
+              <div className="user-avatar">{userData.name.charAt(0)}</div>
+              <div className="user-info">
+                <div className="user-name">{userData.name}</div>
+                <div className="user-role">{userData.role === 'officer' ? 'Officer' : 'Citizen'}</div>
+              </div>
+              <button className="logout-btn" onClick={handleLogout}>Logout</button>
+            </div>
+          ) : (
+            <button className="login-trigger-btn" onClick={() => { setShowLoginModal(true); setLoginEmail(''); setLoginPassword(''); setLoginError(''); }}>
+              Login to Account
+            </button>
+          )}
           
           <div className="lang-selector">
             <button 
@@ -431,6 +534,19 @@ function App() {
             </div>
           )}
           <div ref={messagesEndRef} />
+        </div>
+
+        {/* Quick Reply Chips */}
+        <div className="quick-replies-container">
+          {getQuickReplies().map((qr, idx) => (
+            <button 
+              key={idx} 
+              className="quick-reply-chip"
+              onClick={(e) => handleSendMessage(e, qr.query)}
+            >
+              {qr.label}
+            </button>
+          ))}
         </div>
 
         <div className="chat-input-container">
@@ -630,6 +746,58 @@ function App() {
             )}
           </div>
         </aside>
+      )}
+
+      {/* Login Modal */}
+      {showLoginModal && (
+        <div className="modal-overlay" onClick={() => { setShowLoginModal(false); setLoginError(''); }}>
+          <div className="login-modal" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-header">
+              <h2>SewaSetu Portal Login</h2>
+              <button className="modal-close" onClick={() => { setShowLoginModal(false); setLoginError(''); }}>✕</button>
+            </div>
+            <form onSubmit={handleLoginSubmit} className="login-form">
+              {loginError && <div className="login-error">{loginError}</div>}
+              <div className="form-group">
+                <label>Username or Email</label>
+                <input 
+                  type="text" 
+                  value={loginEmail} 
+                  onChange={(e) => { setLoginEmail(e.target.value); setLoginError(''); }} 
+                  onFocus={() => setLoginError('')}
+                  required 
+                  placeholder="Enter username or email"
+                />
+              </div>
+              <div className="form-group">
+                <label>Password</label>
+                <input 
+                  type="password" 
+                  value={loginPassword} 
+                  onChange={(e) => { setLoginPassword(e.target.value); setLoginError(''); }} 
+                  onFocus={() => setLoginError('')}
+                  required 
+                  placeholder="Enter password"
+                />
+              </div>
+              <button type="submit" className="login-submit-btn" disabled={isLoggingIn}>
+                {isLoggingIn ? 'Signing In...' : 'Sign In'}
+              </button>
+            </form>
+            
+            <div className="demo-credentials">
+              <h3>Demo Credentials (Click to load)</h3>
+              <div className="credential-row" onClick={() => { setLoginEmail('ratan_maheshwari_1'); setLoginPassword('Citizen1@cg'); setLoginError(''); }}>
+                <div><strong>Citizen:</strong> ratan_maheshwari_1</div>
+                <div>Pass: Citizen1@cg</div>
+              </div>
+              <div className="credential-row" onClick={() => { setLoginEmail('officer_naresh_5'); setLoginPassword('Officer5@cg'); setLoginError(''); }}>
+                <div><strong>Officer:</strong> officer_naresh_5</div>
+                <div>Pass: Officer5@cg</div>
+              </div>
+            </div>
+          </div>
+        </div>
       )}
     </div>
   );

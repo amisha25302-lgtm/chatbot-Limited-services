@@ -4,7 +4,12 @@ import time
 import sys
 import requests
 import re
-from fastapi import FastAPI, HTTPException, BackgroundTasks, Body
+import jwt
+import bcrypt
+import mysql.connector
+from mysql.connector import pooling
+from datetime import datetime, timedelta
+from fastapi import FastAPI, HTTPException, BackgroundTasks, Body, Header
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Optional, Dict, Any
@@ -46,7 +51,655 @@ app.add_middleware(
 MANIFEST_DATA = None
 SERVICES_MAP = {}
 
-@app.on_event("startup")
+DB_POOL = None
+
+def init_db_pool():
+    global DB_POOL
+    if DB_POOL is None:
+        try:
+            DB_POOL = mysql.connector.pooling.MySQLConnectionPool(
+                pool_name="sewasetu_pool",
+                pool_size=10,
+                host=os.getenv("DB_HOST", "localhost"),
+                user=os.getenv("DB_USER", "root"),
+                password=os.getenv("DB_PASSWORD", "root"),
+                database=os.getenv("DB_NAME", "sewasetu_db")
+            )
+            print("[Database] Connection pool initialized successfully.")
+        except Exception as e:
+            print(f"[Database] Error initializing connection pool: {e}")
+
+def get_db():
+    global DB_POOL
+    if DB_POOL is None:
+        init_db_pool()
+    if DB_POOL:
+        return DB_POOL.get_connection()
+    return mysql.connector.connect(
+        host=os.getenv("DB_HOST", "localhost"),
+        user=os.getenv("DB_USER", "root"),
+        password=os.getenv("DB_PASSWORD", "root"),
+        database=os.getenv("DB_NAME", "sewasetu_db")
+    )
+
+# JWT configuration
+JWT_SECRET = os.getenv("JWT_SECRET", "sewasetu_super_secret_key")
+JWT_ALGORITHM = os.getenv("JWT_ALGORITHM", "HS256")
+
+def create_jwt_token(user_id: int, role: str, officer_id: Optional[int] = None) -> str:
+    payload = {
+        "user_id": user_id,
+        "role": role,
+        "officer_id": officer_id,
+        "exp": datetime.utcnow() + timedelta(minutes=int(os.getenv("JWT_EXPIRATION_MINUTES", "1440")))
+    }
+    return jwt.encode(payload, JWT_SECRET, algorithm=JWT_ALGORITHM)
+
+def decode_jwt_token(token: str) -> Optional[Dict[str, Any]]:
+    try:
+        return jwt.decode(token, JWT_SECRET, algorithms=[JWT_ALGORITHM])
+    except Exception:
+        return None
+
+def hash_password(password: str) -> str:
+    salt = bcrypt.gensalt()
+    return bcrypt.hashpw(password.encode('utf-8'), salt).decode('utf-8')
+
+# Custom datetime serializer
+def serialize_data(val):
+    if isinstance(val, list):
+        return [serialize_data(v) for v in val]
+    if isinstance(val, dict):
+        return {k: serialize_data(v) for k, v in val.items()}
+    if isinstance(val, (datetime, timedelta)):
+        return str(val)
+    return val
+
+# Auth schemas
+class UserRegister(BaseModel):
+    name: str
+    phone: str
+    email: str
+    password: str
+    role: str # 'citizen' or 'officer'
+    aadhaar_number: str
+    address: Optional[str] = None
+
+class UserLogin(BaseModel):
+    email: str
+    password: str
+
+@app.post("/api/auth/register")
+def register_user(req: UserRegister):
+    if req.role not in ('citizen', 'officer'):
+        raise HTTPException(status_code=400, detail="Invalid role. Must be 'citizen' or 'officer'.")
+    conn = get_db()
+    cursor = conn.cursor()
+    try:
+        username = req.email.split("@")[0]
+        cursor.execute("SELECT user_id FROM users WHERE email = %s OR mobile = %s OR username = %s", 
+                       (req.email, req.phone, username))
+        if cursor.fetchone():
+            raise HTTPException(status_code=400, detail="Email, Phone, or Username already registered.")
+            
+        role_type = "citizen" if req.role == "citizen" else "govt_officer"
+        hashed_pwd = hash_password(req.password)
+        cursor.execute("""
+            INSERT INTO users (username, password, role_type, email, mobile, full_name)
+            VALUES (%s, %s, %s, %s, %s, %s)
+        """, (username, hashed_pwd, role_type, req.email, req.phone, req.name))
+        user_id = cursor.lastrowid
+        
+        if role_type == "citizen":
+            cursor.execute("""
+                INSERT INTO citizens (user_id, full_name, dob, gender, aadhaar_number, samgra_id, category, annual_income, address_line, pincode)
+                VALUES (%s, %s, '1990-01-01', 'male', %s, '123456789', 'general', 150000.00, %s, '492001')
+            """, (user_id, req.name, req.aadhaar_number, req.address))
+        else:
+            cursor.execute("""
+                INSERT INTO officers (user_id, dept_id, designation, district_id, employee_code, joining_date)
+                VALUES (%s, 1, 'Registrar', 1, %s, '2024-01-01')
+            """, (user_id, f"EMP-{user_id}"))
+            
+        conn.commit()
+        return {"message": "Registration successful.", "user_id": user_id}
+    finally:
+        cursor.close()
+        conn.close()
+
+@app.post("/api/auth/login")
+def login_user(req: UserLogin):
+    conn = get_db()
+    cursor = conn.cursor(dictionary=True)
+    try:
+        cursor.execute("""
+            SELECT user_id, full_name, role_type, password 
+            FROM users 
+            WHERE email = %s OR username = %s OR mobile = %s
+        """, (req.email, req.email, req.email))
+        user = cursor.fetchone()
+        if not user:
+            raise HTTPException(status_code=401, detail="Invalid email or password.")
+            
+        pwd_match = False
+        db_pwd = user["password"]
+        if db_pwd.startswith("$2b$") or db_pwd.startswith("$2a$"):
+            try:
+                pwd_match = bcrypt.checkpw(req.password.encode('utf-8'), db_pwd.encode('utf-8'))
+            except Exception:
+                pass
+        else:
+            pwd_match = (db_pwd == req.password)
+            
+        if not pwd_match:
+            raise HTTPException(status_code=401, detail="Invalid email or password.")
+            
+        role_type = user["role_type"]
+        mapped_role = "anonymous"
+        if role_type == "citizen":
+            mapped_role = "citizen"
+        elif role_type in ("govt_officer", "admin", "edm"):
+            mapped_role = "officer"
+            
+        officer_id = None
+        if mapped_role == "officer":
+            cursor.execute("SELECT officer_id FROM officers WHERE user_id = %s LIMIT 1", (user["user_id"],))
+            off_row = cursor.fetchone()
+            if off_row:
+                officer_id = off_row["officer_id"]
+                
+        token = create_jwt_token(user["user_id"], mapped_role, officer_id)
+        return {
+            "token": token,
+            "user": {
+                "user_id": user["user_id"],
+                "name": user["full_name"],
+                "role": mapped_role,
+                "officer_id": officer_id
+            }
+        }
+    finally:
+        cursor.close()
+        conn.close()
+
+# Helper to look up citizen_id from user_id
+def get_citizen_id(user_id: int) -> Optional[int]:
+    conn = get_db()
+    cursor = conn.cursor()
+    try:
+        cursor.execute("SELECT citizen_id FROM citizens WHERE user_id = %s", (user_id,))
+        row = cursor.fetchone()
+        return row[0] if row else None
+    finally:
+        cursor.close()
+        conn.close()
+
+# Citizen scope data access
+def get_my_applications(user_id: int):
+    citizen_id = get_citizen_id(user_id)
+    if not citizen_id:
+        return []
+    conn = get_db()
+    cursor = conn.cursor(dictionary=True)
+    try:
+        cursor.execute("""
+            SELECT a.application_id, s.service_name, a.status, a.submitted_at, s.sla_days
+            FROM applications a
+            JOIN services s ON a.service_id = s.service_id
+            WHERE a.citizen_id = %s
+            ORDER BY a.submitted_at DESC
+        """, (citizen_id,))
+        apps = cursor.fetchall()
+        for app in apps:
+            if app.get("submitted_at") and app.get("sla_days") is not None:
+                app["sla_deadline"] = app["submitted_at"] + timedelta(days=app["sla_days"])
+            else:
+                app["sla_deadline"] = None
+        return apps
+    finally:
+        cursor.close()
+        conn.close()
+
+def get_application_status(user_id: int, application_id: str):
+    citizen_id = get_citizen_id(user_id)
+    if not citizen_id:
+        return {"error": "Citizen profile not found."}
+    conn = get_db()
+    cursor = conn.cursor(dictionary=True)
+    try:
+        cursor.execute("""
+            SELECT a.application_id, s.service_name, a.status, a.submitted_at, a.last_updated_at, s.sla_days,
+                   u_off.full_name as reviewer_name, o.designation as reviewer_designation
+            FROM applications a
+            JOIN services s ON a.service_id = s.service_id
+            LEFT JOIN users u_off ON a.assigned_officer = u_off.user_id
+            LEFT JOIN officers o ON u_off.user_id = o.user_id
+            WHERE a.citizen_id = %s AND a.application_id = %s
+        """, (citizen_id, application_id))
+        app = cursor.fetchone()
+        if not app:
+            return {"error": "Application not found or access denied."}
+            
+        if app.get("submitted_at") and app.get("sla_days") is not None:
+            app["sla_deadline"] = app["submitted_at"] + timedelta(days=app["sla_days"])
+        else:
+            app["sla_deadline"] = None
+            
+        cursor.execute("""
+            SELECT from_status as old_status, to_status as new_status, changed_at, remarks
+            FROM application_timeline
+            WHERE application_id = %s
+            ORDER BY changed_at ASC
+        """, (application_id,))
+        app["history"] = cursor.fetchall()
+        return app
+    finally:
+        cursor.close()
+        conn.close()
+
+def get_missing_documents(user_id: int, application_id: str):
+    citizen_id = get_citizen_id(user_id)
+    if not citizen_id:
+        return {"error": "Citizen profile not found."}
+    conn = get_db()
+    cursor = conn.cursor(dictionary=True)
+    try:
+        cursor.execute("""
+            SELECT a.service_id, s.service_name, s.required_docs, a.documents_json, a.status
+            FROM applications a
+            JOIN services s ON a.service_id = s.service_id
+            WHERE a.citizen_id = %s AND a.application_id = %s
+        """, (citizen_id, application_id))
+        app = cursor.fetchone()
+        if not app:
+            return {"error": "Application not found or access denied."}
+            
+        service_id = app["service_id"]
+        
+        required_docs_list = []
+        if app.get("required_docs"):
+            try:
+                required_docs_list = json.loads(app["required_docs"]) if isinstance(app["required_docs"], str) else app["required_docs"]
+            except Exception:
+                pass
+                
+        uploaded_dict = {}
+        if app.get("documents_json"):
+            try:
+                uploaded_dict = json.loads(app["documents_json"]) if isinstance(app["documents_json"], str) else app["documents_json"]
+            except Exception:
+                pass
+                
+        missing_docs = []
+        for doc_name in required_docs_list:
+            is_uploaded = False
+            req_clean = doc_name.lower().replace(" ", "").replace("card", "").replace("certificate", "").replace("report", "")
+            for up_key in uploaded_dict.keys():
+                up_clean = up_key.lower().replace(" ", "").replace("card", "").replace("certificate", "").replace("report", "")
+                if up_clean in req_clean or req_clean in up_clean:
+                    is_uploaded = True
+                    break
+                    
+            if not is_uploaded:
+                reason = "Not uploaded"
+                if app["status"] == "pending_docs":
+                    reason = "Requested by Officer"
+                missing_docs.append({
+                    "document_type": doc_name,
+                    "mandatory": "Yes",
+                    "reason": reason
+                })
+                
+        return {
+            "application_id": application_id,
+            "service_name": app["service_name"],
+            "missing_documents": missing_docs
+        }
+    finally:
+        cursor.close()
+        conn.close()
+
+# Officer scope data access
+def get_pending_applications(officer_id: int, service_id: Optional[int] = None):
+    conn = get_db()
+    cursor = conn.cursor(dictionary=True)
+    try:
+        cursor.execute("SELECT dept_id, district_id FROM officers WHERE officer_id = %s", (officer_id,))
+        off_row = cursor.fetchone()
+        if not off_row:
+            return {"error": "Officer details not found."}
+            
+        dept_id = off_row["dept_id"]
+        district_id = off_row["district_id"]
+        
+        if service_id is not None:
+            cursor.execute("SELECT department_id FROM services WHERE service_id = %s", (service_id,))
+            srv_row = cursor.fetchone()
+            if not srv_row or srv_row["department_id"] != dept_id:
+                return {"error": "Access denied to this service."}
+            services_to_query = [service_id]
+        else:
+            cursor.execute("SELECT service_id FROM services WHERE department_id = %s", (dept_id,))
+            services_to_query = [row["service_id"] for row in cursor.fetchall()]
+            
+        if not services_to_query:
+            return []
+            
+        format_strings = ','.join(['%s'] * len(services_to_query))
+        query = f"""
+            SELECT a.application_id, s.service_name, u_cit.full_name as applicant_name, a.status, a.submitted_at
+            FROM applications a
+            JOIN services s ON a.service_id = s.service_id
+            JOIN citizens c ON a.citizen_id = c.citizen_id
+            JOIN users u_cit ON c.user_id = u_cit.user_id
+            WHERE a.status IN ('submitted', 'under_review', 'pending_docs') 
+              AND a.service_id IN ({format_strings})
+              AND a.district_id = %s
+            ORDER BY a.submitted_at ASC
+        """
+        cursor.execute(query, tuple(services_to_query) + (district_id,))
+        return cursor.fetchall()
+    finally:
+        cursor.close()
+        conn.close()
+
+def get_application_detail_officer(officer_id: int, application_id: str):
+    conn = get_db()
+    cursor = conn.cursor(dictionary=True)
+    try:
+        cursor.execute("SELECT dept_id, district_id FROM officers WHERE officer_id = %s", (officer_id,))
+        off_row = cursor.fetchone()
+        if not off_row:
+            return {"error": "Officer details not found."}
+            
+        dept_id = off_row["dept_id"]
+        district_id = off_row["district_id"]
+        
+        cursor.execute("""
+            SELECT a.application_id, a.service_id, a.department_id, a.district_id, a.status, a.submitted_at, a.last_updated_at,
+                   u_cit.full_name as applicant_name, u_cit.email as applicant_email, u_cit.mobile as applicant_phone, c.address_line as applicant_address,
+                   a.documents_json
+            FROM applications a
+            JOIN citizens c ON a.citizen_id = c.citizen_id
+            JOIN users u_cit ON c.user_id = u_cit.user_id
+            WHERE a.application_id = %s
+        """, (application_id,))
+        app = cursor.fetchone()
+        if not app:
+            return {"error": "Application not found."}
+            
+        if app["department_id"] != dept_id or app["district_id"] != district_id:
+            return {"error": "Access denied to this application."}
+            
+        docs_list = []
+        if app.get("documents_json"):
+            try:
+                uploaded_dict = json.loads(app["documents_json"]) if isinstance(app["documents_json"], str) else app["documents_json"]
+                for key in uploaded_dict.keys():
+                    docs_list.append({"doc_type": key, "verified_status": "uploaded"})
+            except Exception:
+                pass
+                
+        app["documents"] = docs_list
+        if "documents_json" in app:
+            del app["documents_json"]
+        if "department_id" in app:
+            del app["department_id"]
+        if "district_id" in app:
+            del app["district_id"]
+            
+        return app
+    finally:
+        cursor.close()
+        conn.close()
+
+def get_sla_status(officer_id: int, service_id: Optional[int] = None):
+    conn = get_db()
+    cursor = conn.cursor(dictionary=True)
+    try:
+        cursor.execute("SELECT dept_id, district_id FROM officers WHERE officer_id = %s", (officer_id,))
+        off_row = cursor.fetchone()
+        if not off_row:
+            return {"error": "Officer details not found."}
+            
+        dept_id = off_row["dept_id"]
+        district_id = off_row["district_id"]
+        
+        if service_id is not None:
+            cursor.execute("SELECT department_id FROM services WHERE service_id = %s", (service_id,))
+            srv_row = cursor.fetchone()
+            if not srv_row or srv_row["department_id"] != dept_id:
+                return {"error": "Access denied to this service."}
+            services_to_query = [service_id]
+        else:
+            cursor.execute("SELECT service_id FROM services WHERE department_id = %s", (dept_id,))
+            services_to_query = [row["service_id"] for row in cursor.fetchall()]
+            
+        if not services_to_query:
+            return []
+            
+        format_strings = ','.join(['%s'] * len(services_to_query))
+        query = f"""
+            SELECT a.application_id, s.service_name, u_cit.full_name as applicant_name, a.status, a.submitted_at, s.sla_days,
+                   a.sla_breach
+            FROM applications a
+            JOIN services s ON a.service_id = s.service_id
+            JOIN citizens c ON a.citizen_id = c.citizen_id
+            JOIN users u_cit ON c.user_id = u_cit.user_id
+            WHERE a.service_id IN ({format_strings})
+              AND a.district_id = %s
+            ORDER BY a.submitted_at ASC
+        """
+        cursor.execute(query, tuple(services_to_query) + (district_id,))
+        apps = cursor.fetchall()
+        for app in apps:
+            app["is_breached"] = (app.get("sla_breach") == 1)
+            if app.get("submitted_at") and app.get("sla_days") is not None:
+                app["sla_deadline"] = app["submitted_at"] + timedelta(days=app["sla_days"])
+            else:
+                app["sla_deadline"] = None
+        return apps
+    finally:
+        cursor.close()
+        conn.close()
+
+# Shared FAQ Search RAG tool
+def faq_search(query: str, language: str = "en", selected_sno: Optional[str] = None):
+    try:
+        from backend.vector_store.chroma_store import query_vector_store
+        candidates = query_vector_store(query, lang=language, limit=3, sno=selected_sno)
+        context_parts = []
+        for res in candidates:
+            doc_text = res["document"]
+            source_label = "[User Manual & Guidelines]" if res["metadata"].get("type") == "manual" else "[Official Service Specification Profile]"
+            context_parts.append(f"{source_label}\n{doc_text}")
+        return "\n\n---\n\n".join(context_parts)
+    except Exception as e:
+        return f"Error executing RAG search: {str(e)}"
+
+# Execute tool helper
+def execute_tool(name: str, arguments: Dict[str, Any], user_context: Dict[str, Any], language: str):
+    role = user_context.get("role")
+    user_id = user_context.get("user_id")
+    officer_id = user_context.get("officer_id")
+    
+    # Secure role verification at code level
+    if name == "faq_search":
+        return faq_search(arguments.get("query", ""), language=language)
+        
+    elif name == "get_my_applications":
+        if role != "citizen":
+            return {"error": "Unauthorized."}
+        return get_my_applications(user_id)
+        
+    elif name == "get_application_status":
+        if role != "citizen":
+            return {"error": "Unauthorized."}
+        app_id = str(arguments.get("application_id", ""))
+        return get_application_status(user_id, app_id)
+        
+    elif name == "get_missing_documents":
+        if role != "citizen":
+            return {"error": "Unauthorized."}
+        app_id = str(arguments.get("application_id", ""))
+        return get_missing_documents(user_id, app_id)
+        
+    elif name == "get_pending_applications":
+        if role != "officer":
+            return {"error": "Unauthorized."}
+        service_id = arguments.get("service_id")
+        if service_id is not None:
+            service_id = int(service_id)
+        return get_pending_applications(officer_id, service_id)
+        
+    elif name == "get_application_detail_officer":
+        if role != "officer":
+            return {"error": "Unauthorized."}
+        app_id = str(arguments.get("application_id", ""))
+        return get_application_detail_officer(officer_id, app_id)
+        
+    elif name == "get_sla_status":
+        if role != "officer":
+            return {"error": "Unauthorized."}
+        service_id = arguments.get("service_id")
+        if service_id is not None:
+            service_id = int(service_id)
+        return get_sla_status(officer_id, service_id)
+        
+    else:
+        return {"error": f"Unknown tool: {name}"}
+
+# Claude format tools specifications
+CLAUDE_TOOLS = {
+    "citizen": [
+        {
+            "name": "get_my_applications",
+            "description": "Lists all submitted applications with their status for the authenticated user",
+            "input_schema": {
+                "type": "object",
+                "properties": {},
+                "required": []
+            }
+        },
+        {
+            "name": "get_application_status",
+            "description": "Retrieves the detailed status and historical stage logs of a specific application",
+            "input_schema": {
+                "type": "object",
+                "properties": {
+                    "application_id": {
+                        "type": "string",
+                        "description": "The ID of the application to query"
+                    }
+                },
+                "required": ["application_id"]
+            }
+        },
+        {
+            "name": "get_missing_documents",
+            "description": "Lists required documents that are either not yet uploaded or have been rejected",
+            "input_schema": {
+                "type": "object",
+                "properties": {
+                    "application_id": {
+                        "type": "string",
+                        "description": "The ID of the application to query"
+                    }
+                },
+                "required": ["application_id"]
+            }
+        },
+        {
+            "name": "faq_search",
+            "description": "Queries the general Seva Setu services catalog and citizen manuals (RAG FAQ)",
+            "input_schema": {
+                "type": "object",
+                "properties": {
+                    "query": {
+                        "type": "string",
+                        "description": "The user query/topic to search (e.g. eligibility, documents required, SLA)"
+                    }
+                },
+                "required": ["query"]
+            }
+        }
+    ],
+    "officer": [
+        {
+            "name": "get_pending_applications",
+            "description": "Lists pending applications in the queue for the officer's assigned services",
+            "input_schema": {
+                "type": "object",
+                "properties": {
+                    "service_id": {
+                        "type": "integer",
+                        "description": "Optional filter for a specific service ID"
+                    }
+                },
+                "required": []
+            }
+        },
+        {
+            "name": "get_application_detail_officer",
+            "description": "Retrieves applicant information and document verification metadata (excludes file path/file content)",
+            "input_schema": {
+                "type": "object",
+                "properties": {
+                    "application_id": {
+                        "type": "string",
+                        "description": "The ID of the application to query"
+                    }
+                },
+                "required": ["application_id"]
+            }
+        },
+        {
+            "name": "get_sla_status",
+            "description": "Lists SLA deadlines and flags applications that breached SLA limits",
+            "input_schema": {
+                "type": "object",
+                "properties": {
+                    "service_id": {
+                        "type": "integer",
+                        "description": "Optional filter for a specific service ID"
+                    }
+                },
+                "required": []
+            }
+        },
+        {
+            "name": "faq_search",
+            "description": "Queries the general Seva Setu services catalog and citizen manuals (RAG FAQ)",
+            "input_schema": {
+                "type": "object",
+                "properties": {
+                    "query": {
+                        "type": "string",
+                        "description": "The user query/topic to search (e.g. eligibility, documents required, SLA)"
+                    }
+                },
+                "required": ["query"]
+            }
+        }
+    ],
+    "anonymous": [
+        {
+            "name": "faq_search",
+            "description": "Queries the general Seva Setu services catalog and citizen manuals (RAG FAQ)",
+            "input_schema": {
+                "type": "object",
+                "properties": {
+                    "query": {
+                        "type": "string",
+                        "description": "The user query/topic to search (e.g. eligibility, documents required, SLA)"
+                    }
+                },
+                "required": ["query"]
+            }
+        }
+    ]
+}
+
 def load_manifest():
     global MANIFEST_DATA, SERVICES_MAP
     if not os.path.exists(DATA_MANIFEST_PATH):
@@ -71,6 +724,11 @@ def load_manifest():
         print("[API] Embedding model pre-loaded successfully.")
     except Exception as e:
         print(f"[API] Error pre-loading embedding model: {e}")
+
+@app.on_event("startup")
+def startup_handler():
+    load_manifest()
+    init_db_pool()
 
 # API Validation schemas
 class Message(BaseModel):
@@ -172,17 +830,30 @@ def get_service_details(sno: str, lang: str = "en"):
         raise HTTPException(status_code=500, detail=f"Error reading details file: {str(e)}")
 
 @app.post("/api/chat")
-def chat_with_bot(request: ChatRequest):
+def chat_with_bot(request: ChatRequest, authorization: Optional[str] = Header(None)):
     """
-    Core RAG Chat endpoint querying the local Ollama LLM via HTTP.
-    1. Retrieves relevant context from modular ChromaStore.
-    2. Constructs a bilingual semantic prompt.
-    3. Queries Ollama local server and returns response.
+    Core RAG & database-scoped Chat endpoint.
+    Checks user's role from JWT token and dynamically provisions tools.
     """
     user_query = request.messages[-1].content
     language = request.language
     
-    # 1. Query Chroma vector store (with timing)
+    # 1. Parse authentication header and role context
+    user_context = {"role": "anonymous", "user_id": None, "officer_id": None}
+    if authorization and authorization.startswith("Bearer "):
+        token = authorization.split(" ")[1]
+        payload = decode_jwt_token(token)
+        if payload:
+            user_context = {
+                "role": payload.get("role", "anonymous"),
+                "user_id": payload.get("user_id"),
+                "officer_id": payload.get("officer_id")
+            }
+            
+    role = user_context["role"]
+    print(f"[Agent] Authenticated context: {user_context}")
+    
+    # 2. Query Chroma vector store (RAG retrieval)
     candidates = []
     metadata_doc = None
     retrieval_start = time.perf_counter()
@@ -208,7 +879,7 @@ def chat_with_bot(request: ChatRequest):
         retrieval_elapsed = time.perf_counter() - retrieval_start
         print(f"\n[TIMING] Chunk retrieval took: {retrieval_elapsed:.3f}s")
         
-    # Budget-based context compile with source labeling
+    # Budget-based context compile
     context_parts = []
     current_length = 0
     budget = 10000
@@ -219,12 +890,9 @@ def chat_with_bot(request: ChatRequest):
         current_length += len(header) + len(metadata_doc)
         
     for res in candidates:
-        # Avoid duplicate metadata documents in context
         if res["metadata"].get("type") == "metadata" and metadata_doc:
             continue
         doc_text = res["document"]
-        doc_len = len(doc_text)
-        
         source_label = "[User Manual & Guidelines]" if res["metadata"].get("type") == "manual" else "[Official Service Specification Profile]"
         chunk_text = f"{source_label}\n{doc_text}"
         chunk_len = len(chunk_text)
@@ -236,50 +904,40 @@ def chat_with_bot(request: ChatRequest):
         current_length += chunk_len
         
     retrieved_context = "\n\n---\n\n".join(context_parts)
-
-    # ── DEBUG: Print chunks being passed to the LLM ──────────────────────────
-    if DEBUG_PRINT_CHUNKS:
-        print("\n" + "=" * 70)
-        print(f"[DEBUG] Query: {user_query}")
-        print(f"[DEBUG] Language: {language} | Selected SNO: {request.selected_sno}")
-        print(f"[DEBUG] Total chunks passed to LLM: {len(context_parts)}")
-        for idx, part in enumerate(context_parts, 1):
-            print(f"\n--- Chunk {idx} ---")
-            print(part[:1000] + ("..." if len(part) > 1000 else ""))  # Truncate very long chunks for readability
-        print("=" * 70 + "\n")
-    # ─────────────────────────────────────────────────────────────────────────
     
-    # Construct System prompt instructions
+    # Construct System prompt instructions depending on role and language
+    system_instruction = ""
     if language == "hi":
         system_instruction = (
             "आप SewaSetu (सेवा सेतु) छत्तीसगढ़ पोर्टल के एक विशेषज्ञ सहायक हैं।\n"
-            "आपका उद्देश्य नागरिकों को सरकारी सेवाओं के आवेदन, आवश्यक दस्तावेजों और शुल्कों को समझने में मदद करना है।\n\n"
-            "उत्तर देने के लिए केवल और केवल प्रदान किए गए संदर्भ (Context) का उपयोग करें। ढांचागत आवश्यकताओं, समय सीमा (SLA), शुल्क और आवश्यक दस्तावेजों के लिए '[Official Service Specification Profile]' वाले हिस्से को ही अंतिम और प्राथमिक आधार मानें। विस्तृत विवरण, दिशा-निर्देशों या चरण-दर-चरण निर्देशों के लिए '[User Manual & Guidelines]' वाले हिस्सों का उपयोग करें।\n\n"
-            "यदि संदर्भ में उपयोगकर्ता के प्रश्न का उत्तर पर्याप्त रूप से उपलब्ध नहीं है, तो आपको 'जानकारी उपलब्ध नहीं है।' उत्तर देना होगा। अपनी ओर से कोई काल्पनिक बात या बाहरी ज्ञान का उपयोग न करें।\n\n"
-            "आवश्यक दस्तावेजों के लिए महत्वपूर्ण निर्देश:\n"
-            "- आपको आवश्यक दस्तावेजों की सूची केवल और केवल '[Official Service Specification Profile]' खंड से प्राप्त करनी होगी। आवश्यक दस्तावेजों की सूची के लिए '[User Manual & Guidelines]' को न देखें, क्योंकि यह अपूर्ण, कटी हुई या विरोधाभासी हो सकती है।\n"
-            "- आपको संदर्भ में '## Required Documents' (या '## आवश्यक दस्तावेज़') के अंतर्गत '[Official Service Specification Profile]' में दी गई प्रत्येक दस्तावेज़ श्रेणी (जैसे Category [1], Category [2] आदि) को अनिवार्य रूप से पूरी तरह सूचीबद्ध करना होगा।\n"
-            "- आपको अनिवार्य (हाँ) और वैकल्पिक (नहीं) दोनों श्रेणियों को शामिल करना होगा। किसी भी श्रेणी या उप-विकल्प को छोड़ना या छोटा नहीं करना है।\n"
-            "- प्रत्येक श्रेणी के लिए, उसके सभी विकल्पों/सहायक दस्तावेजों को संदर्भ के अनुसार ही लिखें।\n"
-            "- उत्तर का प्रारूप संदर्भ जैसा ही होना चाहिए। उदाहरण के लिए:\n"
-            "  - Category [X]: Name (Mandatory/अनिवार्य: हाँ या नहीं)\n"
-            "    * Option X.Y: Name\n\n"
+            "आपका उद्देश्य नागरिकों को सरकारी सेवाओं के आवेदन, आवश्यक दस्तावेजों, शुल्कों और उनके आवेदन की स्थिति को समझने में मदद करना है।\n\n"
+            f"उपयोगकर्ता की भूमिका (Role): {role}\n"
+        )
+        if role == "anonymous":
+            system_instruction += (
+                "यदि उपयोगकर्ता अपने किसी आवेदन की स्थिति या दस्तावेजों के बारे में पूछता है, तो उसे बताएं कि वह अपने आवेदन की स्थिति देखने के लिए पोर्टल पर लॉग इन करे।\n"
+            )
+        system_instruction += (
+            "सामान्य प्रश्नों (जैसे पात्रता, शुल्क, नियम) के लिए 'faq_search' टूल का उपयोग करें।\n"
+            "उत्तर देने के लिए केवल और केवल प्रदान किए गए संदर्भ (Context) का उपयोग करें। यदि संदर्भ में उपयोगकर्ता के प्रश्न का उत्तर पर्याप्त रूप से उपलब्ध नहीं है, तो 'जानकारी उपलब्ध नहीं है।' उत्तर दें।\n\n"
         )
         if retrieved_context:
             system_instruction += f"संदर्भ दस्तावेज़:\n{retrieved_context}\n\n"
     else:
         system_instruction = (
             "You are an expert assistant for the SewaSetu Chhattisgarh portal.\n"
-            "Your goal is to help citizens understand how to apply for services, check required documents, kiosk/online fees, and timelines.\n\n"
-            "Answer the question using ONLY the relevant context below. Use the '[Official Service Specification Profile]' chunk as the absolute primary authority for structured requirements, SLAs, fees, and required documents. Use the '[User Manual & Guidelines]' chunks for details, descriptions, or step-by-step instructions. If the context does not contain the answer or if there is insufficient information to answer the question, you MUST respond with: 'Information not available.' Do not make up a response, extrapolate, or use outside knowledge.\n\n"
-            "CRITICAL REQUIREMENT FOR REQUIRED DOCUMENTS:\n"
-            "- You MUST retrieve the list of required documents ONLY from the '[Official Service Specification Profile]' section. Do NOT use or look at '[User Manual & Guidelines]' for listing required documents, as it may be incomplete, truncated, or conflicting.\n"
-            "- You MUST list EVERY single document category (Category [1], Category [2], Category [3], Category [4], etc.) present under the '## Required Documents' section in '[Official Service Specification Profile]'.\n"
-            "- You MUST include both mandatory (Mandatory: Yes or Mandatory/अनिवार्य: Yes) and optional (Mandatory: No or Mandatory/अनिवार्य: No) document categories. Do not omit, filter, or truncate any categories.\n"
-            "- For each category, you MUST list all of its options/supporting documents exactly as written in the context.\n"
-            "- Format the output exactly like the context. For example:\n"
-            "  - Category [X]: Name (Mandatory/अनिवार्य: Yes or No)\n"
-            "    * Option X.Y: Name\n\n"
+            "Your goal is to help citizens understand how to apply for services, check required documents, kiosk/online fees, timelines, and check application status.\n\n"
+            f"User Role: {role}\n"
+        )
+        if role == "anonymous":
+            system_instruction += (
+                "If the user asks about their own application status, missing documents, or officer actions, inform them that they must log in to view or manage application details.\n"
+            )
+        system_instruction += (
+            "For general queries (e.g. eligibility, fees, rules), use the 'faq_search' tool.\n"
+            "If they ask about their own live application data, use the appropriate database tools provided to you. "
+            "Never make up application status, application IDs, or missing documents - always call the tools to fetch the real data.\n\n"
+            "Answer the question using ONLY the relevant context. If there is insufficient information to answer the question, respond with: 'Information not available.'\n\n"
         )
         if retrieved_context:
             system_instruction += f"Relevant Context:\n{retrieved_context}\n\n"
@@ -291,49 +949,106 @@ def chat_with_bot(request: ChatRequest):
     if USE_SARVAM_API and SARVAM_API_KEY:
         generation_start = time.perf_counter()
         try:
-            # Construct standard chat messages format for OpenAI-compatible endpoint
+            # Construct standard chat messages format
             sarvam_messages = [{"role": "system", "content": system_instruction}]
             for msg in history:
                 sarvam_messages.append({"role": msg.role, "content": msg.content})
             sarvam_messages.append({"role": "user", "content": user_query})
             
+            # Fetch tools corresponding to role
+            role_tools = CLAUDE_TOOLS.get(role, CLAUDE_TOOLS["anonymous"])
+            openai_tools = []
+            for t in role_tools:
+                openai_tools.append({
+                    "type": "function",
+                    "function": {
+                        "name": t["name"],
+                        "description": t["description"],
+                        "parameters": t["input_schema"]
+                    }
+                })
+                
             url = "https://api.sarvam.ai/v1/chat/completions"
             headers = {
                 "api-subscription-key": SARVAM_API_KEY,
                 "Authorization": f"Bearer {SARVAM_API_KEY}",
                 "Content-Type": "application/json"
             }
-            payload = {
-                "model": SARVAM_MODEL,
-                "messages": sarvam_messages,
-                "temperature": 0.0
-            }
             
-            print(f"[API] Querying Sarvam AI API (Model: {SARVAM_MODEL})...")
-            res = requests.post(url, json=payload, headers=headers, timeout=120)
+            # Agent Loop (up to 3 iterations)
+            max_iterations = 3
+            for iteration in range(max_iterations):
+                payload = {
+                    "model": SARVAM_MODEL,
+                    "messages": sarvam_messages,
+                    "temperature": 0.0,
+                    "tools": openai_tools,
+                    "tool_choice": "auto"
+                }
+                
+                print(f"[Agent] Iteration {iteration+1}: Querying Sarvam AI...")
+                res = requests.post(url, json=payload, headers=headers, timeout=120)
+                
+                if res.status_code != 200:
+                    raise Exception(f"Sarvam AI API returned code {res.status_code}: {res.text}")
+                    
+                res_json = res.json()
+                choice = res_json["choices"][0]
+                message = choice["message"]
+                
+                # If tool calls are requested
+                if "tool_calls" in message and message["tool_calls"]:
+                    # Append assistant message (containing tool calls) to message list
+                    # OpenAI specs require keeping the assistant message in history to follow up
+                    sarvam_messages.append(message)
+                    
+                    for tc in message["tool_calls"]:
+                        tc_id = tc.get("id")
+                        func_name = tc["function"]["name"]
+                        func_args = {}
+                        try:
+                            func_args = json.loads(tc["function"]["arguments"] or "{}")
+                        except Exception:
+                            pass
+                            
+                        # Execute the tool safely passing the trusted user_context
+                        print(f"[Agent] Executing tool '{func_name}' with args: {func_args}")
+                        tool_res = execute_tool(func_name, func_args, user_context, language)
+                        serialized_res = serialize_data(tool_res)
+                        
+                        # Append tool response
+                        sarvam_messages.append({
+                            "role": "tool",
+                            "tool_call_id": tc_id,
+                            "name": func_name,
+                            "content": json.dumps(serialized_res)
+                        })
+                    # Continue loop to call model again with tool output
+                    continue
+                else:
+                    # No tool call, return the response text
+                    bot_reply = message.get("content", "").strip()
+                    bot_reply = re.sub(r'<think>.*?</think>', '', bot_reply, flags=re.DOTALL).strip()
+                    
+                    generation_elapsed = time.perf_counter() - generation_start
+                    print(f"[TIMING] Agent generation took: {generation_elapsed:.3f}s")
+                    return {"response": bot_reply}
+                    
+            # If we reached maximum iterations without text response
+            return {"response": "I ran into a loop trying to fetch your details. Please try asking again."}
             
-            if res.status_code == 200:
-                generation_elapsed = time.perf_counter() - generation_start
-                print(f"[TIMING] Answer generation (Sarvam AI) took: {generation_elapsed:.3f}s")
-                print(f"[TIMING] Total request time: {retrieval_elapsed + generation_elapsed:.3f}s\n")
-                bot_reply = res.json()["choices"][0]["message"]["content"].strip()
-                # Clean reasoning/thinking tags
-                bot_reply = re.sub(r'<think>.*?</think>', '', bot_reply, flags=re.DOTALL)
-                bot_reply = bot_reply.strip()
-                return {"response": bot_reply}
-            else:
-                generation_elapsed = time.perf_counter() - generation_start
-                print(f"[TIMING] Sarvam AI generation failed after: {generation_elapsed:.3f}s")
-                raise HTTPException(
-                    status_code=500, 
-                    detail=f"Sarvam AI API returned code {res.status_code}: {res.text}"
-                )
         except Exception as e:
             print(f"[API] Sarvam AI API execution exception: {e}")
             raise HTTPException(status_code=500, detail=f"Error communicating with Sarvam AI: {str(e)}")
+            
     else:
-        # Fallback: Query Ollama HTTP API (with timing)
+        # Fallback: Query Ollama HTTP API (with simple text search for tools context)
+        # To support basic local fallback without complex tool execution loops, we can pre-execute RAG search
+        rag_context = faq_search(user_query, language=language, selected_sno=request.selected_sno)
+        
         prompt_parts = [f"System: {system_instruction}"]
+        if rag_context:
+            prompt_parts.append(f"Chroma Context:\n{rag_context}")
         for msg in history:
             role_label = "User" if msg.role == "user" else "Assistant"
             prompt_parts.append(f"{role_label}: {msg.content}")
@@ -357,17 +1072,11 @@ def chat_with_bot(request: ChatRequest):
             if res.status_code == 200:
                 generation_elapsed = time.perf_counter() - generation_start
                 print(f"[TIMING] Answer generation took: {generation_elapsed:.3f}s")
-                print(f"[TIMING] Total request time: {retrieval_elapsed + generation_elapsed:.3f}s\n")
                 bot_reply = res.json().get("response", "").strip()
-                # Clean reasoning/thinking tags
-                bot_reply = re.sub(r'<think>.*?</think>', '', bot_reply, flags=re.DOTALL)
-                bot_reply = bot_reply.strip()
+                bot_reply = re.sub(r'<think>.*?</think>', '', bot_reply, flags=re.DOTALL).strip()
                 return {"response": bot_reply}
             else:
-                generation_elapsed = time.perf_counter() - generation_start
-                print(f"[TIMING] Answer generation failed after: {generation_elapsed:.3f}s")
                 raise HTTPException(status_code=500, detail=f"Ollama server returned code {res.status_code}")
-                
         except Exception as e:
             print(f"[API] Ollama HTTP execution exception: {e}")
             raise HTTPException(status_code=500, detail=f"Error communicating with local LLM: {str(e)}")
